@@ -1,0 +1,26 @@
+2025-01-31 11:28:15 - INFO - DataFrameCleaner initialized.
+2025-01-31 11:29:57 - INFO - Replaced 195 null values in column 'media' with 'no media'.
+2025-01-31 11:29:57 - INFO - Null value cleaning completed.
+2025-01-31 11:30:27 - INFO - Null value cleaning completed.
+2025-01-31 11:30:32 - INFO - Null value cleaning completed.
+2025-01-31 11:32:22 - INFO - DataFrameCleaner initialized.
+2025-01-31 11:32:22 - INFO - Replaced 195 null values in column 'media' with 'no media'.
+2025-01-31 11:32:22 - INFO - Null value cleaning completed.
+2025-01-31 13:02:02 - INFO - DataFrameCleaner initialized with DataFrame of shape (876, 6)
+2025-01-31 13:02:02 - INFO - Replaced 248 null values in column 'text' with 'no text'.
+2025-01-31 13:02:02 - INFO - Replaced 195 null values in column 'media' with 'no media'.
+2025-01-31 13:02:02 - INFO - Null value cleaning completed. Current DataFrame shape: (876, 6)
+2025-01-31 13:02:02 - INFO - Newlines removed and text trimmed in 'text' column.
+2025-01-31 13:02:02 - INFO - Extracted emojis and cleaned 'text' column of emojis.
+2025-01-31 13:02:02 - INFO - Emoji extraction completed.
+2025-01-31 13:02:02 - INFO - Extracted YouTube links, website URLs, and phone numbers.
+2025-01-31 13:02:02 - INFO - Removed duplicates. Rows before: 876, Rows after: 876
+2025-01-31 13:04:26 - INFO - DataFrameCleaner initialized with DataFrame of shape (876, 6)
+2025-01-31 13:04:27 - INFO - Replaced 248 null values in column 'text' with 'no text'.
+2025-01-31 13:04:27 - INFO - Replaced 195 null values in column 'media' with 'no media'.
+2025-01-31 13:04:27 - INFO - Null value cleaning completed. Current DataFrame shape: (876, 6)
+2025-01-31 13:04:27 - INFO - Newlines removed and text trimmed in 'text' column.
+2025-01-31 13:04:27 - INFO - Extracted emojis and cleaned 'text' column of emojis.
+2025-01-31 13:04:27 - INFO - Emoji extraction completed.
+2025-01-31 13:04:27 - INFO - Extracted YouTube links, website URLs, and phone numbers.
+2025-01-31 13:04:27 - INFO - Removed duplicates. Rows before: 876, Rows after: 876
