@@ -1,0 +1,11 @@
+sports ball 0.68 692 612 734 655
+sports ball 0.58 642 652 689 696
+sports ball 0.53 770 610 826 650
+sports ball 0.48 207 646 261 695
+sports ball 0.45 619 622 668 665
+sports ball 0.45 329 688 388 737
+sports ball 0.42 703 578 745 615
+sports ball 0.34 741 587 791 643
+sports ball 0.30 798 663 838 712
+cake 0.28 87 355 908 758
+sports ball 0.26 630 626 686 683
