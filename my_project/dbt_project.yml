@@ -1,0 +1,6 @@
+name: my_project
+profile: my_project
+
+models:
+  my_project:
+    +schema: public
