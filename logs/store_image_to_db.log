@@ -1,0 +1,1351 @@
+2025-02-03 15:19:46 - INFO - Connected to PostgreSQL and ensured table exists.
+2025-02-03 15:19:46 - INFO - Processing label files from ./images/detected_images/labels/
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-09-05_09-57-09.txt: Incorrect number of values -> sports ball 0.68 692 612 734 655
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-09-05_09-57-09.txt: Incorrect number of values -> sports ball 0.58 642 652 689 696
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-09-05_09-57-09.txt: Incorrect number of values -> sports ball 0.53 770 610 826 650
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-09-05_09-57-09.txt: Incorrect number of values -> sports ball 0.48 207 646 261 695
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-09-05_09-57-09.txt: Incorrect number of values -> sports ball 0.45 619 622 668 665
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-09-05_09-57-09.txt: Incorrect number of values -> sports ball 0.45 329 688 388 737
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-09-05_09-57-09.txt: Incorrect number of values -> sports ball 0.42 703 578 745 615
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-09-05_09-57-09.txt: Incorrect number of values -> sports ball 0.34 741 587 791 643
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-09-05_09-57-09.txt: Incorrect number of values -> sports ball 0.30 798 663 838 712
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-09-05_09-57-09.txt: Incorrect number of values -> cake 0.28 87 355 908 758
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-09-05_09-57-09.txt: Incorrect number of values -> sports ball 0.26 630 626 686 683
+2025-02-03 15:19:46 - WARNING - Warning: photo_2022-09-05_10-02-05.txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-09-06_04-26-15.txt: Incorrect number of values -> sports ball 0.68 692 612 734 655
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-09-06_04-26-15.txt: Incorrect number of values -> sports ball 0.58 642 652 689 696
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-09-06_04-26-15.txt: Incorrect number of values -> sports ball 0.53 770 610 826 650
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-09-06_04-26-15.txt: Incorrect number of values -> sports ball 0.48 207 646 261 695
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-09-06_04-26-15.txt: Incorrect number of values -> sports ball 0.45 619 622 668 665
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-09-06_04-26-15.txt: Incorrect number of values -> sports ball 0.45 329 688 388 737
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-09-06_04-26-15.txt: Incorrect number of values -> sports ball 0.42 703 578 745 615
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-09-06_04-26-15.txt: Incorrect number of values -> sports ball 0.34 741 587 791 643
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-09-06_04-26-15.txt: Incorrect number of values -> sports ball 0.30 798 663 838 712
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-09-06_04-26-15.txt: Incorrect number of values -> cake 0.28 87 355 908 758
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-09-06_04-26-15.txt: Incorrect number of values -> sports ball 0.26 630 626 686 683
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-09-07_09-16-40.txt: Incorrect number of values -> toilet 0.63 888 182 1079 412
+2025-02-03 15:19:46 - WARNING - Warning: photo_2022-09-10_15-55-25.txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-09-16_07-42-31.txt: Incorrect number of values -> sports ball 0.43 739 545 808 616
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-09-16_07-42-31.txt: Incorrect number of values -> sports ball 0.42 318 395 382 462
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-09-16_07-42-31.txt: Incorrect number of values -> sports ball 0.28 149 546 220 610
+2025-02-03 15:19:46 - WARNING - Warning: photo_2022-09-28_05-45-31.txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2022-09-30_07-33-42.txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-10-03_05-16-30.txt: Incorrect number of values -> bottle 0.65 576 380 606 461
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-10-03_05-16-30.txt: Incorrect number of values -> bottle 0.47 504 451 543 543
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-10-03_05-16-30.txt: Incorrect number of values -> bottle 0.37 610 525 639 605
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-10-03_05-16-30.txt: Incorrect number of values -> remote 0.34 691 903 830 1046
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-10-03_05-16-30.txt: Incorrect number of values -> bottle 0.33 547 394 578 454
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-10-03_05-16-30.txt: Incorrect number of values -> bottle 0.29 397 506 441 611
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-10-03_05-16-30.txt: Incorrect number of values -> bottle 0.29 602 390 631 453
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-10-03_05-16-30.txt: Incorrect number of values -> refrigerator 0.27 273 49 745 907
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-10-03_05-16-30.txt: Incorrect number of values -> bottle 0.27 400 289 444 368
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-10-03_05-16-30.txt: Incorrect number of values -> bottle 0.26 582 536 613 599
+2025-02-03 15:19:46 - WARNING - Warning: photo_2022-10-06_09-23-46.txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-10-12_14-14-19.txt: Incorrect number of values -> person 0.89 51 380 570 860
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-10-12_14-14-19.txt: Incorrect number of values -> person 0.87 679 428 1183 882
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-10-12_14-14-19.txt: Incorrect number of values -> person 0.51 1178 59 1280 845
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-10-12_14-14-19.txt: Incorrect number of values -> chair 0.26 666 701 712 839
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-10-12_14-14-52.txt: Incorrect number of values -> person 0.89 51 380 570 860
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-10-12_14-14-52.txt: Incorrect number of values -> person 0.87 679 428 1183 882
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-10-12_14-14-52.txt: Incorrect number of values -> person 0.51 1178 59 1280 845
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-10-12_14-14-52.txt: Incorrect number of values -> chair 0.26 666 701 712 839
+2025-02-03 15:19:46 - WARNING - Warning: photo_2022-10-17_14-02-40.txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-10-18_07-57-36.txt: Incorrect number of values -> cell phone 0.76 136 143 589 628
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-10-18_07-57-36.txt: Incorrect number of values -> book 0.46 273 78 811 421
+2025-02-03 15:19:46 - WARNING - Warning: photo_2022-10-20_12-24-01.txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-10-24_09-34-19.txt: Incorrect number of values -> cell phone 0.55 475 147 777 617
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-10-24_09-34-19.txt: Incorrect number of values -> person 0.27 305 502 857 782
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-10-28_06-49-36.txt: Incorrect number of values -> cup 0.48 736 16 1277 727
+2025-02-03 15:19:46 - WARNING - Warning: photo_2022-10-28_09-15-09.txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-10-29_20-26-28.txt: Incorrect number of values -> person 0.73 4 55 415 1033
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-10-29_20-26-28.txt: Incorrect number of values -> frisbee 0.38 464 830 695 1062
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-10-29_20-26-28.txt: Incorrect number of values -> laptop 0.28 10 547 411 1014
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-11-09_08-53-25.txt: Incorrect number of values -> clock 0.51 604 154 878 448
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-11-09_08-53-25.txt: Incorrect number of values -> person 0.28 161 108 439 769
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-11-15_05-24-41.txt: Incorrect number of values -> bottle 0.65 576 380 606 461
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-11-15_05-24-41.txt: Incorrect number of values -> bottle 0.47 504 451 543 543
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-11-15_05-24-41.txt: Incorrect number of values -> bottle 0.36 610 524 639 605
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-11-15_05-24-41.txt: Incorrect number of values -> remote 0.35 691 903 830 1046
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-11-15_05-24-41.txt: Incorrect number of values -> bottle 0.33 547 393 578 454
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-11-15_05-24-41.txt: Incorrect number of values -> bottle 0.30 397 506 441 611
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-11-15_05-24-41.txt: Incorrect number of values -> bottle 0.30 602 390 631 453
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-11-15_05-24-41.txt: Incorrect number of values -> refrigerator 0.27 272 49 746 907
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-11-15_05-24-41.txt: Incorrect number of values -> bottle 0.27 400 289 444 368
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-11-15_05-24-41.txt: Incorrect number of values -> bottle 0.25 582 536 613 599
+2025-02-03 15:19:46 - WARNING - Warning: photo_2022-11-15_08-17-41.txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2022-11-15_11-51-16.txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2022-11-22_08-15-47.txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-11-29_07-43-06.txt: Incorrect number of values -> baseball bat 0.32 98 265 598 588
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-11-29_07-43-06.txt: Incorrect number of values -> baseball bat 0.25 47 137 539 449
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-11-30_06-31-44.txt: Incorrect number of values -> mouse 0.90 146 171 319 300
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-11-30_06-31-44.txt: Incorrect number of values -> mouse 0.88 471 483 672 619
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-11-30_06-31-44.txt: Incorrect number of values -> mouse 0.84 256 372 401 536
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-11-30_06-31-44.txt: Incorrect number of values -> mouse 0.75 257 249 435 388
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-11-30_06-31-44.txt: Incorrect number of values -> mouse 0.69 0 331 213 418
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-11-30_06-31-44.txt: Incorrect number of values -> mouse 0.54 476 296 674 423
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-11-30_06-31-44.txt: Incorrect number of values -> mouse 0.47 441 148 588 295
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-11-30_06-31-44.txt: Incorrect number of values -> mouse 0.45 632 576 797 640
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-01_06-47-22.txt: Incorrect number of values -> person 0.56 588 233 781 520
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-01_06-47-22.txt: Incorrect number of values -> person 0.45 489 241 621 522
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-01_06-47-22.txt: Incorrect number of values -> person 0.45 729 236 877 519
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-01_06-47-22.txt: Incorrect number of values -> person 0.38 802 231 919 384
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-01_06-47-22.txt: Incorrect number of values -> person 0.34 1139 172 1199 612
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-02_06-06-12.txt: Incorrect number of values -> remote 0.77 876 230 972 478
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-02_06-06-12.txt: Incorrect number of values -> remote 0.48 777 225 889 496
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-02_13-44-41.txt: Incorrect number of values -> person 0.59 153 21 1065 893
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-02_13-44-41.txt: Incorrect number of values -> keyboard 0.36 0 909 251 1079
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-02_13-44-41.txt: Incorrect number of values -> cell phone 0.30 0 819 55 893
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-04_12-35-18.txt: Incorrect number of values -> cell phone 0.94 489 60 892 546
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-04_12-35-18.txt: Incorrect number of values -> person 0.50 0 171 887 716
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-05_05-57-22.txt: Incorrect number of values -> knife 0.29 0 463 175 693
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-05_05-57-22.txt: Incorrect number of values -> remote 0.25 22 254 327 473
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-07_06-43-48.txt: Incorrect number of values -> person 0.75 490 373 936 900
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-09_04-09-49.txt: Incorrect number of values -> clock 0.35 701 777 1071 1080
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-09_12-28-53.txt: Incorrect number of values -> cup 0.49 442 474 876 744
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-09_12-28-53.txt: Incorrect number of values -> mouse 0.34 440 474 875 745
+2025-02-03 15:19:46 - WARNING - Warning: photo_2022-12-13_05-55-18.txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-16_12-21-01.txt: Incorrect number of values -> horse 0.86 578 419 790 795
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-16_12-21-01.txt: Incorrect number of values -> person 0.73 786 420 986 818
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-16_12-21-01.txt: Incorrect number of values -> person 0.66 573 383 665 506
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-16_12-21-01.txt: Incorrect number of values -> person 0.61 947 389 1079 810
+2025-02-03 15:19:46 - WARNING - Warning: photo_2022-12-20_07-41-33.txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2022-12-20_11-28-59.txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-20_17-25-05.txt: Incorrect number of values -> person 0.61 370 283 1280 1277
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-22_03-11-26.txt: Incorrect number of values -> sports ball 0.68 692 612 734 654
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-22_03-11-26.txt: Incorrect number of values -> sports ball 0.57 642 652 689 696
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-22_03-11-26.txt: Incorrect number of values -> sports ball 0.56 770 610 827 650
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-22_03-11-26.txt: Incorrect number of values -> sports ball 0.55 207 645 260 695
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-22_03-11-26.txt: Incorrect number of values -> sports ball 0.48 703 579 746 615
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-22_03-11-26.txt: Incorrect number of values -> sports ball 0.47 619 622 668 665
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-22_03-11-26.txt: Incorrect number of values -> sports ball 0.44 329 688 388 737
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-22_03-11-26.txt: Incorrect number of values -> sports ball 0.38 741 587 791 643
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-22_03-11-26.txt: Incorrect number of values -> sports ball 0.34 798 663 838 713
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-22_03-11-26.txt: Incorrect number of values -> cake 0.28 87 355 906 758
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-22_03-11-26.txt: Incorrect number of values -> sports ball 0.28 145 615 190 656
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-22_03-11-26.txt: Incorrect number of values -> sports ball 0.26 630 626 686 682
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-22_06-40-25.txt: Incorrect number of values -> bottle 0.44 47 179 453 895
+2025-02-03 15:19:46 - WARNING - Warning: photo_2022-12-23_06-26-15.txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-27_17-06-32.txt: Incorrect number of values -> clock 0.49 879 727 986 827
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-27_17-06-32.txt: Incorrect number of values -> bed 0.27 0 526 1041 1063
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-27_17-06-32.txt: Incorrect number of values -> chair 0.26 0 436 82 626
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-28_06-31-50.txt: Incorrect number of values -> stop sign 0.73 77 831 240 1058
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-28_17-02-08.txt: Incorrect number of values -> potted plant 0.84 481 536 719 899
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-28_17-02-08.txt: Incorrect number of values -> person 0.71 238 185 530 1028
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-30_15-45-35.txt: Incorrect number of values -> person 0.91 169 345 401 1066
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2022-12-30_15-45-35.txt: Incorrect number of values -> person 0.83 23 442 90 588
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-02_07-02-55.txt: Incorrect number of values -> sports ball 0.25 239 843 541 1066
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-03_05-48-34.txt: Incorrect number of values -> person 0.48 621 395 1072 1077
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-03_17-49-48.txt: Incorrect number of values -> person 0.50 102 250 581 1253
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-04_05-58-02.txt: Incorrect number of values -> bottle 0.85 757 346 944 777
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-04_05-58-02.txt: Incorrect number of values -> bottle 0.75 536 307 765 806
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-04_05-58-02.txt: Incorrect number of values -> bottle 0.69 82 276 335 842
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-04_05-58-02.txt: Incorrect number of values -> bottle 0.27 329 327 550 819
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-06_06-05-01.txt: Incorrect number of values -> clock 0.42 846 810 899 925
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-06_06-05-01.txt: Incorrect number of values -> donut 0.29 698 1115 902 1280
+2025-02-03 15:19:46 - WARNING - Warning: photo_2023-01-06_09-31-17.txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-06_16-06-21.txt: Incorrect number of values -> person 0.92 55 161 542 1010
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-06_16-06-21.txt: Incorrect number of values -> chair 0.64 683 477 718 599
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-13_09-44-14.txt: Incorrect number of values -> bottle 0.83 52 631 244 1004
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-13_09-44-14.txt: Incorrect number of values -> bottle 0.78 875 634 1034 1000
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-13_09-44-14.txt: Incorrect number of values -> bottle 0.73 235 606 448 1021
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-13_09-44-14.txt: Incorrect number of values -> bottle 0.58 667 605 883 1035
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-13_09-44-14.txt: Incorrect number of values -> bottle 0.52 440 557 677 1029
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-13_12-48-47.txt: Incorrect number of values -> bottle 0.86 624 473 771 767
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-13_12-48-47.txt: Incorrect number of values -> bottle 0.72 453 411 632 772
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-13_12-48-47.txt: Incorrect number of values -> bottle 0.66 297 470 460 768
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-13_12-48-47.txt: Incorrect number of values -> mouse 0.65 789 929 892 1035
+2025-02-03 15:19:46 - WARNING - Warning: photo_2023-01-16_09-26-09.txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-16_10-13-42.txt: Incorrect number of values -> person 0.79 2 225 661 1057
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-16_10-13-42.txt: Incorrect number of values -> frisbee 0.76 486 402 558 451
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-16_10-13-42.txt: Incorrect number of values -> frisbee 0.66 539 373 628 412
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-16_10-13-42.txt: Incorrect number of values -> banana 0.52 515 496 576 574
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-16_10-13-42.txt: Incorrect number of values -> banana 0.48 695 518 771 594
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-16_10-13-42.txt: Incorrect number of values -> banana 0.42 579 548 647 629
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-16_10-13-42.txt: Incorrect number of values -> banana 0.37 575 477 638 554
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-16_10-13-42.txt: Incorrect number of values -> banana 0.26 822 485 891 559
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-16_10-13-42.txt: Incorrect number of values -> banana 0.26 686 446 758 523
+2025-02-03 15:19:46 - WARNING - Warning: photo_2023-01-16_13-41-35.txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2023-01-17_08-43-12.txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2023-01-23_10-39-20.txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2023-01-26_18-27-53.txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-27_07-18-40.txt: Incorrect number of values -> person 0.53 212 629 1080 816
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-30_09-45-25.txt: Incorrect number of values -> person 0.87 17 270 596 1077
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-30_09-45-25.txt: Incorrect number of values -> zebra 0.41 726 7 1076 427
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-30_09-45-25.txt: Incorrect number of values -> sports ball 0.35 442 625 577 763
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-31_09-19-53.txt: Incorrect number of values -> person 0.66 3 626 389 854
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-31_09-19-53.txt: Incorrect number of values -> vase 0.63 705 549 855 831
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-31_09-19-53.txt: Incorrect number of values -> vase 0.59 862 548 1015 830
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-01-31_09-19-53.txt: Incorrect number of values -> cake 0.30 704 547 854 833
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-02-01_08-59-37.txt: Incorrect number of values -> person 0.35 11 241 1017 1072
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-02-01_08-59-37.txt: Incorrect number of values -> person 0.26 11 258 476 1056
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2023-02-02_08-58-52.txt: Incorrect number of values -> sports ball 0.32 493 653 594 754
+2025-02-03 15:19:46 - WARNING - Warning: photo_2023-02-10_12-23-06.txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-22_11-15-33 (1).txt: Incorrect number of values -> book 0.36 670 79 1273 1776
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-22_11-15-33 (2).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-22_11-15-33 (3).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-22_11-15-33.txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-23_05-01-22 (1).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-23_05-01-22 (10).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-23_05-01-22 (11).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-23_05-01-22 (2).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-23_05-01-22 (3).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-23_05-01-22 (4).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-23_05-01-22 (5).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-23_05-01-22 (6).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-23_05-01-22 (7).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-23_05-01-22 (8).txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-23_05-01-22 (9).txt: Incorrect number of values -> bottle 0.67 319 198 709 922
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-23_05-01-22.txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-23_10-58-37 (1).txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-23_10-58-37 (2).txt: Incorrect number of values -> person 0.67 431 93 591 357
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-23_10-58-37 (3).txt: Incorrect number of values -> bottle 0.58 347 83 646 940
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-23_10-58-37 (4).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-23_10-58-37 (5).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-23_10-58-37.txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-23_12-17-07.txt: Incorrect number of values -> book 0.35 147 248 300 294
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-23_12-17-08 (1).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-23_12-17-08 (2).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-23_12-17-08 (3).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-23_12-17-08 (4).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-23_12-17-08 (5).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-23_12-17-08 (6).txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-23_12-17-08 (7).txt: Incorrect number of values -> vase 0.52 78 753 216 1167
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-23_12-17-08 (7).txt: Incorrect number of values -> cup 0.41 77 752 218 1173
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-23_12-17-08 (7).txt: Incorrect number of values -> bottle 0.27 681 408 928 996
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-23_12-17-08.txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-24_05-58-43.txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-24_05-59-28 (1).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-24_05-59-28 (2).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-24_05-59-28 (3).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-24_05-59-28 (4).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-24_05-59-28 (5).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-24_05-59-28 (6).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-24_05-59-28 (7).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-24_05-59-28 (8).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-24_05-59-28.txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-24_05-59-39.txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-24_11-39-43 (1).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-24_11-39-43 (2).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-24_11-39-43 (3).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-24_11-39-43 (4).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-24_11-39-43 (5).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-24_11-39-43 (6).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-24_11-39-43 (7).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-24_11-39-43.txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-24_12-44-46.txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-24_12-44-47 (1).txt: Incorrect number of values -> person 0.67 431 93 591 357
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-24_12-44-47.txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-24_14-01-14.txt: Incorrect number of values -> bottle 0.65 773 151 1206 1068
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-24_14-01-14.txt: Incorrect number of values -> bottle 0.39 386 220 864 1270
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-24_14-01-14.txt: Incorrect number of values -> bottle 0.31 71 156 462 1096
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-25_03-50-13 (1).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-25_03-50-13 (2).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-25_03-50-13 (3).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-25_03-50-13.txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-25_03-50-14 (1).txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-25_03-50-14 (10).txt: Incorrect number of values -> bottle 0.58 347 83 646 940
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-25_03-50-14 (11).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-25_03-50-14 (2).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-25_03-50-14 (3).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-25_03-50-14 (4).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-25_03-50-14 (5).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-25_03-50-14 (6).txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-25_03-50-14 (7).txt: Incorrect number of values -> bowl 0.67 237 583 734 965
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-25_03-50-14 (8).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-25_03-50-14 (9).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-25_03-50-14.txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-26_07-33-24.txt: Incorrect number of values -> bottle 0.58 347 83 646 940
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-26_07-33-25 (1).txt: Incorrect number of values -> person 0.67 431 93 591 357
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-26_07-33-25 (2).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-26_07-33-25 (3).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-26_07-33-25 (4).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-26_07-33-25 (5).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-26_07-33-25 (6).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-26_07-33-25 (7).txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-26_07-33-25 (8).txt: Incorrect number of values -> vase 0.52 78 753 216 1167
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-26_07-33-25 (8).txt: Incorrect number of values -> cup 0.41 77 752 218 1173
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-26_07-33-25 (8).txt: Incorrect number of values -> bottle 0.27 681 408 928 996
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-26_07-33-25 (9).txt: Incorrect number of values -> book 0.35 147 248 300 294
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-26_07-33-25.txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-27_05-34-02 (1).txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-27_05-34-02 (2).txt: Incorrect number of values -> person 0.67 431 93 591 357
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-27_05-34-02 (3).txt: Incorrect number of values -> bottle 0.58 347 83 646 940
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-27_05-34-02 (4).txt: Incorrect number of values -> person 0.30 209 40 290 106
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-27_05-34-02 (5).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-27_05-34-02 (6).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-27_05-34-02 (7).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-27_05-34-02.txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-27_05-34-03 (1).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-27_05-34-03 (2).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-27_05-34-03 (3).txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-27_05-34-03 (4).txt: Incorrect number of values -> bottle 0.67 319 198 709 922
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-27_05-34-03 (5).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-27_05-34-03 (6).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-27_05-34-03.txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-28_05-19-57 (1).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-28_05-19-57 (2).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-28_05-19-57 (3).txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-57.txt: Incorrect number of values -> person 0.30 209 40 290 106
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-28_05-19-58 (1).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-28_05-19-58 (10).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-28_05-19-58 (11).txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58 (12).txt: Incorrect number of values -> bottle 0.38 102 98 270 617
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58 (13).txt: Incorrect number of values -> person 0.84 650 564 958 940
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-28_05-19-58 (14).txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58 (15).txt: Incorrect number of values -> vase 0.25 170 42 332 492
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58 (2).txt: Incorrect number of values -> vase 0.52 78 753 216 1167
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58 (2).txt: Incorrect number of values -> cup 0.41 77 752 218 1173
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58 (2).txt: Incorrect number of values -> bottle 0.27 681 408 928 996
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58 (3).txt: Incorrect number of values -> book 0.35 147 248 300 294
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-28_05-19-58 (4).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-28_05-19-58 (5).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-28_05-19-58 (6).txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58 (7).txt: Incorrect number of values -> book 0.65 252 916 777 1019
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58 (7).txt: Incorrect number of values -> book 0.43 255 745 773 922
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58 (7).txt: Incorrect number of values -> person 0.31 591 476 765 934
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58 (8).txt: Incorrect number of values -> bottle 0.37 320 256 635 1189
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58 (9).txt: Incorrect number of values -> bottle 0.50 629 266 945 1200
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58.txt: Incorrect number of values -> bottle 0.57 235 132 274 263
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58.txt: Incorrect number of values -> bottle 0.56 103 85 219 283
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58.txt: Incorrect number of values -> bottle 0.52 262 143 299 257
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58.txt: Incorrect number of values -> toilet 0.49 25 148 58 256
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58.txt: Incorrect number of values -> bottle 0.47 207 119 249 272
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58.txt: Incorrect number of values -> bottle 0.39 281 150 308 254
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58.txt: Incorrect number of values -> suitcase 0.31 73 109 107 268
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58.txt: Incorrect number of values -> toilet 0.28 14 156 35 252
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-28_07-54-58 (1).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-28_07-54-58.txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-28_07-54-59 (1).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-28_07-54-59 (2).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-28_07-54-59 (3).txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-28_07-54-59 (4).txt: Incorrect number of values -> bottle 0.65 773 151 1206 1068
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-28_07-54-59 (4).txt: Incorrect number of values -> bottle 0.39 386 220 864 1270
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-28_07-54-59 (4).txt: Incorrect number of values -> bottle 0.31 71 156 462 1096
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-28_07-54-59 (5).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-28_07-54-59 (6).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-28_07-54-59.txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-28_07-55-08.txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-28_10-54-52 (1).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-28_10-54-52 (2).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-28_10-54-52 (3).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-28_10-54-52 (4).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-28_10-54-52 (5).txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-28_10-54-52.txt: Incorrect number of values -> person 0.67 431 93 591 357
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-28_14-36-30 (1).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-28_14-36-30 (2).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-28_14-36-30 (3).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-28_14-36-30 (4).txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-28_14-36-30.txt: Incorrect number of values -> banana 0.31 858 481 978 546
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-28_14-36-30.txt: Incorrect number of values -> stop sign 0.25 808 575 995 758
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-28_14-36-31 (1).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-28_14-36-31 (2).txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-28_14-36-31 (3).txt: Incorrect number of values -> laptop 0.28 37 96 173 210
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-28_14-36-31 (4).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-28_14-36-31 (5).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-28_14-36-31 (6).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-28_14-36-31 (7).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-28_14-36-31.txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-29_05-02-10.txt: Incorrect number of values -> bottle 0.80 31 22 231 616
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-29_05-02-10.txt: Incorrect number of values -> bottle 0.77 251 48 450 600
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-29_05-03-03 (1).txt: Incorrect number of values -> bottle 0.46 342 182 402 477
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-29_05-03-03 (2).txt: Incorrect number of values -> bottle 0.69 528 368 625 908
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-29_05-03-03 (2).txt: Incorrect number of values -> bottle 0.45 632 372 897 953
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-29_05-03-03 (3).txt: Incorrect number of values -> bottle 0.46 139 43 408 780
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-29_05-03-03 (4).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-29_05-03-03 (5).txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-29_05-03-03.txt: Incorrect number of values -> bottle 0.44 579 255 653 692
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-29_05-03-03.txt: Incorrect number of values -> bottle 0.42 147 84 329 430
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-29_05-03-03.txt: Incorrect number of values -> bottle 0.34 144 120 334 774
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-29_05-03-04.txt: Incorrect number of values -> bottle 0.47 428 285 638 782
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-29_12-59-56.txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-29_13-01-26 (1).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-29_13-01-26 (2).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-29_13-01-26 (3).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-29_13-01-26 (4).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-29_13-01-26 (5).txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-29_13-01-26 (6).txt: Incorrect number of values -> clock 0.65 294 178 883 761
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-29_13-01-26 (7).txt: Incorrect number of values -> book 0.36 670 79 1273 1776
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-29_13-01-26.txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-30_06-32-29 (1).txt: Incorrect number of values -> person 0.75 239 601 375 749
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-30_06-32-29 (1).txt: Incorrect number of values -> person 0.72 351 557 452 742
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-30_06-32-29 (1).txt: Incorrect number of values -> bottle 0.61 537 298 792 855
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-30_06-32-29 (1).txt: Incorrect number of values -> person 0.59 423 548 538 858
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-30_06-32-29 (1).txt: Incorrect number of values -> person 0.29 560 673 680 831
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-30_06-32-29 (2).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-30_06-32-29 (3).txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-30_06-32-29.txt: Incorrect number of values -> bottle 0.38 102 98 270 617
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-30_06-32-30 (1).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-30_06-32-30 (10).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-30_06-32-30 (11).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-30_06-32-30 (12).txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-30_06-32-30 (13).txt: Incorrect number of values -> bottle 0.50 629 266 945 1200
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-30_06-32-30 (14).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-30_06-32-30 (15).txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-30_06-32-30 (16).txt: Incorrect number of values -> person 0.86 434 420 753 895
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-30_06-32-30 (17).txt: Incorrect number of values -> bottle 0.37 320 256 635 1189
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-30_06-32-30 (2).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-30_06-32-30 (3).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-30_06-32-30 (4).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-30_06-32-30 (5).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-30_06-32-30 (6).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-30_06-32-30 (7).txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-30_06-32-30 (8).txt: Incorrect number of values -> bottle 0.47 304 133 699 893
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-30_06-32-30 (9).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-30_06-32-30.txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-30_09-07-32 (1).txt: Incorrect number of values -> book 0.65 252 916 777 1019
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-30_09-07-32 (1).txt: Incorrect number of values -> book 0.43 255 745 773 922
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-30_09-07-32 (1).txt: Incorrect number of values -> person 0.31 591 476 765 934
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-30_09-07-32.txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-30_13-04-01.txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-30_13-04-17.txt: Incorrect number of values -> cup 0.83 72 246 146 306
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-30_14-11-11 (1).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-30_14-11-11 (2).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-30_14-11-11.txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-30_14-11-12.txt: Incorrect number of values -> person 0.67 431 93 591 357
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-31_05-30-28 (1).txt is empty.
+2025-02-03 15:19:46 - ERROR - \u26a0 Error in photo_2025-01-31_05-30-28 (2).txt: Incorrect number of values -> bottle 0.67 319 198 709 922
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-31_05-30-28 (3).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-31_05-30-28 (4).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-31_05-30-28 (5).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-31_05-30-28 (6).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-31_05-30-28 (7).txt is empty.
+2025-02-03 15:19:46 - WARNING - Warning: photo_2025-01-31_05-30-28.txt is empty.
+2025-02-03 15:19:46 - INFO - \u2705 Data successfully stored in PostgreSQL.
+2025-02-03 15:20:51 - INFO - Connected to PostgreSQL and ensured table exists.
+2025-02-03 15:20:51 - INFO - Processing label files from ./images/detected_images/labels/
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-09-05_09-57-09.txt: Incorrect number of values -> sports ball 0.68 692 612 734 655
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-09-05_09-57-09.txt: Incorrect number of values -> sports ball 0.58 642 652 689 696
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-09-05_09-57-09.txt: Incorrect number of values -> sports ball 0.53 770 610 826 650
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-09-05_09-57-09.txt: Incorrect number of values -> sports ball 0.48 207 646 261 695
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-09-05_09-57-09.txt: Incorrect number of values -> sports ball 0.45 619 622 668 665
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-09-05_09-57-09.txt: Incorrect number of values -> sports ball 0.45 329 688 388 737
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-09-05_09-57-09.txt: Incorrect number of values -> sports ball 0.42 703 578 745 615
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-09-05_09-57-09.txt: Incorrect number of values -> sports ball 0.34 741 587 791 643
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-09-05_09-57-09.txt: Incorrect number of values -> sports ball 0.30 798 663 838 712
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-09-05_09-57-09.txt: Incorrect number of values -> cake 0.28 87 355 908 758
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-09-05_09-57-09.txt: Incorrect number of values -> sports ball 0.26 630 626 686 683
+2025-02-03 15:20:51 - WARNING - Warning: photo_2022-09-05_10-02-05.txt is empty.
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-09-06_04-26-15.txt: Incorrect number of values -> sports ball 0.68 692 612 734 655
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-09-06_04-26-15.txt: Incorrect number of values -> sports ball 0.58 642 652 689 696
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-09-06_04-26-15.txt: Incorrect number of values -> sports ball 0.53 770 610 826 650
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-09-06_04-26-15.txt: Incorrect number of values -> sports ball 0.48 207 646 261 695
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-09-06_04-26-15.txt: Incorrect number of values -> sports ball 0.45 619 622 668 665
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-09-06_04-26-15.txt: Incorrect number of values -> sports ball 0.45 329 688 388 737
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-09-06_04-26-15.txt: Incorrect number of values -> sports ball 0.42 703 578 745 615
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-09-06_04-26-15.txt: Incorrect number of values -> sports ball 0.34 741 587 791 643
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-09-06_04-26-15.txt: Incorrect number of values -> sports ball 0.30 798 663 838 712
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-09-06_04-26-15.txt: Incorrect number of values -> cake 0.28 87 355 908 758
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-09-06_04-26-15.txt: Incorrect number of values -> sports ball 0.26 630 626 686 683
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-09-07_09-16-40.txt: Incorrect number of values -> toilet 0.63 888 182 1079 412
+2025-02-03 15:20:51 - WARNING - Warning: photo_2022-09-10_15-55-25.txt is empty.
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-09-16_07-42-31.txt: Incorrect number of values -> sports ball 0.43 739 545 808 616
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-09-16_07-42-31.txt: Incorrect number of values -> sports ball 0.42 318 395 382 462
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-09-16_07-42-31.txt: Incorrect number of values -> sports ball 0.28 149 546 220 610
+2025-02-03 15:20:51 - WARNING - Warning: photo_2022-09-28_05-45-31.txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2022-09-30_07-33-42.txt is empty.
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-10-03_05-16-30.txt: Incorrect number of values -> bottle 0.65 576 380 606 461
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-10-03_05-16-30.txt: Incorrect number of values -> bottle 0.47 504 451 543 543
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-10-03_05-16-30.txt: Incorrect number of values -> bottle 0.37 610 525 639 605
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-10-03_05-16-30.txt: Incorrect number of values -> remote 0.34 691 903 830 1046
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-10-03_05-16-30.txt: Incorrect number of values -> bottle 0.33 547 394 578 454
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-10-03_05-16-30.txt: Incorrect number of values -> bottle 0.29 397 506 441 611
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-10-03_05-16-30.txt: Incorrect number of values -> bottle 0.29 602 390 631 453
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-10-03_05-16-30.txt: Incorrect number of values -> refrigerator 0.27 273 49 745 907
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-10-03_05-16-30.txt: Incorrect number of values -> bottle 0.27 400 289 444 368
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-10-03_05-16-30.txt: Incorrect number of values -> bottle 0.26 582 536 613 599
+2025-02-03 15:20:51 - WARNING - Warning: photo_2022-10-06_09-23-46.txt is empty.
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-10-12_14-14-19.txt: Incorrect number of values -> person 0.89 51 380 570 860
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-10-12_14-14-19.txt: Incorrect number of values -> person 0.87 679 428 1183 882
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-10-12_14-14-19.txt: Incorrect number of values -> person 0.51 1178 59 1280 845
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-10-12_14-14-19.txt: Incorrect number of values -> chair 0.26 666 701 712 839
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-10-12_14-14-52.txt: Incorrect number of values -> person 0.89 51 380 570 860
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-10-12_14-14-52.txt: Incorrect number of values -> person 0.87 679 428 1183 882
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-10-12_14-14-52.txt: Incorrect number of values -> person 0.51 1178 59 1280 845
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-10-12_14-14-52.txt: Incorrect number of values -> chair 0.26 666 701 712 839
+2025-02-03 15:20:51 - WARNING - Warning: photo_2022-10-17_14-02-40.txt is empty.
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-10-18_07-57-36.txt: Incorrect number of values -> cell phone 0.76 136 143 589 628
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-10-18_07-57-36.txt: Incorrect number of values -> book 0.46 273 78 811 421
+2025-02-03 15:20:51 - WARNING - Warning: photo_2022-10-20_12-24-01.txt is empty.
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-10-24_09-34-19.txt: Incorrect number of values -> cell phone 0.55 475 147 777 617
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-10-24_09-34-19.txt: Incorrect number of values -> person 0.27 305 502 857 782
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-10-28_06-49-36.txt: Incorrect number of values -> cup 0.48 736 16 1277 727
+2025-02-03 15:20:51 - WARNING - Warning: photo_2022-10-28_09-15-09.txt is empty.
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-10-29_20-26-28.txt: Incorrect number of values -> person 0.73 4 55 415 1033
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-10-29_20-26-28.txt: Incorrect number of values -> frisbee 0.38 464 830 695 1062
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-10-29_20-26-28.txt: Incorrect number of values -> laptop 0.28 10 547 411 1014
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-11-09_08-53-25.txt: Incorrect number of values -> clock 0.51 604 154 878 448
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-11-09_08-53-25.txt: Incorrect number of values -> person 0.28 161 108 439 769
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-11-15_05-24-41.txt: Incorrect number of values -> bottle 0.65 576 380 606 461
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-11-15_05-24-41.txt: Incorrect number of values -> bottle 0.47 504 451 543 543
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-11-15_05-24-41.txt: Incorrect number of values -> bottle 0.36 610 524 639 605
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-11-15_05-24-41.txt: Incorrect number of values -> remote 0.35 691 903 830 1046
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-11-15_05-24-41.txt: Incorrect number of values -> bottle 0.33 547 393 578 454
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-11-15_05-24-41.txt: Incorrect number of values -> bottle 0.30 397 506 441 611
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-11-15_05-24-41.txt: Incorrect number of values -> bottle 0.30 602 390 631 453
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-11-15_05-24-41.txt: Incorrect number of values -> refrigerator 0.27 272 49 746 907
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-11-15_05-24-41.txt: Incorrect number of values -> bottle 0.27 400 289 444 368
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-11-15_05-24-41.txt: Incorrect number of values -> bottle 0.25 582 536 613 599
+2025-02-03 15:20:51 - WARNING - Warning: photo_2022-11-15_08-17-41.txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2022-11-15_11-51-16.txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2022-11-22_08-15-47.txt is empty.
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-11-29_07-43-06.txt: Incorrect number of values -> baseball bat 0.32 98 265 598 588
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-11-29_07-43-06.txt: Incorrect number of values -> baseball bat 0.25 47 137 539 449
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-11-30_06-31-44.txt: Incorrect number of values -> mouse 0.90 146 171 319 300
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-11-30_06-31-44.txt: Incorrect number of values -> mouse 0.88 471 483 672 619
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-11-30_06-31-44.txt: Incorrect number of values -> mouse 0.84 256 372 401 536
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-11-30_06-31-44.txt: Incorrect number of values -> mouse 0.75 257 249 435 388
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-11-30_06-31-44.txt: Incorrect number of values -> mouse 0.69 0 331 213 418
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-11-30_06-31-44.txt: Incorrect number of values -> mouse 0.54 476 296 674 423
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-11-30_06-31-44.txt: Incorrect number of values -> mouse 0.47 441 148 588 295
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-11-30_06-31-44.txt: Incorrect number of values -> mouse 0.45 632 576 797 640
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-01_06-47-22.txt: Incorrect number of values -> person 0.56 588 233 781 520
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-01_06-47-22.txt: Incorrect number of values -> person 0.45 489 241 621 522
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-01_06-47-22.txt: Incorrect number of values -> person 0.45 729 236 877 519
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-01_06-47-22.txt: Incorrect number of values -> person 0.38 802 231 919 384
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-01_06-47-22.txt: Incorrect number of values -> person 0.34 1139 172 1199 612
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-02_06-06-12.txt: Incorrect number of values -> remote 0.77 876 230 972 478
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-02_06-06-12.txt: Incorrect number of values -> remote 0.48 777 225 889 496
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-02_13-44-41.txt: Incorrect number of values -> person 0.59 153 21 1065 893
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-02_13-44-41.txt: Incorrect number of values -> keyboard 0.36 0 909 251 1079
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-02_13-44-41.txt: Incorrect number of values -> cell phone 0.30 0 819 55 893
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-04_12-35-18.txt: Incorrect number of values -> cell phone 0.94 489 60 892 546
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-04_12-35-18.txt: Incorrect number of values -> person 0.50 0 171 887 716
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-05_05-57-22.txt: Incorrect number of values -> knife 0.29 0 463 175 693
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-05_05-57-22.txt: Incorrect number of values -> remote 0.25 22 254 327 473
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-07_06-43-48.txt: Incorrect number of values -> person 0.75 490 373 936 900
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-09_04-09-49.txt: Incorrect number of values -> clock 0.35 701 777 1071 1080
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-09_12-28-53.txt: Incorrect number of values -> cup 0.49 442 474 876 744
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-09_12-28-53.txt: Incorrect number of values -> mouse 0.34 440 474 875 745
+2025-02-03 15:20:51 - WARNING - Warning: photo_2022-12-13_05-55-18.txt is empty.
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-16_12-21-01.txt: Incorrect number of values -> horse 0.86 578 419 790 795
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-16_12-21-01.txt: Incorrect number of values -> person 0.73 786 420 986 818
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-16_12-21-01.txt: Incorrect number of values -> person 0.66 573 383 665 506
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-16_12-21-01.txt: Incorrect number of values -> person 0.61 947 389 1079 810
+2025-02-03 15:20:51 - WARNING - Warning: photo_2022-12-20_07-41-33.txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2022-12-20_11-28-59.txt is empty.
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-20_17-25-05.txt: Incorrect number of values -> person 0.61 370 283 1280 1277
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-22_03-11-26.txt: Incorrect number of values -> sports ball 0.68 692 612 734 654
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-22_03-11-26.txt: Incorrect number of values -> sports ball 0.57 642 652 689 696
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-22_03-11-26.txt: Incorrect number of values -> sports ball 0.56 770 610 827 650
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-22_03-11-26.txt: Incorrect number of values -> sports ball 0.55 207 645 260 695
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-22_03-11-26.txt: Incorrect number of values -> sports ball 0.48 703 579 746 615
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-22_03-11-26.txt: Incorrect number of values -> sports ball 0.47 619 622 668 665
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-22_03-11-26.txt: Incorrect number of values -> sports ball 0.44 329 688 388 737
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-22_03-11-26.txt: Incorrect number of values -> sports ball 0.38 741 587 791 643
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-22_03-11-26.txt: Incorrect number of values -> sports ball 0.34 798 663 838 713
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-22_03-11-26.txt: Incorrect number of values -> cake 0.28 87 355 906 758
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-22_03-11-26.txt: Incorrect number of values -> sports ball 0.28 145 615 190 656
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-22_03-11-26.txt: Incorrect number of values -> sports ball 0.26 630 626 686 682
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-22_06-40-25.txt: Incorrect number of values -> bottle 0.44 47 179 453 895
+2025-02-03 15:20:51 - WARNING - Warning: photo_2022-12-23_06-26-15.txt is empty.
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-27_17-06-32.txt: Incorrect number of values -> clock 0.49 879 727 986 827
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-27_17-06-32.txt: Incorrect number of values -> bed 0.27 0 526 1041 1063
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-27_17-06-32.txt: Incorrect number of values -> chair 0.26 0 436 82 626
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-28_06-31-50.txt: Incorrect number of values -> stop sign 0.73 77 831 240 1058
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-28_17-02-08.txt: Incorrect number of values -> potted plant 0.84 481 536 719 899
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-28_17-02-08.txt: Incorrect number of values -> person 0.71 238 185 530 1028
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-30_15-45-35.txt: Incorrect number of values -> person 0.91 169 345 401 1066
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2022-12-30_15-45-35.txt: Incorrect number of values -> person 0.83 23 442 90 588
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-02_07-02-55.txt: Incorrect number of values -> sports ball 0.25 239 843 541 1066
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-03_05-48-34.txt: Incorrect number of values -> person 0.48 621 395 1072 1077
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-03_17-49-48.txt: Incorrect number of values -> person 0.50 102 250 581 1253
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-04_05-58-02.txt: Incorrect number of values -> bottle 0.85 757 346 944 777
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-04_05-58-02.txt: Incorrect number of values -> bottle 0.75 536 307 765 806
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-04_05-58-02.txt: Incorrect number of values -> bottle 0.69 82 276 335 842
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-04_05-58-02.txt: Incorrect number of values -> bottle 0.27 329 327 550 819
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-06_06-05-01.txt: Incorrect number of values -> clock 0.42 846 810 899 925
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-06_06-05-01.txt: Incorrect number of values -> donut 0.29 698 1115 902 1280
+2025-02-03 15:20:51 - WARNING - Warning: photo_2023-01-06_09-31-17.txt is empty.
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-06_16-06-21.txt: Incorrect number of values -> person 0.92 55 161 542 1010
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-06_16-06-21.txt: Incorrect number of values -> chair 0.64 683 477 718 599
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-13_09-44-14.txt: Incorrect number of values -> bottle 0.83 52 631 244 1004
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-13_09-44-14.txt: Incorrect number of values -> bottle 0.78 875 634 1034 1000
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-13_09-44-14.txt: Incorrect number of values -> bottle 0.73 235 606 448 1021
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-13_09-44-14.txt: Incorrect number of values -> bottle 0.58 667 605 883 1035
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-13_09-44-14.txt: Incorrect number of values -> bottle 0.52 440 557 677 1029
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-13_12-48-47.txt: Incorrect number of values -> bottle 0.86 624 473 771 767
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-13_12-48-47.txt: Incorrect number of values -> bottle 0.72 453 411 632 772
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-13_12-48-47.txt: Incorrect number of values -> bottle 0.66 297 470 460 768
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-13_12-48-47.txt: Incorrect number of values -> mouse 0.65 789 929 892 1035
+2025-02-03 15:20:51 - WARNING - Warning: photo_2023-01-16_09-26-09.txt is empty.
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-16_10-13-42.txt: Incorrect number of values -> person 0.79 2 225 661 1057
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-16_10-13-42.txt: Incorrect number of values -> frisbee 0.76 486 402 558 451
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-16_10-13-42.txt: Incorrect number of values -> frisbee 0.66 539 373 628 412
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-16_10-13-42.txt: Incorrect number of values -> banana 0.52 515 496 576 574
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-16_10-13-42.txt: Incorrect number of values -> banana 0.48 695 518 771 594
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-16_10-13-42.txt: Incorrect number of values -> banana 0.42 579 548 647 629
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-16_10-13-42.txt: Incorrect number of values -> banana 0.37 575 477 638 554
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-16_10-13-42.txt: Incorrect number of values -> banana 0.26 822 485 891 559
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-16_10-13-42.txt: Incorrect number of values -> banana 0.26 686 446 758 523
+2025-02-03 15:20:51 - WARNING - Warning: photo_2023-01-16_13-41-35.txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2023-01-17_08-43-12.txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2023-01-23_10-39-20.txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2023-01-26_18-27-53.txt is empty.
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-27_07-18-40.txt: Incorrect number of values -> person 0.53 212 629 1080 816
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-30_09-45-25.txt: Incorrect number of values -> person 0.87 17 270 596 1077
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-30_09-45-25.txt: Incorrect number of values -> zebra 0.41 726 7 1076 427
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-30_09-45-25.txt: Incorrect number of values -> sports ball 0.35 442 625 577 763
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-31_09-19-53.txt: Incorrect number of values -> person 0.66 3 626 389 854
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-31_09-19-53.txt: Incorrect number of values -> vase 0.63 705 549 855 831
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-31_09-19-53.txt: Incorrect number of values -> vase 0.59 862 548 1015 830
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-01-31_09-19-53.txt: Incorrect number of values -> cake 0.30 704 547 854 833
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-02-01_08-59-37.txt: Incorrect number of values -> person 0.35 11 241 1017 1072
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-02-01_08-59-37.txt: Incorrect number of values -> person 0.26 11 258 476 1056
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2023-02-02_08-58-52.txt: Incorrect number of values -> sports ball 0.32 493 653 594 754
+2025-02-03 15:20:51 - WARNING - Warning: photo_2023-02-10_12-23-06.txt is empty.
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2025-01-22_11-15-33 (1).txt: Incorrect number of values -> book 0.36 670 79 1273 1776
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-22_11-15-33 (2).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-22_11-15-33 (3).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-22_11-15-33.txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-23_05-01-22 (1).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-23_05-01-22 (10).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-23_05-01-22 (11).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-23_05-01-22 (2).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-23_05-01-22 (3).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-23_05-01-22 (4).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-23_05-01-22 (5).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-23_05-01-22 (6).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-23_05-01-22 (7).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-23_05-01-22 (8).txt is empty.
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2025-01-23_05-01-22 (9).txt: Incorrect number of values -> bottle 0.67 319 198 709 922
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-23_05-01-22.txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-23_10-58-37 (1).txt is empty.
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2025-01-23_10-58-37 (2).txt: Incorrect number of values -> person 0.67 431 93 591 357
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2025-01-23_10-58-37 (3).txt: Incorrect number of values -> bottle 0.58 347 83 646 940
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-23_10-58-37 (4).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-23_10-58-37 (5).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-23_10-58-37.txt is empty.
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2025-01-23_12-17-07.txt: Incorrect number of values -> book 0.35 147 248 300 294
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-23_12-17-08 (1).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-23_12-17-08 (2).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-23_12-17-08 (3).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-23_12-17-08 (4).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-23_12-17-08 (5).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-23_12-17-08 (6).txt is empty.
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2025-01-23_12-17-08 (7).txt: Incorrect number of values -> vase 0.52 78 753 216 1167
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2025-01-23_12-17-08 (7).txt: Incorrect number of values -> cup 0.41 77 752 218 1173
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2025-01-23_12-17-08 (7).txt: Incorrect number of values -> bottle 0.27 681 408 928 996
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-23_12-17-08.txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-24_05-58-43.txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-24_05-59-28 (1).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-24_05-59-28 (2).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-24_05-59-28 (3).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-24_05-59-28 (4).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-24_05-59-28 (5).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-24_05-59-28 (6).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-24_05-59-28 (7).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-24_05-59-28 (8).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-24_05-59-28.txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-24_05-59-39.txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-24_11-39-43 (1).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-24_11-39-43 (2).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-24_11-39-43 (3).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-24_11-39-43 (4).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-24_11-39-43 (5).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-24_11-39-43 (6).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-24_11-39-43 (7).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-24_11-39-43.txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-24_12-44-46.txt is empty.
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2025-01-24_12-44-47 (1).txt: Incorrect number of values -> person 0.67 431 93 591 357
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-24_12-44-47.txt is empty.
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2025-01-24_14-01-14.txt: Incorrect number of values -> bottle 0.65 773 151 1206 1068
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2025-01-24_14-01-14.txt: Incorrect number of values -> bottle 0.39 386 220 864 1270
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2025-01-24_14-01-14.txt: Incorrect number of values -> bottle 0.31 71 156 462 1096
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-25_03-50-13 (1).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-25_03-50-13 (2).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-25_03-50-13 (3).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-25_03-50-13.txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-25_03-50-14 (1).txt is empty.
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2025-01-25_03-50-14 (10).txt: Incorrect number of values -> bottle 0.58 347 83 646 940
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-25_03-50-14 (11).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-25_03-50-14 (2).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-25_03-50-14 (3).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-25_03-50-14 (4).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-25_03-50-14 (5).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-25_03-50-14 (6).txt is empty.
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2025-01-25_03-50-14 (7).txt: Incorrect number of values -> bowl 0.67 237 583 734 965
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-25_03-50-14 (8).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-25_03-50-14 (9).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-25_03-50-14.txt is empty.
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2025-01-26_07-33-24.txt: Incorrect number of values -> bottle 0.58 347 83 646 940
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2025-01-26_07-33-25 (1).txt: Incorrect number of values -> person 0.67 431 93 591 357
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-26_07-33-25 (2).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-26_07-33-25 (3).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-26_07-33-25 (4).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-26_07-33-25 (5).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-26_07-33-25 (6).txt is empty.
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-26_07-33-25 (7).txt is empty.
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2025-01-26_07-33-25 (8).txt: Incorrect number of values -> vase 0.52 78 753 216 1167
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2025-01-26_07-33-25 (8).txt: Incorrect number of values -> cup 0.41 77 752 218 1173
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2025-01-26_07-33-25 (8).txt: Incorrect number of values -> bottle 0.27 681 408 928 996
+2025-02-03 15:20:51 - ERROR - \u26a0 Error in photo_2025-01-26_07-33-25 (9).txt: Incorrect number of values -> book 0.35 147 248 300 294
+2025-02-03 15:20:51 - WARNING - Warning: photo_2025-01-26_07-33-25.txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-27_05-34-02 (1).txt is empty.
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-27_05-34-02 (2).txt: Incorrect number of values -> person 0.67 431 93 591 357
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-27_05-34-02 (3).txt: Incorrect number of values -> bottle 0.58 347 83 646 940
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-27_05-34-02 (4).txt: Incorrect number of values -> person 0.30 209 40 290 106
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-27_05-34-02 (5).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-27_05-34-02 (6).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-27_05-34-02 (7).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-27_05-34-02.txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-27_05-34-03 (1).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-27_05-34-03 (2).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-27_05-34-03 (3).txt is empty.
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-27_05-34-03 (4).txt: Incorrect number of values -> bottle 0.67 319 198 709 922
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-27_05-34-03 (5).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-27_05-34-03 (6).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-27_05-34-03.txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-28_05-19-57 (1).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-28_05-19-57 (2).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-28_05-19-57 (3).txt is empty.
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-57.txt: Incorrect number of values -> person 0.30 209 40 290 106
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-28_05-19-58 (1).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-28_05-19-58 (10).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-28_05-19-58 (11).txt is empty.
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58 (12).txt: Incorrect number of values -> bottle 0.38 102 98 270 617
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58 (13).txt: Incorrect number of values -> person 0.84 650 564 958 940
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-28_05-19-58 (14).txt is empty.
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58 (15).txt: Incorrect number of values -> vase 0.25 170 42 332 492
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58 (2).txt: Incorrect number of values -> vase 0.52 78 753 216 1167
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58 (2).txt: Incorrect number of values -> cup 0.41 77 752 218 1173
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58 (2).txt: Incorrect number of values -> bottle 0.27 681 408 928 996
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58 (3).txt: Incorrect number of values -> book 0.35 147 248 300 294
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-28_05-19-58 (4).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-28_05-19-58 (5).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-28_05-19-58 (6).txt is empty.
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58 (7).txt: Incorrect number of values -> book 0.65 252 916 777 1019
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58 (7).txt: Incorrect number of values -> book 0.43 255 745 773 922
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58 (7).txt: Incorrect number of values -> person 0.31 591 476 765 934
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58 (8).txt: Incorrect number of values -> bottle 0.37 320 256 635 1189
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58 (9).txt: Incorrect number of values -> bottle 0.50 629 266 945 1200
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58.txt: Incorrect number of values -> bottle 0.57 235 132 274 263
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58.txt: Incorrect number of values -> bottle 0.56 103 85 219 283
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58.txt: Incorrect number of values -> bottle 0.52 262 143 299 257
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58.txt: Incorrect number of values -> toilet 0.49 25 148 58 256
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58.txt: Incorrect number of values -> bottle 0.47 207 119 249 272
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58.txt: Incorrect number of values -> bottle 0.39 281 150 308 254
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58.txt: Incorrect number of values -> suitcase 0.31 73 109 107 268
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-28_05-19-58.txt: Incorrect number of values -> toilet 0.28 14 156 35 252
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-28_07-54-58 (1).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-28_07-54-58.txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-28_07-54-59 (1).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-28_07-54-59 (2).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-28_07-54-59 (3).txt is empty.
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-28_07-54-59 (4).txt: Incorrect number of values -> bottle 0.65 773 151 1206 1068
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-28_07-54-59 (4).txt: Incorrect number of values -> bottle 0.39 386 220 864 1270
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-28_07-54-59 (4).txt: Incorrect number of values -> bottle 0.31 71 156 462 1096
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-28_07-54-59 (5).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-28_07-54-59 (6).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-28_07-54-59.txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-28_07-55-08.txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-28_10-54-52 (1).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-28_10-54-52 (2).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-28_10-54-52 (3).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-28_10-54-52 (4).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-28_10-54-52 (5).txt is empty.
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-28_10-54-52.txt: Incorrect number of values -> person 0.67 431 93 591 357
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-28_14-36-30 (1).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-28_14-36-30 (2).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-28_14-36-30 (3).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-28_14-36-30 (4).txt is empty.
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-28_14-36-30.txt: Incorrect number of values -> banana 0.31 858 481 978 546
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-28_14-36-30.txt: Incorrect number of values -> stop sign 0.25 808 575 995 758
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-28_14-36-31 (1).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-28_14-36-31 (2).txt is empty.
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-28_14-36-31 (3).txt: Incorrect number of values -> laptop 0.28 37 96 173 210
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-28_14-36-31 (4).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-28_14-36-31 (5).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-28_14-36-31 (6).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-28_14-36-31 (7).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-28_14-36-31.txt is empty.
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-29_05-02-10.txt: Incorrect number of values -> bottle 0.80 31 22 231 616
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-29_05-02-10.txt: Incorrect number of values -> bottle 0.77 251 48 450 600
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-29_05-03-03 (1).txt: Incorrect number of values -> bottle 0.46 342 182 402 477
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-29_05-03-03 (2).txt: Incorrect number of values -> bottle 0.69 528 368 625 908
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-29_05-03-03 (2).txt: Incorrect number of values -> bottle 0.45 632 372 897 953
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-29_05-03-03 (3).txt: Incorrect number of values -> bottle 0.46 139 43 408 780
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-29_05-03-03 (4).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-29_05-03-03 (5).txt is empty.
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-29_05-03-03.txt: Incorrect number of values -> bottle 0.44 579 255 653 692
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-29_05-03-03.txt: Incorrect number of values -> bottle 0.42 147 84 329 430
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-29_05-03-03.txt: Incorrect number of values -> bottle 0.34 144 120 334 774
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-29_05-03-04.txt: Incorrect number of values -> bottle 0.47 428 285 638 782
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-29_12-59-56.txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-29_13-01-26 (1).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-29_13-01-26 (2).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-29_13-01-26 (3).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-29_13-01-26 (4).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-29_13-01-26 (5).txt is empty.
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-29_13-01-26 (6).txt: Incorrect number of values -> clock 0.65 294 178 883 761
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-29_13-01-26 (7).txt: Incorrect number of values -> book 0.36 670 79 1273 1776
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-29_13-01-26.txt is empty.
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-30_06-32-29 (1).txt: Incorrect number of values -> person 0.75 239 601 375 749
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-30_06-32-29 (1).txt: Incorrect number of values -> person 0.72 351 557 452 742
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-30_06-32-29 (1).txt: Incorrect number of values -> bottle 0.61 537 298 792 855
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-30_06-32-29 (1).txt: Incorrect number of values -> person 0.59 423 548 538 858
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-30_06-32-29 (1).txt: Incorrect number of values -> person 0.29 560 673 680 831
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-30_06-32-29 (2).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-30_06-32-29 (3).txt is empty.
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-30_06-32-29.txt: Incorrect number of values -> bottle 0.38 102 98 270 617
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-30_06-32-30 (1).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-30_06-32-30 (10).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-30_06-32-30 (11).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-30_06-32-30 (12).txt is empty.
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-30_06-32-30 (13).txt: Incorrect number of values -> bottle 0.50 629 266 945 1200
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-30_06-32-30 (14).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-30_06-32-30 (15).txt is empty.
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-30_06-32-30 (16).txt: Incorrect number of values -> person 0.86 434 420 753 895
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-30_06-32-30 (17).txt: Incorrect number of values -> bottle 0.37 320 256 635 1189
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-30_06-32-30 (2).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-30_06-32-30 (3).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-30_06-32-30 (4).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-30_06-32-30 (5).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-30_06-32-30 (6).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-30_06-32-30 (7).txt is empty.
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-30_06-32-30 (8).txt: Incorrect number of values -> bottle 0.47 304 133 699 893
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-30_06-32-30 (9).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-30_06-32-30.txt is empty.
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-30_09-07-32 (1).txt: Incorrect number of values -> book 0.65 252 916 777 1019
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-30_09-07-32 (1).txt: Incorrect number of values -> book 0.43 255 745 773 922
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-30_09-07-32 (1).txt: Incorrect number of values -> person 0.31 591 476 765 934
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-30_09-07-32.txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-30_13-04-01.txt is empty.
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-30_13-04-17.txt: Incorrect number of values -> cup 0.83 72 246 146 306
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-30_14-11-11 (1).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-30_14-11-11 (2).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-30_14-11-11.txt is empty.
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-30_14-11-12.txt: Incorrect number of values -> person 0.67 431 93 591 357
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-31_05-30-28 (1).txt is empty.
+2025-02-03 15:20:52 - ERROR - \u26a0 Error in photo_2025-01-31_05-30-28 (2).txt: Incorrect number of values -> bottle 0.67 319 198 709 922
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-31_05-30-28 (3).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-31_05-30-28 (4).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-31_05-30-28 (5).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-31_05-30-28 (6).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-31_05-30-28 (7).txt is empty.
+2025-02-03 15:20:52 - WARNING - Warning: photo_2025-01-31_05-30-28.txt is empty.
+2025-02-03 15:20:52 - INFO - \u2705 Data successfully stored in PostgreSQL.
+2025-02-03 15:24:41 - INFO - Connected to PostgreSQL and ensured table exists.
+2025-02-03 15:24:41 - INFO - Processing label files from ./images/detected_images/labels/
+2025-02-03 15:24:41 - WARNING - Warning: photo_2022-09-05_10-02-05.txt is empty.
+2025-02-03 15:24:41 - WARNING - Warning: photo_2022-09-10_15-55-25.txt is empty.
+2025-02-03 15:24:41 - WARNING - Warning: photo_2022-09-28_05-45-31.txt is empty.
+2025-02-03 15:24:41 - WARNING - Warning: photo_2022-09-30_07-33-42.txt is empty.
+2025-02-03 15:24:41 - WARNING - Warning: photo_2022-10-06_09-23-46.txt is empty.
+2025-02-03 15:24:41 - WARNING - Warning: photo_2022-10-17_14-02-40.txt is empty.
+2025-02-03 15:24:41 - WARNING - Warning: photo_2022-10-20_12-24-01.txt is empty.
+2025-02-03 15:24:41 - WARNING - Warning: photo_2022-10-28_09-15-09.txt is empty.
+2025-02-03 15:24:41 - WARNING - Warning: photo_2022-11-15_08-17-41.txt is empty.
+2025-02-03 15:24:41 - WARNING - Warning: photo_2022-11-15_11-51-16.txt is empty.
+2025-02-03 15:24:41 - WARNING - Warning: photo_2022-11-22_08-15-47.txt is empty.
+2025-02-03 15:24:41 - WARNING - Warning: photo_2022-12-13_05-55-18.txt is empty.
+2025-02-03 15:24:41 - WARNING - Warning: photo_2022-12-20_07-41-33.txt is empty.
+2025-02-03 15:24:41 - WARNING - Warning: photo_2022-12-20_11-28-59.txt is empty.
+2025-02-03 15:24:41 - WARNING - Warning: photo_2022-12-23_06-26-15.txt is empty.
+2025-02-03 15:24:41 - WARNING - Warning: photo_2023-01-06_09-31-17.txt is empty.
+2025-02-03 15:24:41 - WARNING - Warning: photo_2023-01-16_09-26-09.txt is empty.
+2025-02-03 15:24:41 - WARNING - Warning: photo_2023-01-16_13-41-35.txt is empty.
+2025-02-03 15:24:41 - WARNING - Warning: photo_2023-01-17_08-43-12.txt is empty.
+2025-02-03 15:24:41 - WARNING - Warning: photo_2023-01-23_10-39-20.txt is empty.
+2025-02-03 15:24:41 - WARNING - Warning: photo_2023-01-26_18-27-53.txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2023-02-10_12-23-06.txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-22_11-15-33 (2).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-22_11-15-33 (3).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-22_11-15-33.txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-23_05-01-22 (1).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-23_05-01-22 (10).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-23_05-01-22 (11).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-23_05-01-22 (2).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-23_05-01-22 (3).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-23_05-01-22 (4).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-23_05-01-22 (5).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-23_05-01-22 (6).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-23_05-01-22 (7).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-23_05-01-22 (8).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-23_05-01-22.txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-23_10-58-37 (1).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-23_10-58-37 (4).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-23_10-58-37 (5).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-23_10-58-37.txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-23_12-17-08 (1).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-23_12-17-08 (2).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-23_12-17-08 (3).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-23_12-17-08 (4).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-23_12-17-08 (5).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-23_12-17-08 (6).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-23_12-17-08.txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-24_05-58-43.txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-24_05-59-28 (1).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-24_05-59-28 (2).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-24_05-59-28 (3).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-24_05-59-28 (4).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-24_05-59-28 (5).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-24_05-59-28 (6).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-24_05-59-28 (7).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-24_05-59-28 (8).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-24_05-59-28.txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-24_05-59-39.txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-24_11-39-43 (1).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-24_11-39-43 (2).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-24_11-39-43 (3).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-24_11-39-43 (4).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-24_11-39-43 (5).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-24_11-39-43 (6).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-24_11-39-43 (7).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-24_11-39-43.txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-24_12-44-46.txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-24_12-44-47.txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-25_03-50-13 (1).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-25_03-50-13 (2).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-25_03-50-13 (3).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-25_03-50-13.txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-25_03-50-14 (1).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-25_03-50-14 (11).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-25_03-50-14 (2).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-25_03-50-14 (3).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-25_03-50-14 (4).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-25_03-50-14 (5).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-25_03-50-14 (6).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-25_03-50-14 (8).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-25_03-50-14 (9).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-25_03-50-14.txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-26_07-33-25 (2).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-26_07-33-25 (3).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-26_07-33-25 (4).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-26_07-33-25 (5).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-26_07-33-25 (6).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-26_07-33-25 (7).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-26_07-33-25.txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-27_05-34-02 (1).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-27_05-34-02 (5).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-27_05-34-02 (6).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-27_05-34-02 (7).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-27_05-34-02.txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-27_05-34-03 (1).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-27_05-34-03 (2).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-27_05-34-03 (3).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-27_05-34-03 (5).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-27_05-34-03 (6).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-27_05-34-03.txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-28_05-19-57 (1).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-28_05-19-57 (2).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-28_05-19-57 (3).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-28_05-19-58 (1).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-28_05-19-58 (10).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-28_05-19-58 (11).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-28_05-19-58 (14).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-28_05-19-58 (4).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-28_05-19-58 (5).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-28_05-19-58 (6).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-28_07-54-58 (1).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-28_07-54-58.txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-28_07-54-59 (1).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-28_07-54-59 (2).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-28_07-54-59 (3).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-28_07-54-59 (5).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-28_07-54-59 (6).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-28_07-54-59.txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-28_07-55-08.txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-28_10-54-52 (1).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-28_10-54-52 (2).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-28_10-54-52 (3).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-28_10-54-52 (4).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-28_10-54-52 (5).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-28_14-36-30 (1).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-28_14-36-30 (2).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-28_14-36-30 (3).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-28_14-36-30 (4).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-28_14-36-31 (1).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-28_14-36-31 (2).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-28_14-36-31 (4).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-28_14-36-31 (5).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-28_14-36-31 (6).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-28_14-36-31 (7).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-28_14-36-31.txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-29_05-03-03 (4).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-29_05-03-03 (5).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-29_12-59-56.txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-29_13-01-26 (1).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-29_13-01-26 (2).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-29_13-01-26 (3).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-29_13-01-26 (4).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-29_13-01-26 (5).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-29_13-01-26.txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-30_06-32-29 (2).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-30_06-32-29 (3).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-30_06-32-30 (1).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-30_06-32-30 (10).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-30_06-32-30 (11).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-30_06-32-30 (12).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-30_06-32-30 (14).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-30_06-32-30 (15).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-30_06-32-30 (2).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-30_06-32-30 (3).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-30_06-32-30 (4).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-30_06-32-30 (5).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-30_06-32-30 (6).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-30_06-32-30 (7).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-30_06-32-30 (9).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-30_06-32-30.txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-30_09-07-32.txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-30_13-04-01.txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-30_14-11-11 (1).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-30_14-11-11 (2).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-30_14-11-11.txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-31_05-30-28 (1).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-31_05-30-28 (3).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-31_05-30-28 (4).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-31_05-30-28 (5).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-31_05-30-28 (6).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-31_05-30-28 (7).txt is empty.
+2025-02-03 15:24:42 - WARNING - Warning: photo_2025-01-31_05-30-28.txt is empty.
+2025-02-03 15:24:42 - INFO - \u2705 Data successfully stored in PostgreSQL.
+2025-02-03 15:27:56 - INFO - Connected to PostgreSQL and ensured table exists.
+2025-02-03 15:27:56 - INFO - Processing label files from ./images/detected_images/labels/
+2025-02-03 15:27:56 - WARNING - Warning: photo_2022-09-05_10-02-05.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2022-09-10_15-55-25.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2022-09-28_05-45-31.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2022-09-30_07-33-42.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2022-10-06_09-23-46.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2022-10-17_14-02-40.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2022-10-20_12-24-01.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2022-10-28_09-15-09.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2022-11-15_08-17-41.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2022-11-15_11-51-16.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2022-11-22_08-15-47.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2022-12-13_05-55-18.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2022-12-20_07-41-33.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2022-12-20_11-28-59.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2022-12-23_06-26-15.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2023-01-06_09-31-17.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2023-01-16_09-26-09.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2023-01-16_13-41-35.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2023-01-17_08-43-12.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2023-01-23_10-39-20.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2023-01-26_18-27-53.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2023-02-10_12-23-06.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-22_11-15-33 (2).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-22_11-15-33 (3).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-22_11-15-33.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-23_05-01-22 (1).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-23_05-01-22 (10).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-23_05-01-22 (11).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-23_05-01-22 (2).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-23_05-01-22 (3).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-23_05-01-22 (4).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-23_05-01-22 (5).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-23_05-01-22 (6).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-23_05-01-22 (7).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-23_05-01-22 (8).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-23_05-01-22.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-23_10-58-37 (1).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-23_10-58-37 (4).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-23_10-58-37 (5).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-23_10-58-37.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-23_12-17-08 (1).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-23_12-17-08 (2).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-23_12-17-08 (3).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-23_12-17-08 (4).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-23_12-17-08 (5).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-23_12-17-08 (6).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-23_12-17-08.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-24_05-58-43.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-24_05-59-28 (1).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-24_05-59-28 (2).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-24_05-59-28 (3).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-24_05-59-28 (4).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-24_05-59-28 (5).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-24_05-59-28 (6).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-24_05-59-28 (7).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-24_05-59-28 (8).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-24_05-59-28.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-24_05-59-39.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-24_11-39-43 (1).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-24_11-39-43 (2).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-24_11-39-43 (3).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-24_11-39-43 (4).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-24_11-39-43 (5).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-24_11-39-43 (6).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-24_11-39-43 (7).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-24_11-39-43.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-24_12-44-46.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-24_12-44-47.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-25_03-50-13 (1).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-25_03-50-13 (2).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-25_03-50-13 (3).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-25_03-50-13.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-25_03-50-14 (1).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-25_03-50-14 (11).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-25_03-50-14 (2).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-25_03-50-14 (3).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-25_03-50-14 (4).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-25_03-50-14 (5).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-25_03-50-14 (6).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-25_03-50-14 (8).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-25_03-50-14 (9).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-25_03-50-14.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-26_07-33-25 (2).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-26_07-33-25 (3).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-26_07-33-25 (4).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-26_07-33-25 (5).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-26_07-33-25 (6).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-26_07-33-25 (7).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-26_07-33-25.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-27_05-34-02 (1).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-27_05-34-02 (5).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-27_05-34-02 (6).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-27_05-34-02 (7).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-27_05-34-02.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-27_05-34-03 (1).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-27_05-34-03 (2).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-27_05-34-03 (3).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-27_05-34-03 (5).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-27_05-34-03 (6).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-27_05-34-03.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-28_05-19-57 (1).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-28_05-19-57 (2).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-28_05-19-57 (3).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-28_05-19-58 (1).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-28_05-19-58 (10).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-28_05-19-58 (11).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-28_05-19-58 (14).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-28_05-19-58 (4).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-28_05-19-58 (5).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-28_05-19-58 (6).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-28_07-54-58 (1).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-28_07-54-58.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-28_07-54-59 (1).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-28_07-54-59 (2).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-28_07-54-59 (3).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-28_07-54-59 (5).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-28_07-54-59 (6).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-28_07-54-59.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-28_07-55-08.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-28_10-54-52 (1).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-28_10-54-52 (2).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-28_10-54-52 (3).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-28_10-54-52 (4).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-28_10-54-52 (5).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-28_14-36-30 (1).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-28_14-36-30 (2).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-28_14-36-30 (3).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-28_14-36-30 (4).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-28_14-36-31 (1).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-28_14-36-31 (2).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-28_14-36-31 (4).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-28_14-36-31 (5).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-28_14-36-31 (6).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-28_14-36-31 (7).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-28_14-36-31.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-29_05-03-03 (4).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-29_05-03-03 (5).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-29_12-59-56.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-29_13-01-26 (1).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-29_13-01-26 (2).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-29_13-01-26 (3).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-29_13-01-26 (4).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-29_13-01-26 (5).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-29_13-01-26.txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-30_06-32-29 (2).txt is empty.
+2025-02-03 15:27:56 - WARNING - Warning: photo_2025-01-30_06-32-29 (3).txt is empty.
+2025-02-03 15:27:57 - WARNING - Warning: photo_2025-01-30_06-32-30 (1).txt is empty.
+2025-02-03 15:27:57 - WARNING - Warning: photo_2025-01-30_06-32-30 (10).txt is empty.
+2025-02-03 15:27:57 - WARNING - Warning: photo_2025-01-30_06-32-30 (11).txt is empty.
+2025-02-03 15:27:57 - WARNING - Warning: photo_2025-01-30_06-32-30 (12).txt is empty.
+2025-02-03 15:27:57 - WARNING - Warning: photo_2025-01-30_06-32-30 (14).txt is empty.
+2025-02-03 15:27:57 - WARNING - Warning: photo_2025-01-30_06-32-30 (15).txt is empty.
+2025-02-03 15:27:57 - WARNING - Warning: photo_2025-01-30_06-32-30 (2).txt is empty.
+2025-02-03 15:27:57 - WARNING - Warning: photo_2025-01-30_06-32-30 (3).txt is empty.
+2025-02-03 15:27:57 - WARNING - Warning: photo_2025-01-30_06-32-30 (4).txt is empty.
+2025-02-03 15:27:57 - WARNING - Warning: photo_2025-01-30_06-32-30 (5).txt is empty.
+2025-02-03 15:27:57 - WARNING - Warning: photo_2025-01-30_06-32-30 (6).txt is empty.
+2025-02-03 15:27:57 - WARNING - Warning: photo_2025-01-30_06-32-30 (7).txt is empty.
+2025-02-03 15:27:57 - WARNING - Warning: photo_2025-01-30_06-32-30 (9).txt is empty.
+2025-02-03 15:27:57 - WARNING - Warning: photo_2025-01-30_06-32-30.txt is empty.
+2025-02-03 15:27:57 - WARNING - Warning: photo_2025-01-30_09-07-32.txt is empty.
+2025-02-03 15:27:57 - WARNING - Warning: photo_2025-01-30_13-04-01.txt is empty.
+2025-02-03 15:27:57 - WARNING - Warning: photo_2025-01-30_14-11-11 (1).txt is empty.
+2025-02-03 15:27:57 - WARNING - Warning: photo_2025-01-30_14-11-11 (2).txt is empty.
+2025-02-03 15:27:57 - WARNING - Warning: photo_2025-01-30_14-11-11.txt is empty.
+2025-02-03 15:27:57 - WARNING - Warning: photo_2025-01-31_05-30-28 (1).txt is empty.
+2025-02-03 15:27:57 - WARNING - Warning: photo_2025-01-31_05-30-28 (3).txt is empty.
+2025-02-03 15:27:57 - WARNING - Warning: photo_2025-01-31_05-30-28 (4).txt is empty.
+2025-02-03 15:27:57 - WARNING - Warning: photo_2025-01-31_05-30-28 (5).txt is empty.
+2025-02-03 15:27:57 - WARNING - Warning: photo_2025-01-31_05-30-28 (6).txt is empty.
+2025-02-03 15:27:57 - WARNING - Warning: photo_2025-01-31_05-30-28 (7).txt is empty.
+2025-02-03 15:27:57 - WARNING - Warning: photo_2025-01-31_05-30-28.txt is empty.
+2025-02-03 15:27:57 - INFO - \u2705 Data successfully stored in PostgreSQL.
+2025-02-03 15:29:39 - INFO - Connected to PostgreSQL and ensured table exists.
+2025-02-03 15:29:39 - INFO - Processing label files from ./images/detected_images/labels/
+2025-02-03 15:29:39 - WARNING - Warning: photo_2022-09-05_10-02-05.txt is empty.
+2025-02-03 15:29:39 - WARNING - Warning: photo_2022-09-10_15-55-25.txt is empty.
+2025-02-03 15:29:39 - WARNING - Warning: photo_2022-09-28_05-45-31.txt is empty.
+2025-02-03 15:29:39 - WARNING - Warning: photo_2022-09-30_07-33-42.txt is empty.
+2025-02-03 15:29:39 - WARNING - Warning: photo_2022-10-06_09-23-46.txt is empty.
+2025-02-03 15:29:39 - WARNING - Warning: photo_2022-10-17_14-02-40.txt is empty.
+2025-02-03 15:29:39 - WARNING - Warning: photo_2022-10-20_12-24-01.txt is empty.
+2025-02-03 15:29:39 - WARNING - Warning: photo_2022-10-28_09-15-09.txt is empty.
+2025-02-03 15:29:39 - WARNING - Warning: photo_2022-11-15_08-17-41.txt is empty.
+2025-02-03 15:29:39 - WARNING - Warning: photo_2022-11-15_11-51-16.txt is empty.
+2025-02-03 15:29:39 - WARNING - Warning: photo_2022-11-22_08-15-47.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2022-12-13_05-55-18.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2022-12-20_07-41-33.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2022-12-20_11-28-59.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2022-12-23_06-26-15.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2023-01-06_09-31-17.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2023-01-16_09-26-09.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2023-01-16_13-41-35.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2023-01-17_08-43-12.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2023-01-23_10-39-20.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2023-01-26_18-27-53.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2023-02-10_12-23-06.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-22_11-15-33 (2).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-22_11-15-33 (3).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-22_11-15-33.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-23_05-01-22 (1).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-23_05-01-22 (10).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-23_05-01-22 (11).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-23_05-01-22 (2).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-23_05-01-22 (3).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-23_05-01-22 (4).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-23_05-01-22 (5).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-23_05-01-22 (6).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-23_05-01-22 (7).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-23_05-01-22 (8).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-23_05-01-22.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-23_10-58-37 (1).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-23_10-58-37 (4).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-23_10-58-37 (5).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-23_10-58-37.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-23_12-17-08 (1).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-23_12-17-08 (2).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-23_12-17-08 (3).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-23_12-17-08 (4).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-23_12-17-08 (5).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-23_12-17-08 (6).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-23_12-17-08.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-24_05-58-43.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-24_05-59-28 (1).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-24_05-59-28 (2).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-24_05-59-28 (3).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-24_05-59-28 (4).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-24_05-59-28 (5).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-24_05-59-28 (6).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-24_05-59-28 (7).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-24_05-59-28 (8).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-24_05-59-28.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-24_05-59-39.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-24_11-39-43 (1).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-24_11-39-43 (2).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-24_11-39-43 (3).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-24_11-39-43 (4).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-24_11-39-43 (5).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-24_11-39-43 (6).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-24_11-39-43 (7).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-24_11-39-43.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-24_12-44-46.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-24_12-44-47.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-25_03-50-13 (1).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-25_03-50-13 (2).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-25_03-50-13 (3).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-25_03-50-13.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-25_03-50-14 (1).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-25_03-50-14 (11).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-25_03-50-14 (2).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-25_03-50-14 (3).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-25_03-50-14 (4).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-25_03-50-14 (5).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-25_03-50-14 (6).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-25_03-50-14 (8).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-25_03-50-14 (9).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-25_03-50-14.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-26_07-33-25 (2).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-26_07-33-25 (3).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-26_07-33-25 (4).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-26_07-33-25 (5).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-26_07-33-25 (6).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-26_07-33-25 (7).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-26_07-33-25.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-27_05-34-02 (1).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-27_05-34-02 (5).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-27_05-34-02 (6).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-27_05-34-02 (7).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-27_05-34-02.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-27_05-34-03 (1).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-27_05-34-03 (2).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-27_05-34-03 (3).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-27_05-34-03 (5).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-27_05-34-03 (6).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-27_05-34-03.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-28_05-19-57 (1).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-28_05-19-57 (2).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-28_05-19-57 (3).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-28_05-19-58 (1).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-28_05-19-58 (10).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-28_05-19-58 (11).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-28_05-19-58 (14).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-28_05-19-58 (4).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-28_05-19-58 (5).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-28_05-19-58 (6).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-28_07-54-58 (1).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-28_07-54-58.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-28_07-54-59 (1).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-28_07-54-59 (2).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-28_07-54-59 (3).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-28_07-54-59 (5).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-28_07-54-59 (6).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-28_07-54-59.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-28_07-55-08.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-28_10-54-52 (1).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-28_10-54-52 (2).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-28_10-54-52 (3).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-28_10-54-52 (4).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-28_10-54-52 (5).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-28_14-36-30 (1).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-28_14-36-30 (2).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-28_14-36-30 (3).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-28_14-36-30 (4).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-28_14-36-31 (1).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-28_14-36-31 (2).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-28_14-36-31 (4).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-28_14-36-31 (5).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-28_14-36-31 (6).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-28_14-36-31 (7).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-28_14-36-31.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-29_05-03-03 (4).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-29_05-03-03 (5).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-29_12-59-56.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-29_13-01-26 (1).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-29_13-01-26 (2).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-29_13-01-26 (3).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-29_13-01-26 (4).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-29_13-01-26 (5).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-29_13-01-26.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-30_06-32-29 (2).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-30_06-32-29 (3).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-30_06-32-30 (1).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-30_06-32-30 (10).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-30_06-32-30 (11).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-30_06-32-30 (12).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-30_06-32-30 (14).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-30_06-32-30 (15).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-30_06-32-30 (2).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-30_06-32-30 (3).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-30_06-32-30 (4).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-30_06-32-30 (5).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-30_06-32-30 (6).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-30_06-32-30 (7).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-30_06-32-30 (9).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-30_06-32-30.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-30_09-07-32.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-30_13-04-01.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-30_14-11-11 (1).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-30_14-11-11 (2).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-30_14-11-11.txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-31_05-30-28 (1).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-31_05-30-28 (3).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-31_05-30-28 (4).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-31_05-30-28 (5).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-31_05-30-28 (6).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-31_05-30-28 (7).txt is empty.
+2025-02-03 15:29:40 - WARNING - Warning: photo_2025-01-31_05-30-28.txt is empty.
+2025-02-03 15:29:40 - INFO - \u2705 Data successfully stored in PostgreSQL.
