@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: my_source
+    schema: public
+    tables:
+      - name: telegram_messages
