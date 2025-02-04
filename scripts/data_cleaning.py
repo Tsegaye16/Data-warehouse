@@ -23,20 +23,7 @@ class DataFrameCleaner:
         self.df = df
         logging.info("DataFrameCleaner initialized with DataFrame of shape %s", self.df.shape)
 
-    def clean_null_values(self):
-        """
-        Replace NaN, None, and empty strings with 'no <column name>' in all columns.
-        """
-        for column in self.df.columns:
-            null_mask = self.df[column].isna() | (self.df[column] == "") | (self.df[column].astype(str).str.lower() == "nan")
-            null_count = null_mask.sum()
-            
-            if null_count > 0:
-                self.df.loc[null_mask, column] = f'no {column}'
-                logging.info("Replaced %d null values in column '%s' with 'no %s'.", null_count, column, column)
-        
-        logging.info("Null value cleaning completed. Current DataFrame shape: %s", self.df.shape)
-        return self.df
+
 
     def clean_text(self):
         """
@@ -123,4 +110,18 @@ class DataFrameCleaner:
                 logging.error(f"Error converting timestamps in column '{column_name}': {e}")
         else:
             logging.warning(f"Column '{column_name}' not found in DataFrame.")
+        return self.df
+    def clean_null_values(self):
+        """
+        Replace NaN, None, and empty strings with 'no <column name>' in all columns.
+        """
+        for column in self.df.columns:
+            null_mask = self.df[column].isna() | (self.df[column] == "") | (self.df[column].astype(str).str.lower() == "nan")
+            null_count = null_mask.sum()
+            
+            if null_count > 0:
+                self.df.loc[null_mask, column] = f'no {column}'
+                logging.info("Replaced %d null values in column '%s' with 'no %s'.", null_count, column, column)
+        
+        logging.info("Null value cleaning completed. Current DataFrame shape: %s", self.df.shape)
         return self.df

@@ -89,3 +89,15 @@
 2025-01-31 17:07:51 - INFO - Replaced 374 null values in column 'emoji' with 'no emoji'.
 2025-01-31 17:07:51 - INFO - Null value cleaning completed. Current DataFrame shape: (876, 10)
 2025-01-31 17:07:51 - INFO - Timestamps in column 'timestamp' converted successfully.
+2025-02-04 09:09:56 - INFO - DataFrameCleaner initialized with DataFrame of shape (1, 1)
+2025-02-04 09:09:56 - INFO - Newlines removed and text trimmed in 'text' column.
+2025-02-04 09:09:56 - INFO - Extracted emojis and cleaned 'text' column of emojis.
+2025-02-04 09:09:56 - INFO - Emoji extraction completed.
+2025-02-04 09:09:56 - INFO - Extracted YouTube links, website URLs, and phone numbers.
+2025-02-04 09:09:56 - INFO - Removed duplicates. Rows before: 1, Rows after: 1
+2025-02-04 09:31:54 - INFO - DataFrameCleaner initialized with DataFrame of shape (1, 1)
+2025-02-04 09:31:54 - INFO - Newlines removed and text trimmed in 'text' column.
+2025-02-04 09:31:54 - INFO - Extracted emojis and cleaned 'text' column of emojis.
+2025-02-04 09:31:54 - INFO - Emoji extraction completed.
+2025-02-04 09:31:54 - INFO - Extracted YouTube links, website URLs, and phone numbers.
+2025-02-04 09:31:54 - INFO - Removed duplicates. Rows before: 1, Rows after: 1
