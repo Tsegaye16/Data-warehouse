@@ -80,7 +80,7 @@ class DataFrameCleaner:
         return website if website else "no website"
 
     def _extract_phone_numbers(self, text: str):
-        phone_pattern = r'\b(251|09)\d{8}\b'
+        phone_pattern = r'(\+251\s?9\d{2}\s?\d{3}\s?\d{4}|09\s?\d{2}\s?\d{3}\s?\d{4})'
         phone = re.findall(phone_pattern, text)
         return phone if phone else "no phone"
 
