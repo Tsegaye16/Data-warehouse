@@ -51,7 +51,7 @@ class TelegramScraper:
 
     async def _download_media(self, message):
         media_path = "./downloads"
-        os.makedirs(media_path, exist_ok=True)
+        await os.makedirs(media_path, exist_ok=True)
 
         try:
             if isinstance(message.media, (MessageMediaPhoto, MessageMediaDocument)):
