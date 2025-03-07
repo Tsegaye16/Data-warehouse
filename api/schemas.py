@@ -1,17 +1,8 @@
 from pydantic import BaseModel
 from datetime import datetime
-from typing import Optional
+from typing import Optional, List
 
-# Schema for Adding a New Message
-class MessageCreate(BaseModel):
-    user_input: str  # Required field
-    channel_title: Optional[str] = "user input"  # Defaults to "user input"
-
-# Schema for updating a message
-class MessageUpdate(BaseModel):
-    text: str  # The new text for the message
-
-
+# Schema for Returning a Message (Response Model)
 # Schema for Returning a Message (Response Model)
 class MessageResponse(BaseModel):
     id: int
@@ -25,13 +16,32 @@ class MessageResponse(BaseModel):
     phone: Optional[str] = None
 
     class Config:
-        from_attributes = True  # Allows ORM compatibility
+        from_attributes = True
 
-# Schema for Deleting a Message (Response)
-class MessageDeleteResponse(BaseModel):
+class RawMessageResponse(BaseModel):
+    id: int
+    channel_name: str
+    message_id: int
+    sender: str
+    timestamp: datetime
     message: str
+    media: Optional[str] = None
+    is_processed: bool
 
+    class Config:
+        from_attributes = True
 
-# Schema for the update response
-class MessageUpdateResponse(BaseModel):
-    message: str
+# Schema for Paginated Raw Message Response
+class PaginatedRawMessageResponse(BaseModel):
+    total: int
+    messages: List[RawMessageResponse]
+
+# Schema for Paginated Response
+class PaginatedMessageResponse(BaseModel):
+    total: int
+    messages: List[MessageResponse]
+
+# Schema for Adding a New Message
+class MessageCreate(BaseModel):
+    user_input: str
+    channel_title: Optional[str] = "user input"

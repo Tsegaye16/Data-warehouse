@@ -1,15 +1,30 @@
-from sqlalchemy import Column, Integer, BigInteger, Text, DateTime
+from sqlalchemy import Column, Integer, BigInteger, Text, DateTime, Boolean, ForeignKey
+from sqlalchemy.orm import relationship
 from database import Base
+
+class RawTelegramMessage(Base):
+    __tablename__ = "raw_message"
+    id = Column(Integer, primary_key=True, index=True, nullable=False)
+    channel_name = Column(Text)
+    message_id = Column(BigInteger, unique=True) #added unique constraint
+    sender = Column(Text)
+    timestamp = Column(DateTime)
+    message = Column(Text)
+    media = Column(Text)
+    is_processed = Column(Boolean, default=False)
+
+    telegram_message = relationship("TelegramMessage", back_populates="raw_message")
 
 class TelegramMessage(Base):
     __tablename__ = "telegram_messages"
+    id = Column(Integer, primary_key=True, index=True, nullable=False)
+    channel_title = Column(Text)
+    message_id = Column(BigInteger, ForeignKey("raw_message.message_id", ondelete="CASCADE"), unique=True) #added unique constraint
+    message = Column(Text)
+    message_date = Column(DateTime)
+    media_path = Column(Text)
+    emoji = Column(Text)
+    youtube = Column(Text)
+    phone = Column(Text)
 
-    id = Column(Integer, primary_key=True, index=True, nullable=False)  # Primary Key
-    channel_title = Column(Text)  # Channel title
-    message_id = Column(BigInteger)  # Message ID (large number)
-    message = Column(Text)  # Message content
-    message_date = Column(DateTime)  # Timestamp without time zone
-    media_path = Column(Text)  # Path to media files
-    emoji = Column(Text)  # Emojis in message
-    youtube = Column(Text)  # YouTube links in message
-    phone = Column(Text)  # Phone numbers in message
+    raw_message = relationship("RawTelegramMessage", back_populates="telegram_message")
