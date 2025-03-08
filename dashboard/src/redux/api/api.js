@@ -41,3 +41,14 @@ export const fetchRecent = async () => {
     );
   }
 };
+
+export const processMessage = async (data) => {
+  try {
+    const response = await API.post("/messages/process", data);
+    return response.data; // Return the response data
+  } catch (error) {
+    throw new Error(
+      error.response?.data?.message || "Failed to fetch recent messages"
+    );
+  }
+};

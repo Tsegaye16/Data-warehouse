@@ -3,7 +3,7 @@ from datetime import datetime
 from typing import Optional, List
 
 # Schema for Returning a Message (Response Model)
-# Schema for Returning a Message (Response Model)
+
 class MessageResponse(BaseModel):
     id: int
     message_id: int

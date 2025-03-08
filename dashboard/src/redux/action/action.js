@@ -38,3 +38,15 @@ export const fetchRecent = createAsyncThunk(
     }
   }
 );
+
+export const processMessage = createAsyncThunk(
+  "PROCESS_MESSAGE",
+  async (data, { rejectWithValue }) => {
+    try {
+      const response = await api.processMessage(data);
+      return response; // Return the response data
+    } catch (error) {
+      return rejectWithValue(error.response?.data?.message || error.message);
+    }
+  }
+);

@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { getRawMessage, fetchRecent } from "../action/action";
+import { getRawMessage, fetchRecent, processMessage } from "../action/action";
 
 const initialState = {
   raw_message: [],
@@ -34,9 +34,23 @@ const raw_messageSlice = createSlice({
       })
       .addCase(fetchRecent.fulfilled, (state, action) => {
         state.loading = false;
+        console.log(action);
         state.raw_message = action.payload.messages;
       })
       .addCase(fetchRecent.rejected, (state, action) => {
+        state.loading = false;
+        state.error = action.payload;
+      })
+      .addCase(processMessage.pending, (state) => {
+        state.loading = true;
+        state.error = null;
+      })
+      .addCase(processMessage.fulfilled, (state) => {
+        state.loading = false;
+        state.raw_message = []; // Clear the state after processing
+        state.total = 0;
+      })
+      .addCase(processMessage.rejected, (state, action) => {
         state.loading = false;
         state.error = action.payload;
       });

@@ -9,9 +9,10 @@ from database import SessionLocal
 import crud
 import schemas
 
-sys.path.append(os.path.abspath(os.path.join('..', 'scripts')))
+sys.path.append(os.path.abspath(os.path.join('..', '')))
 
-from telegram_scrapper import TelegramScraper
+
+from app import mains
 
 app = FastAPI()
 
@@ -35,27 +36,29 @@ def get_db():
 # Endpoint to retrieve messages with pagination
 @app.get("/messages/", response_model=schemas.PaginatedMessageResponse)
 def read_messages(
+    all: bool = Query(False, description="Return all messages if True"),
     page: int = Query(1, description="Page number", ge=1),
-    page_size: int = Query(10, description="Number of items per page", ge=1, le=100),
+    page_size: int = Query(10, description="Number of items per page", ge=1),
     db: Session = Depends(get_db)
 ):
     """
-    Retrieve messages with pagination.
-    :param page: Page number (starting from 1)
-    :param page_size: Number of items per page
-    :param db: Database session
-    :return: Paginated response with messages and total count
+    Retrieve messages with optional pagination.
+    If `all=True`, returns all messages.
+    Otherwise, applies pagination.
     """
     try:
-        # Calculate skip value for pagination
-        skip = (page - 1) * page_size
-        # Fetch messages and total count from the database
-        messages, total = crud.get_telegram_messages(db, skip=skip, limit=page_size)
-        # Return paginated response
+        if all:
+            messages = crud.get_all_messages(db)  # ✅ Fetch all messages
+            total = len(messages)
+        else:
+            skip = (page - 1) * page_size
+            messages, total = crud.get_telegram_messages(db, skip=skip, limit=page_size)
+
         return {"total": total, "messages": messages}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-# Endpoint to retrieve raw messages with pagination
+
+
 
 # Endpoint to retrieve raw messages with pagination
 @app.get("/messages/raw", response_model=schemas.PaginatedRawMessageResponse) #Modified line
@@ -90,47 +93,32 @@ def read_messages_by_channel(channel_title: str, limit: int = 10, db: Session = 
     return crud.get_telegram_messages_by_channel(db, channel_title, limit)
 
 
-# Make the endpoint asynchronous
 @app.post("/messages/recent")
 async def fetch_recent_messages(db: Session = Depends(get_db)):
-    scraper =await TelegramScraper()
-    raw_data_folder = "data/raw"
-    metadata_fetch_file = "metadata/last_fetched.json"
-    os.makedirs("metadata", exist_ok=True)
-
-    channels = [
-        "https://t.me/DoctorsET",
-        "https://t.me/CheMed123",
-        "https://t.me/lobelia4cosmetics",
-        "https://t.me/yetenaweg",
-        "https://t.me/EAHCI"
-    ]
-
-    metadata = {}
-    if os.path.exists(metadata_fetch_file):
-        with open(metadata_fetch_file, "r", encoding="utf-8") as f:
-            metadata = json.load(f)
-
-    all_messages = []
-    for channel in channels:
-        last_fetched_id = metadata.get(channel, {}).get("last_fetched_id")
+    """
+    Fetch recent messages and store them in the raw_message table.
+    """
+    result = await mains()  # Fetch messages
+    if result["status"] == "success" and "data" in result:
         try:
-            # Use await to call asynchronous fetch_messages
-            messages = await scraper.fetch_messages(channel, limit=200, min_id=last_fetched_id)
-            if messages:
-                all_messages.extend(messages)
-                metadata[channel] = {
-                    "last_fetched_id": messages[0]["id"],
-                    "last_fetched_time": messages[0]["timestamp"]
-                }
+            total,messages=  crud.insert_raw_messages(db, result["data"])  # Insert into database
+            
+            return {"total": total, "messages": messages}
         except Exception as e:
-            logging.error(f"Error fetching from {channel}: {e}")
+            raise HTTPException(status_code=500, detail=f"Database error: {str(e)}")
+    else:
+        raise HTTPException(status_code=500, detail=result.get("message", "Unknown error"))
 
-    with open(metadata_fetch_file, "w", encoding="utf-8") as f:
-        json.dump(metadata, f, ensure_ascii=False, indent=4)
 
-    for message in all_messages:
-        crud.add_raw_telegram_message(db, message)
+@app.post("/messages/process")
+def process_messages_endpoint(db: Session = Depends(get_db)):
+    """
+    Process all unprocessed messages by cleaning and inserting them into the telegram_messages table.
+    """
+    try:
+        result = crud.fetch_and_process_messages(db)
+        return result
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
-    return {"message": "Recent messages fetched and saved."}
 
