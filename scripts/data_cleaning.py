@@ -1,3 +1,4 @@
+from datetime import datetime
 import pandas as pd
 import os
 import logging
@@ -23,18 +24,15 @@ class DataFrameCleaner:
         self.df = df
         logging.info("DataFrameCleaner initialized with DataFrame of shape %s", self.df.shape)
 
-
-
     def clean_text(self):
         """
         Clean the text by removing newlines, extra spaces, and extracting emojis.
         """
-        if 'text' not in self.df.columns:
-            logging.warning("Column 'text' not found in DataFrame. Skipping text cleaning.")
-            return self.df
+        if 'message' not in self.df.columns:
+            raise ValueError("Column 'message' not found in DataFrame.")
         
-        self.df['text'] = self.df['text'].str.replace(r'\n', ' ', regex=True).str.strip()
-        logging.info("Newlines removed and text trimmed in 'text' column.")
+        self.df['message'] = self.df['message'].str.replace(r'\n', ' ', regex=True).str.strip()
+        logging.info("Newlines removed and text trimmed in 'message' column.")
         
         self._extract_emojis()
         logging.info("Emoji extraction completed.")
@@ -50,21 +48,20 @@ class DataFrameCleaner:
         """
         Extract emojis from text columns and store them in a new 'emoji' column.
         """
-        self.df['emoji'] = self.df['text'].apply(lambda x: self._get_emojis(x) if isinstance(x, str) else 'no emoji')
-        self.df['text'] = self.df['text'].apply(lambda x: ''.join([char for char in x if char not in emoji.EMOJI_DATA]) if isinstance(x, str) else x)
-        logging.info("Extracted emojis and cleaned 'text' column of emojis.")
+        self.df['emoji'] = self.df['message'].apply(lambda x: self._get_emojis(x) if isinstance(x, str) else 'no emoji')
+        self.df['message'] = self.df['message'].apply(lambda x: ''.join([char for char in x if char not in emoji.EMOJI_DATA]) if isinstance(x, str) else x)
+        logging.info("Extracted emojis and cleaned 'message' column of emojis.")
 
     def extract_links(self):
         """
-        Extract YouTube links, website URLs, and phone numbers from the 'text' column.
+        Extract YouTube links, website URLs, and phone numbers from the 'message' column.
         """
-        if 'text' not in self.df.columns:
-            logging.warning("Column 'text' not found in DataFrame. Skipping link extraction.")
-            return self.df
+        if 'message' not in self.df.columns:
+            raise ValueError("Column 'message' not found in DataFrame.")
         
-        self.df['youtube'] = self.df['text'].apply(self._extract_youtube_links)
-        self.df['website'] = self.df['text'].apply(self._extract_websites)
-        self.df['phone'] = self.df['text'].apply(self._extract_phone_numbers)
+        self.df['youtube'] = self.df['message'].apply(self._extract_youtube_links)
+        self.df['website'] = self.df['message'].apply(self._extract_websites)
+        self.df['phone'] = self.df['message'].apply(self._extract_phone_numbers)
         
         logging.info("Extracted YouTube links, website URLs, and phone numbers.")
         return self.df
@@ -80,21 +77,32 @@ class DataFrameCleaner:
         return website if website else "no website"
 
     def _extract_phone_numbers(self, text: str):
-        phone_pattern = r'(\+251\s?9\d{2}\s?\d{3}\s?\d{4}|09\s?\d{2}\s?\d{3}\s?\d{4})'
-        phone = re.findall(phone_pattern, text)
-        return phone if phone else "no phone"
+        patterns = [
+            r'\+251\d{9}',  # Matches numbers starting with +251 followed by 9 digits
+            r'09\d{8}',     # Matches numbers starting with 09 followed by 8 digits
+            r'07\d{8}',     # Matches numbers starting with 07 followed by 8 digits
+            r'\b\d{4}\b'    # Matches 4-digit short numbers
+        ]
+        combined_pattern = '|'.join(patterns)
+        phone = re.findall(combined_pattern, text)
+        return phone if phone else []
 
     def remove_duplicates(self):
         """
         Remove duplicate rows by converting lists to tuples (hashable type).
         """
         initial_shape = self.df.shape
-        self.df = self.df.applymap(lambda x: tuple(x) if isinstance(x, list) else x)
+
+        # Convert lists to tuples in all columns
+        self.df = self.df.apply(lambda col: col.apply(lambda x: tuple(x) if isinstance(x, list) else x))
+
+        # Drop duplicates
         self.df = self.df.drop_duplicates()
         final_shape = self.df.shape
         
         logging.info("Removed duplicates. Rows before: %d, Rows after: %d", initial_shape[0], final_shape[0])
         return self.df
+
     def convert_timestamp(self, column_name="timestamp"):
         """
         Convert timestamps from '2024-05-26 16:11:43+00:00' to '2023-12-18 17:04:02' format.
@@ -111,6 +119,7 @@ class DataFrameCleaner:
         else:
             logging.warning(f"Column '{column_name}' not found in DataFrame.")
         return self.df
+
     def clean_null_values(self):
         """
         Replace NaN, None, and empty strings with 'no <column name>' in all columns.
@@ -125,3 +134,15 @@ class DataFrameCleaner:
         
         logging.info("Null value cleaning completed. Current DataFrame shape: %s", self.df.shape)
         return self.df
+
+    def restructure(self):
+        """
+        Rename columns to match the telegram_messages table schema.
+        """
+        self.df = self.df.rename(columns={
+            "channel_name": "channel_title",
+            "timestamp": "message_date",
+            "message": "message",
+            "media": "media_path"
+        })
+        return self.df 
