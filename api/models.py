@@ -1,10 +1,11 @@
 from sqlalchemy import Column, Integer, BigInteger, Text, DateTime, Boolean, ForeignKey
 from sqlalchemy.orm import relationship
 from database import Base
+from sqlalchemy import ARRAY, String
 
 class RawTelegramMessage(Base):
     __tablename__ = "raw_message"
-    __table_args__ = {'extend_existing': True}  # Allow redefinition of the table
+    #__table_args__ = {'extend_existing': True}  # Allow redefinition of the table
       # Allow redefinition of the table
     id = Column(Integer, primary_key=True, index=True, nullable=False)
     channel_name = Column(Text)
@@ -19,7 +20,7 @@ class RawTelegramMessage(Base):
 
 class TelegramMessage(Base):
     __tablename__ = "telegram_messages"
-    __table_args__ = {'extend_existing': True}  # Allow redefinition of the table
+    #__table_args__ = {'extend_existing': True}  # Allow redefinition of the table
     id = Column(Integer, primary_key=True, index=True, nullable=False)
     channel_title = Column(Text)
     message_id = Column(BigInteger, ForeignKey("raw_message.message_id", ondelete="CASCADE"), unique=True) #added unique constraint

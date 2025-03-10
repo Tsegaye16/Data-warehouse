@@ -2,6 +2,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy import func
 import pandas as pd
 import os,sys
+from typing import Optional
 
 from models import TelegramMessage,RawTelegramMessage
 import schemas
@@ -11,24 +12,50 @@ sys.path.append(os.path.abspath(os.path.join('..', 'scripts')))
 from data_cleaning import DataFrameCleaner
 
 
-def get_telegram_messages(db: Session, skip: int = 0, limit: int = 10):
+def get_telegram_messages(db: Session, skip: int = 0, limit: int = 10, channel_title: Optional[str] = None):
     """
     Retrieve messages with pagination support.
     :param db: Database session
     :param skip: Number of records to skip (for pagination)
     :param limit: Number of records to return (page size)
+    :param channel_title: Filter messages by channel title (optional)
     :return: List of messages and total count
     """
-    # Query messages with pagination
-    messages = db.query(TelegramMessage).offset(skip).limit(limit).all()
-    # Get the total count of messages in the database
-    total = db.query(func.count(TelegramMessage.id)).scalar()
+    # Base query
+    query = db.query(TelegramMessage)
+    if channel_title:
+        query = query.filter(TelegramMessage.channel_title.ilike(f"%{channel_title}%"))
+
+    messages = query.offset(skip).limit(limit).all()
+
+    # Get the total count of messages
+    total = query.count()  # Corrected total count calculation
+
     return messages, total
 
-def get_raw_telegram_message(db:Session, skip:int = 0, limit:int = 0):
-    # Query messages with pagination
-    messages = db.query(RawTelegramMessage).filter(RawTelegramMessage.is_processed == False).offset(skip).limit(limit).all()
-    total = db.query(func.count(RawTelegramMessage.id)).filter(RawTelegramMessage.is_processed == False).scalar()
+
+def get_raw_telegram_message(
+    db: Session,
+    skip: int = 0,
+    limit: int = 0,
+    channel_name: Optional[str] = None 
+):
+    # Base query
+    query = db.query(RawTelegramMessage).filter(RawTelegramMessage.is_processed == False)
+
+    # Apply channel_name filter if provided
+    if channel_name:
+        query = query.filter(RawTelegramMessage.channel_name.ilike(f"%{channel_name}%"))  # Case-insensitive search
+
+    # Apply pagination
+    messages = query.offset(skip).limit(limit).all()
+
+    # Get total count (with the same filters applied)
+    total_query = db.query(func.count(RawTelegramMessage.id)).filter(RawTelegramMessage.is_processed == False)
+    if channel_name:
+        total_query = total_query.filter(RawTelegramMessage.channel_name.ilike(f"%{channel_name}%"))
+    total = total_query.scalar()
+
     return messages, total
 
 def insert_raw_messages(db: Session, messages: list[dict]):
@@ -99,11 +126,11 @@ def fetch_and_process_messages(db: Session):
                 message_date=row["timestamp"],
                 media_path=row["media"],
                 emoji=row["emoji"],
-                youtube=row["youtube"],
+                youtube=row["youtube"][0] if isinstance(row["youtube"], list) else row["youtube"],
                 phone=row["phone"]
             )
             db.add(new_message)
-
+           
         # Mark raw messages as processed
         db.query(RawTelegramMessage).filter(RawTelegramMessage.is_processed == False).update({"is_processed": True})
         db.commit()

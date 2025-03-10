@@ -2,6 +2,7 @@ import json
 import logging
 import os,sys
 from fastapi import FastAPI, Depends, HTTPException, Query
+from typing import Optional
 
 from sqlalchemy.orm import Session
 from fastapi.middleware.cors import CORSMiddleware
@@ -39,6 +40,7 @@ def read_messages(
     all: bool = Query(False, description="Return all messages if True"),
     page: int = Query(1, description="Page number", ge=1),
     page_size: int = Query(10, description="Number of items per page", ge=1),
+    channel_name: Optional[str] = Query(None, description="Filter by channel title"),
     db: Session = Depends(get_db)
 ):
     """
@@ -52,7 +54,7 @@ def read_messages(
             total = len(messages)
         else:
             skip = (page - 1) * page_size
-            messages, total = crud.get_telegram_messages(db, skip=skip, limit=page_size)
+            messages, total = crud.get_telegram_messages(db, skip=skip, limit=page_size,channel_title=channel_name)
 
         return {"total": total, "messages": messages}
     except Exception as e:
@@ -60,23 +62,27 @@ def read_messages(
 
 
 
-# Endpoint to retrieve raw messages with pagination
-@app.get("/messages/raw", response_model=schemas.PaginatedRawMessageResponse) #Modified line
+# Endpoint to retrieve raw messages with pagination and optional channel_title filter
+@app.get("/messages/raw", response_model=schemas.PaginatedRawMessageResponse)
 def read_raw_messages(
     page: int = Query(1, description="Page number", ge=1),
     page_size: int = Query(10, description="Number of items per page", ge=1, le=100),
+    channel_name: Optional[str] = Query(None, description="Filter by channel title"),  # New parameter
     db: Session = Depends(get_db)
 ):
     """
-    Retrieve raw messages with pagination.
+    Retrieve raw messages with pagination and optional channel title filter.
     :param page: Page number (starting from 1)
     :param page_size: Number of items per page
+    :param channel_title: Optional filter by channel title
     :param db: Database session
     :return: Paginated response with raw messages and total count
     """
     try:
         skip = (page - 1) * page_size
-        messages, total = crud.get_raw_telegram_message(db, skip=skip, limit=page_size)
+        messages, total = crud.get_raw_telegram_message(
+            db, skip=skip, limit=page_size, channel_name=channel_name  # Pass channel_title to the query
+        )
         return {"total": total, "messages": messages}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

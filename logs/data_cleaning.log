@@ -3082,3 +3082,346 @@
 2025-03-10 14:00:33 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption
 2025-03-10 14:00:38 - INFO - Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
 2025-03-10 14:00:38 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption
+2025-03-10 14:00:52 - INFO - Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2025-03-10 14:00:52 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption
+2025-03-10 14:32:34 - INFO - Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2025-03-10 14:32:34 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption
+2025-03-10 14:32:57 - INFO - Initializing Telegram client...
+2025-03-10 14:32:57 - INFO - Connecting to 149.154.167.91:443/TcpFull...
+2025-03-10 14:32:57 - INFO - Connection to 149.154.167.91:443/TcpFull complete!
+2025-03-10 14:32:58 - INFO - Telegram client started successfully.
+2025-03-10 14:32:58 - INFO - Fetching messages from https://t.me/DoctorsET...
+2025-03-10 14:32:58 - INFO - Fetching messages from https://t.me/DoctorsET with min_id=864...
+2025-03-10 14:32:59 - INFO - Fetched 0 messages from https://t.me/DoctorsET.
+2025-03-10 14:32:59 - INFO - No new messages found for https://t.me/DoctorsET.
+2025-03-10 14:32:59 - INFO - Fetching messages from https://t.me/CheMed123...
+2025-03-10 14:32:59 - INFO - Fetching messages from https://t.me/CheMed123 with min_id=97...
+2025-03-10 14:32:59 - INFO - Fetched 0 messages from https://t.me/CheMed123.
+2025-03-10 14:32:59 - INFO - No new messages found for https://t.me/CheMed123.
+2025-03-10 14:32:59 - INFO - Fetching messages from https://t.me/lobelia4cosmetics...
+2025-03-10 14:32:59 - INFO - Fetching messages from https://t.me/lobelia4cosmetics with min_id=16019...
+2025-03-10 14:33:00 - INFO - Fetched 0 messages from https://t.me/lobelia4cosmetics.
+2025-03-10 14:33:00 - INFO - No new messages found for https://t.me/lobelia4cosmetics.
+2025-03-10 14:33:00 - INFO - Fetching messages from https://t.me/yetenaweg...
+2025-03-10 14:33:00 - INFO - Fetching messages from https://t.me/yetenaweg with min_id=1258...
+2025-03-10 14:33:01 - INFO - Fetched 0 messages from https://t.me/yetenaweg.
+2025-03-10 14:33:01 - INFO - No new messages found for https://t.me/yetenaweg.
+2025-03-10 14:33:01 - INFO - Fetching messages from https://t.me/EAHCI...
+2025-03-10 14:33:01 - INFO - Fetching messages from https://t.me/EAHCI with min_id=2658...
+2025-03-10 14:33:02 - INFO - Fetched 0 messages from https://t.me/EAHCI.
+2025-03-10 14:33:02 - INFO - No new messages found for https://t.me/EAHCI.
+2025-03-10 14:33:02 - INFO - Metadata updated successfully.
+2025-03-10 14:33:02 - INFO - Merged messages saved to 'data/merged_messages.json'.
+2025-03-10 14:33:02 - INFO - Disconnecting Telegram client...
+2025-03-10 14:33:02 - INFO - Disconnecting from 149.154.167.91:443/TcpFull...
+2025-03-10 14:33:02 - INFO - Disconnection from 149.154.167.91:443/TcpFull complete!
+2025-03-10 14:33:02 - INFO - Telegram client disconnected.
+2025-03-10 14:38:47 - INFO - Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2025-03-10 14:38:47 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption
+2025-03-10 14:43:31 - INFO - Initializing Telegram client...
+2025-03-10 14:43:31 - INFO - Connecting to 149.154.167.91:443/TcpFull...
+2025-03-10 14:43:31 - INFO - Connection to 149.154.167.91:443/TcpFull complete!
+2025-03-10 14:43:32 - INFO - Telegram client started successfully.
+2025-03-10 14:43:32 - INFO - Fetching messages from https://t.me/DoctorsET...
+2025-03-10 14:43:32 - INFO - Fetching messages from https://t.me/DoctorsET with min_id=0...
+2025-03-10 14:43:34 - INFO - Fetched 200 messages from https://t.me/DoctorsET.
+2025-03-10 14:43:34 - INFO - Messages from https://t.me/DoctorsET saved to '../data/raw\https___t_me_DoctorsET.json'.
+2025-03-10 14:43:34 - INFO - Fetching messages from https://t.me/CheMed123...
+2025-03-10 14:43:34 - INFO - Fetching messages from https://t.me/CheMed123 with min_id=0...
+2025-03-10 14:43:35 - INFO - Fetched 76 messages from https://t.me/CheMed123.
+2025-03-10 14:43:35 - INFO - Messages from https://t.me/CheMed123 saved to '../data/raw\https___t_me_CheMed123.json'.
+2025-03-10 14:43:35 - INFO - Fetching messages from https://t.me/lobelia4cosmetics...
+2025-03-10 14:43:35 - INFO - Fetching messages from https://t.me/lobelia4cosmetics with min_id=0...
+2025-03-10 14:43:37 - INFO - Fetched 200 messages from https://t.me/lobelia4cosmetics.
+2025-03-10 14:43:37 - INFO - Messages from https://t.me/lobelia4cosmetics saved to '../data/raw\https___t_me_lobelia4cosmetics.json'.
+2025-03-10 14:43:37 - INFO - Fetching messages from https://t.me/yetenaweg...
+2025-03-10 14:43:37 - INFO - Fetching messages from https://t.me/yetenaweg with min_id=0...
+2025-03-10 14:43:39 - INFO - Fetched 200 messages from https://t.me/yetenaweg.
+2025-03-10 14:43:39 - INFO - Messages from https://t.me/yetenaweg saved to '../data/raw\https___t_me_yetenaweg.json'.
+2025-03-10 14:43:39 - INFO - Fetching messages from https://t.me/EAHCI...
+2025-03-10 14:43:39 - INFO - Fetching messages from https://t.me/EAHCI with min_id=0...
+2025-03-10 14:43:40 - INFO - Fetched 200 messages from https://t.me/EAHCI.
+2025-03-10 14:43:40 - INFO - Messages from https://t.me/EAHCI saved to '../data/raw\https___t_me_EAHCI.json'.
+2025-03-10 14:43:40 - ERROR - An error occurred during data fetching: [Errno 2] No such file or directory: '../metadata/last_fetched.json'
+2025-03-10 14:43:40 - INFO - Disconnecting Telegram client...
+2025-03-10 14:43:40 - INFO - Disconnecting from 149.154.167.91:443/TcpFull...
+2025-03-10 14:43:40 - INFO - Disconnection from 149.154.167.91:443/TcpFull complete!
+2025-03-10 14:43:40 - INFO - Telegram client disconnected.
+2025-03-10 14:46:48 - INFO - Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2025-03-10 14:46:48 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption
+2025-03-10 14:46:58 - INFO - Initializing Telegram client...
+2025-03-10 14:46:58 - INFO - Connecting to 149.154.167.91:443/TcpFull...
+2025-03-10 14:46:58 - INFO - Connection to 149.154.167.91:443/TcpFull complete!
+2025-03-10 14:46:58 - INFO - Telegram client started successfully.
+2025-03-10 14:46:58 - INFO - Fetching messages from https://t.me/DoctorsET...
+2025-03-10 14:46:58 - INFO - Fetching messages from https://t.me/DoctorsET with min_id=0...
+2025-03-10 14:47:01 - INFO - Fetched 200 messages from https://t.me/DoctorsET.
+2025-03-10 14:47:01 - INFO - Messages from https://t.me/DoctorsET saved to '../data/raw\https___t_me_DoctorsET.json'.
+2025-03-10 14:47:01 - INFO - Fetching messages from https://t.me/CheMed123...
+2025-03-10 14:47:01 - INFO - Fetching messages from https://t.me/CheMed123 with min_id=0...
+2025-03-10 14:47:02 - INFO - Fetched 76 messages from https://t.me/CheMed123.
+2025-03-10 14:47:02 - INFO - Messages from https://t.me/CheMed123 saved to '../data/raw\https___t_me_CheMed123.json'.
+2025-03-10 14:47:02 - INFO - Fetching messages from https://t.me/lobelia4cosmetics...
+2025-03-10 14:47:02 - INFO - Fetching messages from https://t.me/lobelia4cosmetics with min_id=0...
+2025-03-10 14:47:04 - INFO - Fetched 200 messages from https://t.me/lobelia4cosmetics.
+2025-03-10 14:47:04 - INFO - Messages from https://t.me/lobelia4cosmetics saved to '../data/raw\https___t_me_lobelia4cosmetics.json'.
+2025-03-10 14:47:04 - INFO - Fetching messages from https://t.me/yetenaweg...
+2025-03-10 14:47:04 - INFO - Fetching messages from https://t.me/yetenaweg with min_id=0...
+2025-03-10 14:47:06 - INFO - Fetched 200 messages from https://t.me/yetenaweg.
+2025-03-10 14:47:06 - INFO - Messages from https://t.me/yetenaweg saved to '../data/raw\https___t_me_yetenaweg.json'.
+2025-03-10 14:47:06 - INFO - Fetching messages from https://t.me/EAHCI...
+2025-03-10 14:47:06 - INFO - Fetching messages from https://t.me/EAHCI with min_id=0...
+2025-03-10 14:47:07 - INFO - Fetched 200 messages from https://t.me/EAHCI.
+2025-03-10 14:47:07 - INFO - Messages from https://t.me/EAHCI saved to '../data/raw\https___t_me_EAHCI.json'.
+2025-03-10 14:47:07 - INFO - Metadata updated successfully.
+2025-03-10 14:47:07 - INFO - Merged messages saved to 'data/merged_messages.json'.
+2025-03-10 14:47:07 - INFO - Disconnecting Telegram client...
+2025-03-10 14:47:07 - INFO - Disconnecting from 149.154.167.91:443/TcpFull...
+2025-03-10 14:47:07 - INFO - Disconnection from 149.154.167.91:443/TcpFull complete!
+2025-03-10 14:47:08 - INFO - Telegram client disconnected.
+2025-03-10 14:49:47 - INFO - Initializing Telegram client...
+2025-03-10 14:49:47 - INFO - Connecting to 149.154.167.91:443/TcpFull...
+2025-03-10 14:49:47 - INFO - Connection to 149.154.167.91:443/TcpFull complete!
+2025-03-10 14:49:48 - INFO - Telegram client started successfully.
+2025-03-10 14:49:48 - INFO - Fetching messages from https://t.me/DoctorsET...
+2025-03-10 14:49:48 - INFO - Fetching messages from https://t.me/DoctorsET with min_id=864...
+2025-03-10 14:49:49 - INFO - Fetched 0 messages from https://t.me/DoctorsET.
+2025-03-10 14:49:49 - INFO - No new messages found for https://t.me/DoctorsET.
+2025-03-10 14:49:49 - INFO - Fetching messages from https://t.me/CheMed123...
+2025-03-10 14:49:49 - INFO - Fetching messages from https://t.me/CheMed123 with min_id=97...
+2025-03-10 14:49:49 - INFO - Fetched 0 messages from https://t.me/CheMed123.
+2025-03-10 14:49:49 - INFO - No new messages found for https://t.me/CheMed123.
+2025-03-10 14:49:49 - INFO - Fetching messages from https://t.me/lobelia4cosmetics...
+2025-03-10 14:49:49 - INFO - Fetching messages from https://t.me/lobelia4cosmetics with min_id=16019...
+2025-03-10 14:49:50 - INFO - Fetched 0 messages from https://t.me/lobelia4cosmetics.
+2025-03-10 14:49:50 - INFO - No new messages found for https://t.me/lobelia4cosmetics.
+2025-03-10 14:49:50 - INFO - Fetching messages from https://t.me/yetenaweg...
+2025-03-10 14:49:50 - INFO - Fetching messages from https://t.me/yetenaweg with min_id=1258...
+2025-03-10 14:49:51 - INFO - Fetched 0 messages from https://t.me/yetenaweg.
+2025-03-10 14:49:51 - INFO - No new messages found for https://t.me/yetenaweg.
+2025-03-10 14:49:51 - INFO - Fetching messages from https://t.me/EAHCI...
+2025-03-10 14:49:51 - INFO - Fetching messages from https://t.me/EAHCI with min_id=2658...
+2025-03-10 14:49:52 - INFO - Fetched 0 messages from https://t.me/EAHCI.
+2025-03-10 14:49:52 - INFO - No new messages found for https://t.me/EAHCI.
+2025-03-10 14:49:52 - INFO - Metadata updated successfully.
+2025-03-10 14:49:52 - INFO - Merged messages saved to 'data/merged_messages.json'.
+2025-03-10 14:49:52 - INFO - Disconnecting Telegram client...
+2025-03-10 14:49:52 - INFO - Disconnecting from 149.154.167.91:443/TcpFull...
+2025-03-10 14:49:52 - INFO - Disconnection from 149.154.167.91:443/TcpFull complete!
+2025-03-10 14:49:52 - INFO - Telegram client disconnected.
+2025-03-10 15:32:52 - INFO - Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2025-03-10 15:32:52 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption
+2025-03-10 15:34:54 - INFO - Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2025-03-10 15:34:54 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption
+2025-03-10 15:35:17 - INFO - Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2025-03-10 15:35:17 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption
+2025-03-10 16:02:06 - INFO - DataFrameCleaner initialized with DataFrame of shape (876, 6)
+2025-03-10 16:02:06 - INFO - Newlines removed and text trimmed in 'message' column.
+2025-03-10 16:02:06 - INFO - Extracted emojis and cleaned 'message' column of emojis.
+2025-03-10 16:02:06 - INFO - Emoji extraction completed.
+2025-03-10 16:02:06 - INFO - Extracted YouTube links, website URLs, and phone numbers.
+2025-03-10 16:02:06 - INFO - Removed duplicates. Rows before: 876, Rows after: 876
+2025-03-10 16:02:06 - INFO - Timestamps in column 'timestamp' converted successfully.
+2025-03-10 16:02:06 - INFO - Replaced 1 null values in column 'message' with 'no message'.
+2025-03-10 16:02:06 - INFO - Replaced 373 null values in column 'emoji' with 'no emoji'.
+2025-03-10 16:02:06 - INFO - Null value cleaning completed. Current DataFrame shape: (876, 10)
+2025-03-10 16:03:03 - INFO - DataFrameCleaner initialized with DataFrame of shape (876, 6)
+2025-03-10 16:03:03 - INFO - Newlines removed and text trimmed in 'message' column.
+2025-03-10 16:03:04 - INFO - Extracted emojis and cleaned 'message' column of emojis.
+2025-03-10 16:03:04 - INFO - Emoji extraction completed.
+2025-03-10 16:03:04 - INFO - Extracted YouTube links, website URLs, and phone numbers.
+2025-03-10 16:03:04 - INFO - Removed duplicates. Rows before: 876, Rows after: 876
+2025-03-10 16:03:04 - INFO - Timestamps in column 'timestamp' converted successfully.
+2025-03-10 16:03:04 - INFO - Replaced 1 null values in column 'message' with 'no message'.
+2025-03-10 16:03:04 - INFO - Replaced 373 null values in column 'emoji' with 'no emoji'.
+2025-03-10 16:03:04 - INFO - Null value cleaning completed. Current DataFrame shape: (876, 10)
+2025-03-10 16:15:00 - INFO - Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2025-03-10 16:15:00 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption
+2025-03-10 16:15:14 - INFO - DataFrameCleaner initialized with DataFrame of shape (876, 6)
+2025-03-10 16:15:14 - INFO - Newlines removed and text trimmed in 'message' column.
+2025-03-10 16:15:14 - INFO - Extracted emojis and cleaned 'message' column of emojis.
+2025-03-10 16:15:14 - INFO - Emoji extraction completed.
+2025-03-10 16:15:14 - INFO - Extracted YouTube links, website URLs, and phone numbers.
+2025-03-10 16:15:14 - INFO - Removed duplicates. Rows before: 876, Rows after: 876
+2025-03-10 16:15:14 - INFO - Timestamps in column 'timestamp' converted successfully.
+2025-03-10 16:15:14 - INFO - Replaced 1 null values in column 'message' with 'no message'.
+2025-03-10 16:15:14 - INFO - Replaced 373 null values in column 'emoji' with 'no emoji'.
+2025-03-10 16:15:14 - INFO - Null value cleaning completed. Current DataFrame shape: (876, 10)
+2025-03-10 16:16:04 - INFO - Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2025-03-10 16:16:04 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption
+2025-03-10 16:20:06 - INFO - Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2025-03-10 16:20:06 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption
+2025-03-10 16:20:13 - INFO - Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2025-03-10 16:20:13 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption
+2025-03-10 16:26:21 - INFO - Initializing Telegram client...
+2025-03-10 16:26:21 - INFO - Connecting to 149.154.167.91:443/TcpFull...
+2025-03-10 16:26:21 - INFO - Connection to 149.154.167.91:443/TcpFull complete!
+2025-03-10 16:26:22 - INFO - Telegram client started successfully.
+2025-03-10 16:26:22 - INFO - Fetching messages from https://t.me/DoctorsET...
+2025-03-10 16:26:22 - INFO - Fetching messages from https://t.me/DoctorsET with min_id=864...
+2025-03-10 16:26:22 - INFO - Fetched 0 messages from https://t.me/DoctorsET.
+2025-03-10 16:26:22 - INFO - No new messages found for https://t.me/DoctorsET.
+2025-03-10 16:26:22 - INFO - Fetching messages from https://t.me/CheMed123...
+2025-03-10 16:26:22 - INFO - Fetching messages from https://t.me/CheMed123 with min_id=97...
+2025-03-10 16:26:23 - INFO - Fetched 0 messages from https://t.me/CheMed123.
+2025-03-10 16:26:23 - INFO - No new messages found for https://t.me/CheMed123.
+2025-03-10 16:26:23 - INFO - Fetching messages from https://t.me/lobelia4cosmetics...
+2025-03-10 16:26:23 - INFO - Fetching messages from https://t.me/lobelia4cosmetics with min_id=16019...
+2025-03-10 16:26:23 - INFO - Fetched 0 messages from https://t.me/lobelia4cosmetics.
+2025-03-10 16:26:23 - INFO - No new messages found for https://t.me/lobelia4cosmetics.
+2025-03-10 16:26:23 - INFO - Fetching messages from https://t.me/yetenaweg...
+2025-03-10 16:26:23 - INFO - Fetching messages from https://t.me/yetenaweg with min_id=1258...
+2025-03-10 16:26:24 - INFO - Fetched 0 messages from https://t.me/yetenaweg.
+2025-03-10 16:26:24 - INFO - No new messages found for https://t.me/yetenaweg.
+2025-03-10 16:26:24 - INFO - Fetching messages from https://t.me/EAHCI...
+2025-03-10 16:26:24 - INFO - Fetching messages from https://t.me/EAHCI with min_id=2658...
+2025-03-10 16:26:25 - INFO - Fetched 0 messages from https://t.me/EAHCI.
+2025-03-10 16:26:25 - INFO - No new messages found for https://t.me/EAHCI.
+2025-03-10 16:26:25 - INFO - Metadata updated successfully.
+2025-03-10 16:26:25 - INFO - Merged messages saved to 'data/merged_messages.json'.
+2025-03-10 16:26:25 - INFO - Disconnecting Telegram client...
+2025-03-10 16:26:25 - INFO - Disconnecting from 149.154.167.91:443/TcpFull...
+2025-03-10 16:26:25 - INFO - Disconnection from 149.154.167.91:443/TcpFull complete!
+2025-03-10 16:26:25 - INFO - Telegram client disconnected.
+2025-03-10 16:33:20 - INFO - Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2025-03-10 16:33:20 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption
+2025-03-10 16:33:26 - INFO - Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2025-03-10 16:33:26 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption
+2025-03-10 16:33:33 - INFO - Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2025-03-10 16:33:33 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption
+2025-03-10 16:33:38 - INFO - Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2025-03-10 16:33:38 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption
+2025-03-10 16:33:53 - INFO - Initializing Telegram client...
+2025-03-10 16:33:53 - INFO - Connecting to 149.154.167.91:443/TcpFull...
+2025-03-10 16:33:53 - INFO - Connection to 149.154.167.91:443/TcpFull complete!
+2025-03-10 16:33:54 - INFO - Telegram client started successfully.
+2025-03-10 16:33:54 - INFO - Fetching messages from https://t.me/DoctorsET...
+2025-03-10 16:33:54 - INFO - Fetching messages from https://t.me/DoctorsET with min_id=864...
+2025-03-10 16:33:55 - INFO - Fetched 0 messages from https://t.me/DoctorsET.
+2025-03-10 16:33:55 - INFO - No new messages found for https://t.me/DoctorsET.
+2025-03-10 16:33:55 - INFO - Fetching messages from https://t.me/CheMed123...
+2025-03-10 16:33:55 - INFO - Fetching messages from https://t.me/CheMed123 with min_id=97...
+2025-03-10 16:33:55 - INFO - Fetched 0 messages from https://t.me/CheMed123.
+2025-03-10 16:33:55 - INFO - No new messages found for https://t.me/CheMed123.
+2025-03-10 16:33:55 - INFO - Fetching messages from https://t.me/lobelia4cosmetics...
+2025-03-10 16:33:55 - INFO - Fetching messages from https://t.me/lobelia4cosmetics with min_id=16019...
+2025-03-10 16:33:56 - INFO - Fetched 0 messages from https://t.me/lobelia4cosmetics.
+2025-03-10 16:33:56 - INFO - No new messages found for https://t.me/lobelia4cosmetics.
+2025-03-10 16:33:56 - INFO - Fetching messages from https://t.me/yetenaweg...
+2025-03-10 16:33:56 - INFO - Fetching messages from https://t.me/yetenaweg with min_id=1258...
+2025-03-10 16:33:56 - INFO - Fetched 0 messages from https://t.me/yetenaweg.
+2025-03-10 16:33:56 - INFO - No new messages found for https://t.me/yetenaweg.
+2025-03-10 16:33:56 - INFO - Fetching messages from https://t.me/EAHCI...
+2025-03-10 16:33:56 - INFO - Fetching messages from https://t.me/EAHCI with min_id=2658...
+2025-03-10 16:33:57 - INFO - Fetched 0 messages from https://t.me/EAHCI.
+2025-03-10 16:33:57 - INFO - No new messages found for https://t.me/EAHCI.
+2025-03-10 16:33:57 - INFO - Metadata updated successfully.
+2025-03-10 16:33:57 - INFO - Merged messages saved to 'data/merged_messages.json'.
+2025-03-10 16:33:57 - INFO - Disconnecting Telegram client...
+2025-03-10 16:33:57 - INFO - Disconnecting from 149.154.167.91:443/TcpFull...
+2025-03-10 16:33:57 - INFO - Disconnection from 149.154.167.91:443/TcpFull complete!
+2025-03-10 16:33:57 - INFO - Telegram client disconnected.
+2025-03-10 16:34:10 - INFO - DataFrameCleaner initialized with DataFrame of shape (876, 6)
+2025-03-10 16:34:10 - INFO - Newlines removed and text trimmed in 'message' column.
+2025-03-10 16:34:10 - INFO - Extracted emojis and cleaned 'message' column of emojis.
+2025-03-10 16:34:10 - INFO - Emoji extraction completed.
+2025-03-10 16:34:10 - INFO - Extracted YouTube links, website URLs, and phone numbers.
+2025-03-10 16:34:10 - INFO - Removed duplicates. Rows before: 876, Rows after: 876
+2025-03-10 16:34:10 - INFO - Timestamps in column 'timestamp' converted successfully.
+2025-03-10 16:34:10 - INFO - Replaced 1 null values in column 'message' with 'no message'.
+2025-03-10 16:34:10 - INFO - Replaced 373 null values in column 'emoji' with 'no emoji'.
+2025-03-10 16:34:10 - INFO - Null value cleaning completed. Current DataFrame shape: (876, 10)
+2025-03-10 16:34:37 - INFO - DataFrameCleaner initialized with DataFrame of shape (876, 6)
+2025-03-10 16:34:37 - INFO - Newlines removed and text trimmed in 'message' column.
+2025-03-10 16:34:37 - INFO - Extracted emojis and cleaned 'message' column of emojis.
+2025-03-10 16:34:37 - INFO - Emoji extraction completed.
+2025-03-10 16:34:38 - INFO - Extracted YouTube links, website URLs, and phone numbers.
+2025-03-10 16:34:38 - INFO - Removed duplicates. Rows before: 876, Rows after: 876
+2025-03-10 16:34:38 - INFO - Timestamps in column 'timestamp' converted successfully.
+2025-03-10 16:34:38 - INFO - Replaced 1 null values in column 'message' with 'no message'.
+2025-03-10 16:34:38 - INFO - Replaced 373 null values in column 'emoji' with 'no emoji'.
+2025-03-10 16:34:38 - INFO - Null value cleaning completed. Current DataFrame shape: (876, 10)
+2025-03-10 16:35:22 - INFO - Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2025-03-10 16:35:22 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption
+2025-03-10 16:36:06 - INFO - Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2025-03-10 16:36:06 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption
+2025-03-10 16:36:23 - INFO - Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2025-03-10 16:36:23 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption
+2025-03-10 16:40:05 - INFO - Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2025-03-10 16:40:05 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption
+2025-03-10 16:41:09 - INFO - Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2025-03-10 16:41:09 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption
+2025-03-10 16:45:32 - INFO - Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2025-03-10 16:45:32 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption
+2025-03-10 16:53:04 - INFO - DataFrameCleaner initialized with DataFrame of shape (876, 6)
+2025-03-10 16:53:04 - INFO - Newlines removed and text trimmed in 'message' column.
+2025-03-10 16:53:04 - INFO - Extracted emojis and cleaned 'message' column of emojis.
+2025-03-10 16:53:04 - INFO - Emoji extraction completed.
+2025-03-10 16:53:04 - INFO - Extracted YouTube links, website URLs, and phone numbers.
+2025-03-10 16:53:04 - INFO - Removed duplicates. Rows before: 876, Rows after: 876
+2025-03-10 16:53:04 - INFO - Timestamps in column 'timestamp' converted successfully.
+2025-03-10 16:53:04 - INFO - Replaced 1 null values in column 'message' with 'no message'.
+2025-03-10 16:53:04 - INFO - Replaced 373 null values in column 'emoji' with 'no emoji'.
+2025-03-10 16:53:04 - INFO - Null value cleaning completed. Current DataFrame shape: (876, 10)
+2025-03-10 16:53:29 - INFO - DataFrameCleaner initialized with DataFrame of shape (876, 6)
+2025-03-10 16:53:29 - INFO - Newlines removed and text trimmed in 'message' column.
+2025-03-10 16:53:29 - INFO - Extracted emojis and cleaned 'message' column of emojis.
+2025-03-10 16:53:29 - INFO - Emoji extraction completed.
+2025-03-10 16:53:29 - INFO - Extracted YouTube links, website URLs, and phone numbers.
+2025-03-10 16:53:29 - INFO - Removed duplicates. Rows before: 876, Rows after: 876
+2025-03-10 16:53:29 - INFO - Timestamps in column 'timestamp' converted successfully.
+2025-03-10 16:53:29 - INFO - Replaced 1 null values in column 'message' with 'no message'.
+2025-03-10 16:53:29 - INFO - Replaced 373 null values in column 'emoji' with 'no emoji'.
+2025-03-10 16:53:29 - INFO - Null value cleaning completed. Current DataFrame shape: (876, 10)
+2025-03-10 16:56:33 - INFO - Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2025-03-10 16:56:33 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption
+2025-03-10 16:56:59 - INFO - Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2025-03-10 16:56:59 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption
+2025-03-10 16:57:59 - INFO - DataFrameCleaner initialized with DataFrame of shape (876, 6)
+2025-03-10 16:57:59 - INFO - Newlines removed and text trimmed in 'message' column.
+2025-03-10 16:57:59 - INFO - Extracted emojis and cleaned 'message' column of emojis.
+2025-03-10 16:57:59 - INFO - Emoji extraction completed.
+2025-03-10 16:57:59 - INFO - Extracted YouTube links, website URLs, and phone numbers.
+2025-03-10 16:57:59 - INFO - Removed duplicates. Rows before: 876, Rows after: 876
+2025-03-10 16:57:59 - INFO - Timestamps in column 'timestamp' converted successfully.
+2025-03-10 16:57:59 - INFO - Replaced 1 null values in column 'message' with 'no message'.
+2025-03-10 16:57:59 - INFO - Replaced 373 null values in column 'emoji' with 'no emoji'.
+2025-03-10 16:57:59 - INFO - Null value cleaning completed. Current DataFrame shape: (876, 10)
+2025-03-10 17:12:38 - INFO - Initializing Telegram client...
+2025-03-10 17:12:38 - INFO - Connecting to 149.154.167.91:443/TcpFull...
+2025-03-10 17:12:38 - INFO - Connection to 149.154.167.91:443/TcpFull complete!
+2025-03-10 17:12:39 - INFO - Telegram client started successfully.
+2025-03-10 17:12:39 - INFO - Fetching messages from https://t.me/DoctorsET...
+2025-03-10 17:12:39 - INFO - Fetching messages from https://t.me/DoctorsET with min_id=864...
+2025-03-10 17:12:40 - INFO - Fetched 0 messages from https://t.me/DoctorsET.
+2025-03-10 17:12:40 - INFO - No new messages found for https://t.me/DoctorsET.
+2025-03-10 17:12:40 - INFO - Fetching messages from https://t.me/CheMed123...
+2025-03-10 17:12:40 - INFO - Fetching messages from https://t.me/CheMed123 with min_id=97...
+2025-03-10 17:12:40 - INFO - Fetched 0 messages from https://t.me/CheMed123.
+2025-03-10 17:12:40 - INFO - No new messages found for https://t.me/CheMed123.
+2025-03-10 17:12:40 - INFO - Fetching messages from https://t.me/lobelia4cosmetics...
+2025-03-10 17:12:40 - INFO - Fetching messages from https://t.me/lobelia4cosmetics with min_id=16019...
+2025-03-10 17:12:41 - INFO - Fetched 0 messages from https://t.me/lobelia4cosmetics.
+2025-03-10 17:12:41 - INFO - No new messages found for https://t.me/lobelia4cosmetics.
+2025-03-10 17:12:41 - INFO - Fetching messages from https://t.me/yetenaweg...
+2025-03-10 17:12:41 - INFO - Fetching messages from https://t.me/yetenaweg with min_id=1258...
+2025-03-10 17:12:42 - INFO - Fetched 0 messages from https://t.me/yetenaweg.
+2025-03-10 17:12:42 - INFO - No new messages found for https://t.me/yetenaweg.
+2025-03-10 17:12:42 - INFO - Fetching messages from https://t.me/EAHCI...
+2025-03-10 17:12:42 - INFO - Fetching messages from https://t.me/EAHCI with min_id=2658...
+2025-03-10 17:12:42 - INFO - Fetched 0 messages from https://t.me/EAHCI.
+2025-03-10 17:12:42 - INFO - No new messages found for https://t.me/EAHCI.
+2025-03-10 17:12:42 - INFO - Metadata updated successfully.
+2025-03-10 17:12:42 - INFO - Merged messages saved to 'data/merged_messages.json'.
+2025-03-10 17:12:42 - INFO - Disconnecting Telegram client...
+2025-03-10 17:12:42 - INFO - Disconnecting from 149.154.167.91:443/TcpFull...
+2025-03-10 17:12:42 - INFO - Disconnection from 149.154.167.91:443/TcpFull complete!
+2025-03-10 17:12:42 - INFO - Telegram client disconnected.
+2025-03-10 17:30:37 - INFO - Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2025-03-10 17:30:37 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption
+2025-03-10 17:38:51 - INFO - Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2025-03-10 17:38:51 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption
+2025-03-10 17:43:29 - INFO - Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2025-03-10 17:43:29 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption
+2025-03-10 17:43:51 - INFO - Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2025-03-10 17:43:51 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption

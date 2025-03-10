@@ -9,8 +9,10 @@ import {
   Row,
   Col,
   Layout,
+  Input,
   Typography,
 } from "antd";
+import { debounce } from "lodash";
 import { useDispatch } from "react-redux";
 import { getMessage } from "../redux/action/action";
 import { useMessages } from "../hooks/useMessages";
@@ -21,17 +23,26 @@ import PropTypes from "prop-types";
 
 const { Content } = Layout;
 const { Title } = Typography;
+const { Search } = Input;
 
 const PreProcessedTable = () => {
   const [page, setPage] = useState(1);
   const [pageSize, setPageSize] = useState(10);
   const [exporting, setExporting] = useState(false);
+  const [searchTerm, setSearchTerm] = useState(""); // State for search term
   const dispatch = useDispatch();
   const { messages, loading, total, error } = useMessages();
 
+  // Debounced search function
+  const handleSearch = debounce((value) => {
+    setSearchTerm(value); // Update search term
+    setPage(1); // Reset to the first page
+  }, 300); // 300ms delay
   useEffect(() => {
-    dispatch(getMessage({ page, page_size: pageSize }));
-  }, [dispatch, page, pageSize]);
+    dispatch(
+      getMessage({ page, page_size: pageSize, channel_name: searchTerm })
+    );
+  }, [dispatch, page, pageSize, searchTerm]);
 
   const exportData = async (format) => {
     setExporting(true);
@@ -219,6 +230,16 @@ const PreProcessedTable = () => {
               Export
             </Button>
           </Dropdown>
+        </Col>
+      </Row>
+      <Row style={{ marginBottom: 16 }}>
+        <Col span={8}>
+          <Search
+            placeholder="Search by channel title"
+            allowClear
+            enterButton="Search"
+            onChange={(e) => handleSearch(e.target.value)}
+          />
         </Col>
       </Row>
       <Spin spinning={loading}>

@@ -3,9 +3,9 @@ import * as api from "../api/api";
 
 export const getMessage = createAsyncThunk(
   "GET_MESSAGE",
-  async ({ page, page_size }, { rejectWithValue }) => {
+  async ({ page, page_size, channel_name }, { rejectWithValue }) => {
     try {
-      const response = await api.getMessage(page, page_size);
+      const response = await api.getMessage(page, page_size, channel_name);
       console.log(response);
       return response; // Return the response data
     } catch (error) {
@@ -16,9 +16,9 @@ export const getMessage = createAsyncThunk(
 
 export const getRawMessage = createAsyncThunk(
   "GET_RAW_MESSAGE",
-  async ({ page, page_size }, { rejectWithValue }) => {
+  async ({ page, page_size, channel_name }, { rejectWithValue }) => {
     try {
-      const response = await api.getRawMessage(page, page_size);
+      const response = await api.getRawMessage(page, page_size, channel_name);
       return response; // Return the response data
     } catch (error) {
       return rejectWithValue(error.response?.data?.message || error.message);

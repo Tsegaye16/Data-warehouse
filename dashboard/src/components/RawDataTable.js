@@ -11,12 +11,13 @@ import {
   Space,
   Typography,
   message as antdMessage,
-  message,
+  Input,
 } from "antd";
 import { useDispatch } from "react-redux";
 import * as XLSX from "xlsx";
 import { saveAs } from "file-saver";
 import PropTypes from "prop-types";
+import { debounce } from "lodash";
 import {
   DownloadOutlined,
   SyncOutlined,
@@ -31,18 +32,28 @@ import { useRawMessages } from "../hooks/useRawMessages";
 
 const { Content } = Layout;
 const { Title } = Typography;
+const { Search } = Input;
 
 const RawDataTable = () => {
   const [page, setPage] = useState(1);
   const [pageSize, setPageSize] = useState(10);
   const [exporting, setExporting] = useState(false);
+  const [searchTerm, setSearchTerm] = useState(""); // State for search term
   const dispatch = useDispatch();
 
   const { rawMessages, loading, total, error } = useRawMessages();
   const length = rawMessages.length;
+
+  // Debounced search function
+  const handleSearch = debounce((value) => {
+    setSearchTerm(value); // Update search term
+    setPage(1); // Reset to the first page
+  }, 300); // 300ms delay
   useEffect(() => {
-    dispatch(getRawMessage({ page, page_size: pageSize }));
-  }, [dispatch, page, pageSize]);
+    dispatch(
+      getRawMessage({ page, page_size: pageSize, channel_name: searchTerm })
+    );
+  }, [dispatch, page, pageSize, searchTerm]); // Include searchTerm in dependency array
 
   const handleProcessMessage = () => {
     dispatch(processMessage())
@@ -59,7 +70,7 @@ const RawDataTable = () => {
     setExporting(true);
     try {
       const response = await dispatch(
-        getRawMessage({ page: 1, page_size: total })
+        getRawMessage({ page: 1, page_size: total, channel_name: searchTerm })
       ).unwrap();
       const allMessages = response?.servey || response?.messages || [];
 
@@ -116,9 +127,14 @@ const RawDataTable = () => {
     e.preventDefault();
     const response = await dispatch(fetchRecent());
     if (response.type === "FETCH_RECENT/fulfilled") {
-      message.success(`${response.payload.total.length} fetched`);
+      antdMessage.success(`${response.payload.total.length} fetched`);
     }
   };
+
+  // const handleSearch = (value) => {
+  //   setSearchTerm(value); // Update search term state
+  //   setPage(1); // Reset to the first page when searching
+  // };
 
   const columns = [
     { title: "Channel Name", dataIndex: "channel_name", key: "channel_name" },
@@ -133,16 +149,16 @@ const RawDataTable = () => {
     },
     { title: "Message", dataIndex: "message", key: "message" },
     {
-      title: "Media",
-      dataIndex: "media",
-      key: "media",
+      title: "Media Path",
+      dataIndex: "media_path",
+      key: "media_path",
       render: (media) =>
-        media ? (
+        media && media.toLowerCase() !== "no media" ? (
           <a href={media} target="_blank" rel="noopener noreferrer">
             {media}
           </a>
         ) : (
-          "N/A"
+          "no media"
         ),
     },
   ];
@@ -162,7 +178,7 @@ const RawDataTable = () => {
       <Row justify="space-between" align="middle" style={{ marginBottom: 16 }}>
         <Col>
           <Button
-            type="primary"
+            type="default"
             icon={<SyncOutlined />}
             onClick={handleFetchRecent}
           >
@@ -173,7 +189,7 @@ const RawDataTable = () => {
           <Col>
             <Space>
               <Button
-                type="primary"
+                type="text"
                 icon={<CheckOutlined />}
                 onClick={handleProcessMessage}
               >
@@ -181,7 +197,7 @@ const RawDataTable = () => {
               </Button>
               <Dropdown overlay={menu} trigger={["click"]}>
                 <Button
-                  type="primary"
+                  type="default"
                   icon={<DownloadOutlined />}
                   loading={exporting}
                 >
@@ -193,6 +209,18 @@ const RawDataTable = () => {
         ) : (
           ""
         )}
+      </Row>
+
+      {/* Add Search Input */}
+      <Row style={{ marginBottom: 16 }}>
+        <Col span={8}>
+          <Search
+            placeholder="Search by channel title"
+            allowClear
+            enterButton="Search"
+            onChange={(e) => handleSearch(e.target.value)}
+          />
+        </Col>
       </Row>
 
       <Spin spinning={loading}>

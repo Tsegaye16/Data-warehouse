@@ -4,10 +4,10 @@ const API = axios.create({
   baseURL: "http://127.0.0.1:8000",
 });
 
-export const getMessage = async (page, page_size) => {
+export const getMessage = async (page, page_size, channel_name) => {
   try {
     const response = await API.get(`/messages`, {
-      params: { page, page_size },
+      params: { page, page_size, channel_name },
     });
     return response.data; // Return the response data
   } catch (error) {
@@ -17,10 +17,10 @@ export const getMessage = async (page, page_size) => {
   }
 };
 
-export const getRawMessage = async (page, page_size) => {
+export const getRawMessage = async (page, page_size, channel_name) => {
   try {
     const response = await API.get(`/messages/raw`, {
-      params: { page, page_size },
+      params: { page, page_size, channel_name },
     });
     console.log(response);
     return response.data; // Return the response data

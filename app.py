@@ -4,11 +4,11 @@ import logging
 import re
 from scripts.telegram_scrapper import TelegramScraper
 
-os.makedirs("logs", exist_ok=True)
+os.makedirs("../logs", exist_ok=True)
 
 # Configure logging
 logging.basicConfig(
-    filename="logs/fetcher.log",
+    filename="../logs/fetcher.log",
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s"
 )
@@ -70,10 +70,9 @@ async def fetch_data(scraper, channels, metadata_file, raw_data_folder):
     return all_messages  # Return merged messages
 
 async def mains():
-    raw_data_folder = "data/raw"
-    metadata_fetch_file = "metadata/last_fetched.json"
+    raw_data_folder = "../data/raw"
+    metadata_fetch_file = "../metadata/last_fetched.json"
     os.makedirs("metadata", exist_ok=True)
-
     channels = [
         "https://t.me/DoctorsET",
         "https://t.me/CheMed123",
@@ -88,7 +87,7 @@ async def mains():
         all_fetched_messages = await fetch_data(scraper, channels, metadata_fetch_file, raw_data_folder)
         
         # Save merged data
-        with open("data/merged_messages.json", "w", encoding="utf-8") as f:
+        with open("../data/merged_messages.json", "w", encoding="utf-8") as f:
             json.dump(all_fetched_messages, f, ensure_ascii=False, indent=4)
             logging.info(f"Merged messages saved to 'data/merged_messages.json'.")
 
