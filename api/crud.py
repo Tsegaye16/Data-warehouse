@@ -10,9 +10,6 @@ sys.path.append(os.path.abspath(os.path.join('..', 'scripts')))
 
 from data_cleaning import DataFrameCleaner
 
-# get all message from TelegramMessage table
-def get_all_messages(db: Session):
-    return db.query(TelegramMessage).all()
 
 def get_telegram_messages(db: Session, skip: int = 0, limit: int = 10):
     """

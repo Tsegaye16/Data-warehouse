@@ -80,17 +80,6 @@ def read_raw_messages(
         return {"total": total, "messages": messages}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-# Endpoint to add a new message
-@app.post("/messages/", response_model=schemas.MessageResponse)
-def add_message(message: schemas.MessageCreate, db: Session = Depends(get_db)):
-    return crud.add_telegram_message(db, message.user_input, message.channel_title)
-
-
-
-# Endpoint to retrieve messages based on channel_title and limit
-@app.get("/messages/{channel_title}/", response_model=list[schemas.MessageResponse])
-def read_messages_by_channel(channel_title: str, limit: int = 10, db: Session = Depends(get_db)):
-    return crud.get_telegram_messages_by_channel(db, channel_title, limit)
 
 
 @app.post("/messages/recent")

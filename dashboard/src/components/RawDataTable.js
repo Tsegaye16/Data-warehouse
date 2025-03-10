@@ -11,6 +11,7 @@ import {
   Space,
   Typography,
   message as antdMessage,
+  message,
 } from "antd";
 import { useDispatch } from "react-redux";
 import * as XLSX from "xlsx";
@@ -111,9 +112,12 @@ const RawDataTable = () => {
     </Menu>
   );
 
-  const handleFetchRecent = (e) => {
+  const handleFetchRecent = async (e) => {
     e.preventDefault();
-    dispatch(fetchRecent());
+    const response = await dispatch(fetchRecent());
+    if (response.type === "FETCH_RECENT/fulfilled") {
+      message.success(`${response.payload.total.length} fetched`);
+    }
   };
 
   const columns = [

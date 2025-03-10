@@ -40,8 +40,3 @@ class PaginatedRawMessageResponse(BaseModel):
 class PaginatedMessageResponse(BaseModel):
     total: int
     messages: List[MessageResponse]
-
-# Schema for Adding a New Message
-class MessageCreate(BaseModel):
-    user_input: str
-    channel_title: Optional[str] = "user input"
