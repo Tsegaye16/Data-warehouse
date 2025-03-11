@@ -4,10 +4,16 @@ const API = axios.create({
   baseURL: "http://127.0.0.1:8000",
 });
 
-export const getMessage = async (page, page_size, channel_name) => {
+export const getMessage = async (
+  page,
+  page_size,
+  channel_name,
+  start_date,
+  end_date
+) => {
   try {
     const response = await API.get(`/messages`, {
-      params: { page, page_size, channel_name },
+      params: { page, page_size, channel_name, start_date, end_date },
     });
     return response.data; // Return the response data
   } catch (error) {

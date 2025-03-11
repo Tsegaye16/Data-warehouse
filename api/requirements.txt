@@ -1,0 +1,15 @@
+
+asyncio
+
+datetime
+dotenv
+emoji
+fastapi
+pandas
+psycopg2
+pydantic
+
+sqlalchemy
+telethon
+torch
+
