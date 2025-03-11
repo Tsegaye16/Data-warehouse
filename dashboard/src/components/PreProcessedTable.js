@@ -261,7 +261,7 @@ const PreProcessedTable = () => {
         <Col>
           <Dropdown overlay={menu} trigger={["click"]}>
             <Button
-              type="primary"
+              type="default"
               icon={<DownloadOutlined />}
               loading={exporting}
             >
