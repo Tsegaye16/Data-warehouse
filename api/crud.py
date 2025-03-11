@@ -51,21 +51,48 @@ def get_raw_telegram_message(
     db: Session,
     skip: int = 0,
     limit: Optional[int] = None,  # Fetch all if limit is 0
-    channel_name: Optional[str] = None
+    channel_name: Optional[str] = None,
+    start_date: Optional[datetime] = None,
+    end_date: Optional[datetime] = None,
 ) -> Tuple[List[RawTelegramMessage], int]:
-    
+    """
+    Retrieve raw messages with pagination and optional filters.
+    :param db: Database session
+    :param skip: Number of records to skip (for pagination)
+    :param limit: Number of records to return (page size)
+    :param channel_name: Filter messages by channel name (optional)
+    :param start_date: Filter messages by start date (optional)
+    :param end_date: Filter messages by end date (optional)
+    :return: Tuple of (list of messages, total count)
+    """
     # Base query
     query = db.query(RawTelegramMessage).filter(RawTelegramMessage.is_processed == False)
 
-    # Apply channel_name filter (avoid % search for index efficiency)
+    # Apply channel_name filter (case-insensitive)
     if channel_name:
-        query = query.filter(RawTelegramMessage.channel_name == channel_name.lower())  
+        query = query.filter(RawTelegramMessage.channel_name.ilike(f"%{channel_name}%"))
 
-    # Get total count in the same query
-    total = query.with_entities(func.count()).scalar()
+    # Apply date filters
+    if start_date and end_date:
+        query = query.filter(
+            and_(
+                RawTelegramMessage.timestamp >= start_date,
+                RawTelegramMessage.timestamp <= end_date,
+            )
+        )
+    elif start_date:
+        query = query.filter(RawTelegramMessage.timestamp >= start_date)
+    elif end_date:
+        query = query.filter(RawTelegramMessage.timestamp <= end_date)
+
+    # Get total count (with filters applied)
+    total = query.count()
 
     # Apply pagination
-    messages = query.offset(skip).limit(limit).all()
+    if limit is not None:
+        query = query.offset(skip).limit(limit)
+
+    messages = query.all()
 
     return messages, total
 

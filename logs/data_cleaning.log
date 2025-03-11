@@ -3726,3 +3726,7 @@
 2025-03-11 17:51:20 - INFO - Disconnecting from 149.154.167.91:443/TcpFull...
 2025-03-11 17:51:20 - INFO - Disconnection from 149.154.167.91:443/TcpFull complete!
 2025-03-11 17:51:20 - INFO - Telegram client disconnected.
+2025-03-11 18:39:36 - INFO - Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2025-03-11 18:39:36 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption
+2025-03-11 18:41:10 - INFO - Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2025-03-11 18:41:10 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption

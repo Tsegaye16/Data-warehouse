@@ -82,26 +82,34 @@ def read_messages(
 def read_raw_messages(
     page: int = Query(1, description="Page number", ge=1),
     page_size: int = Query(10, description="Number of items per page", ge=1, le=100),
-    channel_name: Optional[str] = Query(None, description="Filter by channel title"),  # New parameter
+    channel_name: Optional[str] = Query(None, description="Filter by channel title"),
+    start_date: Optional[datetime] = Query(None, description="Filter by start date (format: YYYY-MM-DD)"),
+    end_date: Optional[datetime] = Query(None, description="Filter by end date (format: YYYY-MM-DD)"),
     db: Session = Depends(get_db)
 ):
     """
-    Retrieve raw messages with pagination and optional channel title filter.
+    Retrieve raw messages with pagination and optional filters.
     :param page: Page number (starting from 1)
     :param page_size: Number of items per page
-    :param channel_title: Optional filter by channel title
+    :param channel_name: Optional filter by channel title
+    :param start_date: Optional filter by start date
+    :param end_date: Optional filter by end date
     :param db: Database session
     :return: Paginated response with raw messages and total count
     """
     try:
         skip = (page - 1) * page_size
         messages, total = crud.get_raw_telegram_message(
-            db, skip=skip, limit=page_size, channel_name=channel_name  # Pass channel_title to the query
+            db,
+            skip=skip,
+            limit=page_size,
+            channel_name=channel_name,
+            start_date=start_date,
+            end_date=end_date,
         )
         return {"total": total, "messages": messages}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-
 
 @app.post("/messages/recent")
 async def fetch_recent_messages(db: Session = Depends(get_db)):
