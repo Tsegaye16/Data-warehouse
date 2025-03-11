@@ -3425,3 +3425,5 @@
 2025-03-10 17:43:29 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption
 2025-03-10 17:43:51 - INFO - Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
 2025-03-10 17:43:51 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption
+2025-03-10 17:45:50 - INFO - Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2025-03-10 17:45:50 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption
