@@ -23,10 +23,16 @@ export const getMessage = async (
   }
 };
 
-export const getRawMessage = async (page, page_size, channel_name) => {
+export const getRawMessage = async (
+  page,
+  page_size,
+  channel_name,
+  start_date,
+  end_date
+) => {
   try {
     const response = await API.get(`/messages/raw`, {
-      params: { page, page_size, channel_name },
+      params: { page, page_size, channel_name, start_date, end_date },
     });
     console.log(response);
     return response.data; // Return the response data
