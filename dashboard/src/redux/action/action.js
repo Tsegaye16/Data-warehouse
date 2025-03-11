@@ -3,9 +3,18 @@ import * as api from "../api/api";
 
 export const getMessage = createAsyncThunk(
   "GET_MESSAGE",
-  async ({ page, page_size, channel_name }, { rejectWithValue }) => {
+  async (
+    { page, page_size, channel_name, start_date, end_date },
+    { rejectWithValue }
+  ) => {
     try {
-      const response = await api.getMessage(page, page_size, channel_name);
+      const response = await api.getMessage(
+        page,
+        page_size,
+        channel_name,
+        start_date,
+        end_date
+      );
       console.log(response);
       return response; // Return the response data
     } catch (error) {

@@ -3,10 +3,11 @@ import logging
 import os,sys
 from fastapi import FastAPI, Depends, HTTPException, Query
 from typing import Optional
+from datetime import datetime
 
 from sqlalchemy.orm import Session
 from fastapi.middleware.cors import CORSMiddleware
-from database import SessionLocal
+from database import Base, SessionLocal,engine
 import crud
 import schemas
 
@@ -14,8 +15,14 @@ sys.path.append(os.path.abspath(os.path.join('..', '')))
 
 
 from app import mains
+# Create tables on startup
 
 app = FastAPI()
+@app.on_event("startup")
+def create_tables():
+    Base.metadata.create_all(bind=engine)
+
+
 
 # Enable CORS
 app.add_middleware(
@@ -41,25 +48,33 @@ def read_messages(
     page: int = Query(1, description="Page number", ge=1),
     page_size: int = Query(10, description="Number of items per page", ge=1),
     channel_name: Optional[str] = Query(None, description="Filter by channel title"),
-    db: Session = Depends(get_db)
+    start_date: Optional[datetime] = Query(None, description="Filter by start date (format: YYYY-MM-DD)"),
+    end_date: Optional[datetime] = Query(None, description="Filter by end date (format: YYYY-MM-DD)"),
+    db: Session = Depends(get_db),
 ):
     """
-    Retrieve messages with optional pagination.
+    Retrieve messages with optional pagination and filters.
     If `all=True`, returns all messages.
-    Otherwise, applies pagination.
+    Otherwise, applies pagination and optional filters (channel_name, start_date, end_date).
     """
     try:
         if all:
-            messages = crud.get_all_messages(db)  # ✅ Fetch all messages
+            messages = crud.get_all_messages(db)  # Fetch all messages
             total = len(messages)
         else:
             skip = (page - 1) * page_size
-            messages, total = crud.get_telegram_messages(db, skip=skip, limit=page_size,channel_title=channel_name)
+            messages, total = crud.get_telegram_messages(
+                db,
+                skip=skip,
+                limit=page_size,
+                channel_title=channel_name,
+                start_date=start_date,
+                end_date=end_date,
+            )
 
         return {"total": total, "messages": messages}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-
 
 
 # Endpoint to retrieve raw messages with pagination and optional channel_title filter

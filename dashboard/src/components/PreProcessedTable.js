@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import {
   Table,
   Spin,
@@ -10,39 +10,60 @@ import {
   Col,
   Layout,
   Input,
+  DatePicker,
   Typography,
 } from "antd";
 import { debounce } from "lodash";
 import { useDispatch } from "react-redux";
-import { getMessage } from "../redux/action/action";
-import { useMessages } from "../hooks/useMessages";
 import { DownloadOutlined } from "@ant-design/icons";
 import * as XLSX from "xlsx";
 import { saveAs } from "file-saver";
 import PropTypes from "prop-types";
+import moment from "moment";
+
+import { getMessage } from "../redux/action/action";
+import { useMessages } from "../hooks/useMessages";
 
 const { Content } = Layout;
 const { Title } = Typography;
 const { Search } = Input;
+const { RangePicker } = DatePicker;
 
 const PreProcessedTable = () => {
   const [page, setPage] = useState(1);
   const [pageSize, setPageSize] = useState(10);
   const [exporting, setExporting] = useState(false);
-  const [searchTerm, setSearchTerm] = useState(""); // State for search term
+  const [searchTerm, setSearchTerm] = useState("");
+  const [dateRange, setDateRange] = useState([null, null]);
   const dispatch = useDispatch();
   const { messages, loading, total, error } = useMessages();
 
-  // Debounced search function
-  const handleSearch = debounce((value) => {
-    setSearchTerm(value); // Update search term
-    setPage(1); // Reset to the first page
-  }, 300); // 300ms delay
+  // Debounced search function (memoized)
+  const handleSearch = useMemo(
+    () =>
+      debounce((value) => {
+        setSearchTerm(value);
+        setPage(1);
+      }, 300),
+    []
+  );
+
   useEffect(() => {
     dispatch(
-      getMessage({ page, page_size: pageSize, channel_name: searchTerm })
+      getMessage({
+        page,
+        page_size: pageSize,
+        channel_name: searchTerm,
+        start_date: dateRange[0] ? dateRange[0].format("YYYY-MM-DD") : null,
+        end_date: dateRange[1] ? dateRange[1].format("YYYY-MM-DD") : null,
+      })
     );
-  }, [dispatch, page, pageSize, searchTerm]);
+  }, [dispatch, page, pageSize, searchTerm, dateRange]);
+
+  const handleDateChange = (dates) => {
+    setDateRange(dates ? dates : [null, null]);
+    setPage(1);
+  };
 
   const exportData = async (format) => {
     setExporting(true);
@@ -50,7 +71,7 @@ const PreProcessedTable = () => {
       const response = await dispatch(
         getMessage({ page: 1, page_size: total })
       ).unwrap();
-      const allMessages = response?.servey || response?.messages || [];
+      const allMessages = response?.messages || [];
 
       if (!allMessages.length) {
         antdMessage.error("No data available for export!");
@@ -139,7 +160,6 @@ const PreProcessedTable = () => {
         let youtubeLinks = [];
 
         if (typeof youtube === "string") {
-          // Remove `('` and `',)` brackets and split the links
           youtube = youtube.replace(/[\(\)']/g, "").trim();
           youtubeLinks = youtube.split(",").map((link) => link.trim());
         } else if (Array.isArray(youtube)) {
@@ -173,7 +193,6 @@ const PreProcessedTable = () => {
         let phoneNumbers = [];
 
         if (typeof phone === "string") {
-          // Remove `{}` brackets and split the numbers by comma
           phone = phone.replace(/[{}]/g, "").trim();
           phoneNumbers = phone.split(",").map((num) => num.trim());
         } else if (Array.isArray(phone)) {
@@ -203,7 +222,15 @@ const PreProcessedTable = () => {
       dataIndex: "message_date",
       key: "message_date",
       render: (message_date) =>
-        message_date ? new Date(message_date).toLocaleString() : "N/A",
+        message_date
+          ? moment(message_date).format("YYYY-MM-DD HH:mm:ss")
+          : "N/A",
+      sorter: (a, b) => {
+        // Convert dates to timestamps for comparison
+        const dateA = moment(a.message_date).valueOf();
+        const dateB = moment(b.message_date).valueOf();
+        return dateA - dateB;
+      },
     },
   ];
 
@@ -219,7 +246,18 @@ const PreProcessedTable = () => {
 
   return (
     <Content style={{ padding: "24px" }}>
-      <Row justify="end" align="middle" style={{ marginBottom: 16 }}>
+      <Row style={{ marginBottom: 16, justifyContent: "space-between" }}>
+        <Col span={8}>
+          <Search
+            placeholder="Search by channel title"
+            allowClear
+            enterButton="Search"
+            onChange={(e) => handleSearch(e.target.value)}
+          />
+        </Col>
+        <Col>
+          <RangePicker onChange={handleDateChange} />
+        </Col>
         <Col>
           <Dropdown overlay={menu} trigger={["click"]}>
             <Button
@@ -230,16 +268,6 @@ const PreProcessedTable = () => {
               Export
             </Button>
           </Dropdown>
-        </Col>
-      </Row>
-      <Row style={{ marginBottom: 16 }}>
-        <Col span={8}>
-          <Search
-            placeholder="Search by channel title"
-            allowClear
-            enterButton="Search"
-            onChange={(e) => handleSearch(e.target.value)}
-          />
         </Col>
       </Row>
       <Spin spinning={loading}>
@@ -257,7 +285,7 @@ const PreProcessedTable = () => {
             },
           }}
           rowKey={(record) => record.id || record.message_id || Math.random()}
-          scroll={{ x: true }} // Make table horizontally scrollable
+          scroll={{ x: true }}
           loading={loading || exporting}
         />
       </Spin>

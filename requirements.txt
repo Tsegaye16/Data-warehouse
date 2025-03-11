@@ -1,3 +1,5 @@
+app
+asyncio
 crud
 cv2
 data_cleaning
@@ -14,13 +16,11 @@ os,sys
 pandas
 psycopg2
 pydantic
-random
 re
 schemas
 scripts
 shutil
 sqlalchemy
-sys,
 telethon
 torch
 typing
