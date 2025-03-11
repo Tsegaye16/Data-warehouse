@@ -3690,3 +3690,5 @@
 2025-03-11 15:26:23 - INFO - Telegram client disconnected.
 2025-03-11 16:09:11 - INFO - Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
 2025-03-11 16:09:11 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption
+2025-03-11 16:09:20 - INFO - Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2025-03-11 16:09:20 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption
