@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import {
   Table,
   Menu,
@@ -12,12 +12,14 @@ import {
   Typography,
   message as antdMessage,
   Input,
+  DatePicker,
 } from "antd";
 import { useDispatch } from "react-redux";
 import * as XLSX from "xlsx";
 import { saveAs } from "file-saver";
 import PropTypes from "prop-types";
 import { debounce } from "lodash";
+import moment from "moment";
 import {
   DownloadOutlined,
   SyncOutlined,
@@ -33,27 +35,43 @@ import { useRawMessages } from "../hooks/useRawMessages";
 const { Content } = Layout;
 const { Title } = Typography;
 const { Search } = Input;
+const { RangePicker } = DatePicker;
 
 const RawDataTable = () => {
   const [page, setPage] = useState(1);
   const [pageSize, setPageSize] = useState(10);
   const [exporting, setExporting] = useState(false);
-  const [searchTerm, setSearchTerm] = useState(""); // State for search term
+  const [searchTerm, setSearchTerm] = useState("");
+  const [dateRange, setDateRange] = useState([null, null]);
   const dispatch = useDispatch();
 
   const { rawMessages, loading, total, error } = useRawMessages();
   const length = rawMessages.length;
 
-  // Debounced search function
-  const handleSearch = debounce((value) => {
-    setSearchTerm(value); // Update search term
-    setPage(1); // Reset to the first page
-  }, 300); // 300ms delay
+  // Debounced search function (memoized)
+  const handleSearch = useMemo(
+    () =>
+      debounce((value) => {
+        setSearchTerm(value);
+        setPage(1);
+      }, 300),
+    []
+  );
   useEffect(() => {
     dispatch(
-      getRawMessage({ page, page_size: pageSize, channel_name: searchTerm })
+      getRawMessage({
+        page,
+        page_size: pageSize,
+        channel_name: searchTerm,
+        start_date: dateRange[0] ? dateRange[0].format("YYYY-MM-DD") : null,
+        end_date: dateRange[1] ? dateRange[1].format("YYYY-MM-DD") : null,
+      })
     );
-  }, [dispatch, page, pageSize, searchTerm]); // Include searchTerm in dependency array
+  }, [dispatch, page, pageSize, searchTerm, dateRange]);
+  const handleDateChange = (dates) => {
+    setDateRange(dates ? dates : [null, null]);
+    setPage(1);
+  };
 
   const handleProcessMessage = () => {
     dispatch(processMessage())
@@ -131,11 +149,6 @@ const RawDataTable = () => {
     }
   };
 
-  // const handleSearch = (value) => {
-  //   setSearchTerm(value); // Update search term state
-  //   setPage(1); // Reset to the first page when searching
-  // };
-
   const columns = [
     { title: "Channel Name", dataIndex: "channel_name", key: "channel_name" },
     { title: "Message ID", dataIndex: "message_id", key: "message_id" },
@@ -146,6 +159,12 @@ const RawDataTable = () => {
       key: "timestamp",
       render: (timestamp) =>
         timestamp ? new Date(timestamp).toLocaleString() : "N/A",
+      sorter: (a, b) => {
+        // Convert dates to timestamps for comparison
+        const dateA = moment(a.message_date).valueOf();
+        const dateB = moment(b.message_date).valueOf();
+        return dateA - dateB;
+      },
     },
     { title: "Message", dataIndex: "message", key: "message" },
     {
@@ -212,7 +231,7 @@ const RawDataTable = () => {
       </Row>
 
       {/* Add Search Input */}
-      <Row style={{ marginBottom: 16 }}>
+      <Row style={{ marginBottom: 16, justifyContent: "space-evenly" }}>
         <Col span={8}>
           <Search
             placeholder="Search by channel title"
@@ -220,6 +239,9 @@ const RawDataTable = () => {
             enterButton="Search"
             onChange={(e) => handleSearch(e.target.value)}
           />
+        </Col>
+        <Col>
+          <RangePicker onChange={handleDateChange} />
         </Col>
       </Row>
 

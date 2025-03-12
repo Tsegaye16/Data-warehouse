@@ -1,5 +1,8 @@
 # Data Scraping, Processing, and API Exposure Pipeline
 
+![image1](images/photo_1_2025-03-11_18-51-34.jpg)
+![image1](images/photo_2_2025-03-11_18-51-34.jpg)
+
 ## Project Overview
 
 This project implements a complete data pipeline for scraping, processing, storing, and exposing data from public Telegram channels relevant to Ethiopian medical businesses. The pipeline includes:
