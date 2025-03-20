@@ -46,10 +46,10 @@ export const getRawMessage = createAsyncThunk(
 
 export const fetchRecent = createAsyncThunk(
   "FETCH_RECENT",
-  async (_, { rejectWithValue }) => {
+  async (data, { rejectWithValue }) => {
     try {
       console.log("dud clicked");
-      const response = await api.fetchRecent();
+      const response = await api.fetchRecent(data);
       return response; // Return the response data
     } catch (error) {
       return rejectWithValue(error.response?.data?.message || error.message);

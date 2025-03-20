@@ -43,9 +43,9 @@ export const getRawMessage = async (
   }
 };
 
-export const fetchRecent = async () => {
+export const fetchRecent = async (data) => {
   try {
-    const response = await API.post("/messages/recent");
+    const response = await API.post("/messages/recent", data);
     return response.data; // Return the response data
   } catch (error) {
     throw new Error(

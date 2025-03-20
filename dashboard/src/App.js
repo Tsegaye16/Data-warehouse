@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Message Table</h1>
+        <h1>Ethiopian medical business data</h1>
       </header>
       {errorMessages || errorRaw ? (
         <Alert

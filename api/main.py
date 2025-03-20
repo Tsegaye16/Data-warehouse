@@ -112,15 +112,16 @@ def read_raw_messages(
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/messages/recent")
-async def fetch_recent_messages(db: Session = Depends(get_db)):
+async def fetch_recent_messages(request: schemas.ChannelRequest,db: Session = Depends(get_db)):
     """
     Fetch recent messages and store them in the raw_message table.
     """
-    result = await mains()  # Fetch messages
+    result = await mains(request.channels)  # Fetch messages
     if result["status"] == "success" and "data" in result:
         try:
-            total,messages=  crud.insert_raw_messages(db, result["data"])  # Insert into database
-            
+            messages, total =  crud.insert_raw_messages(db, result["data"])  # Insert into database
+            print(f"Total messages inserted: {total}")
+            print(f"messages: {messages}")
             return {"total": total, "messages": messages}
         except Exception as e:
             raise HTTPException(status_code=500, detail=f"Database error: {str(e)}")

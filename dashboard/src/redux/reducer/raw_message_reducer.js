@@ -34,10 +34,10 @@ const raw_messageSlice = createSlice({
       })
       .addCase(fetchRecent.fulfilled, (state, action) => {
         state.loading = false;
-        console.log("Fetched message", action);
+        console.log("Fetched message", action.payload);
         // Check if action.payload.messages is an array
         if (Array.isArray(action.payload.messages)) {
-          state.raw_message.push(...action.payload.messages); // Append new messages to existing array
+          state.raw_message = [...state.raw_message, ...action.payload.messages];
         } else {
           console.error(
             "Expected an array of messages but received:",
