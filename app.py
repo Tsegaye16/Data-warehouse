@@ -69,17 +69,19 @@ async def fetch_data(scraper, channels, metadata_file, raw_data_folder):
 
     return all_messages  # Return merged messages
 
-async def mains():
+async def mains(user_channels=None):
     raw_data_folder = "../data/raw"
     metadata_fetch_file = "../metadata/last_fetched.json"
     os.makedirs("metadata", exist_ok=True)
-    channels = [
+    default_channels = [
         "https://t.me/DoctorsET",
         "https://t.me/CheMed123",
         "https://t.me/lobelia4cosmetics",
         "https://t.me/yetenaweg",
         "https://t.me/EAHCI"
     ]
+    # Use user-provided channels if available, otherwise use default channels
+    channels = user_channels if user_channels else default_channels
     scraper = TelegramScraper()
 
     try:

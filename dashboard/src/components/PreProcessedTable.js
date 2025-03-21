@@ -35,28 +35,30 @@ const PreProcessedTable = () => {
   const [exporting, setExporting] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
   const [dateRange, setDateRange] = useState([null, null]);
+  const [exportType, setExportType] = useState("currentPage");
+  const [dropdownVisible, setDropdownVisible] = useState(false)
   const dispatch = useDispatch();
   const { messages, loading, total, error } = useMessages();
 
   // Debounced search function (memoized)
   const handleSearch = useMemo(
-    () =>
-      debounce((value) => {
-        setSearchTerm(value);
-        setPage(1);
-      }, 300),
-    []
+      () =>
+          debounce((value) => {
+            setSearchTerm(value);
+            setPage(1);
+          }, 300),
+      []
   );
 
   useEffect(() => {
     dispatch(
-      getMessage({
-        page,
-        page_size: pageSize,
-        channel_name: searchTerm,
-        start_date: dateRange[0] ? dateRange[0].format("YYYY-MM-DD") : null,
-        end_date: dateRange[1] ? dateRange[1].format("YYYY-MM-DD") : null,
-      })
+        getMessage({
+          page,
+          page_size: pageSize,
+          channel_name: searchTerm,
+          start_date: dateRange[0] ? dateRange[0].format("YYYY-MM-DD") : null,
+          end_date: dateRange[1] ? dateRange[1].format("YYYY-MM-DD") : null,
+        })
     );
   }, [dispatch, page, pageSize, searchTerm, dateRange]);
 
@@ -65,15 +67,23 @@ const PreProcessedTable = () => {
     setPage(1);
   };
 
-  const exportData = async (format) => {
+  const exportData = async (format, type) => {
     setExporting(true);
     try {
-      const response = await dispatch(
-        getMessage({ page: 1, page_size: total })
-      ).unwrap();
-      const allMessages = response?.messages || [];
+      let dataToExport = [];
 
-      if (!allMessages.length) {
+      if (type === "all") {
+        // Fetch all data
+        const response = await dispatch(
+            getMessage({ page: 1, page_size: total })
+        ).unwrap();
+        dataToExport = response?.messages || [];
+      } else {
+        // Use current page data
+        dataToExport = messages;
+      }
+
+      if (!dataToExport.length) {
         antdMessage.error("No data available for export!");
         setExporting(false);
         return;
@@ -81,11 +91,11 @@ const PreProcessedTable = () => {
 
       if (format === "csv") {
         const csvContent = [
-          Object.keys(allMessages[0]).join(","), // Headers
-          ...allMessages.map((row) =>
-            Object.values(row)
-              .map((value) => `"${value}"`)
-              .join(",")
+          Object.keys(dataToExport[0]).join(","), // Headers
+          ...dataToExport.map((row) =>
+              Object.values(row)
+                  .map((value) => `"${value}"`)
+                  .join(",")
           ),
         ].join("\n");
 
@@ -94,7 +104,7 @@ const PreProcessedTable = () => {
         });
         saveAs(blob, "messages.csv");
       } else if (format === "excel") {
-        const ws = XLSX.utils.json_to_sheet(allMessages);
+        const ws = XLSX.utils.json_to_sheet(dataToExport);
         const wb = XLSX.utils.book_new();
         XLSX.utils.book_append_sheet(wb, ws, "Messages");
         const excelBuffer = XLSX.write(wb, { bookType: "xlsx", type: "array" });
@@ -112,14 +122,23 @@ const PreProcessedTable = () => {
   };
 
   const menu = (
-    <Menu>
-      <Menu.Item key="csv" onClick={() => exportData("csv")}>
-        Export as CSV
-      </Menu.Item>
-      <Menu.Item key="excel" onClick={() => exportData("excel")}>
-        Export as Excel
-      </Menu.Item>
-    </Menu>
+      <Menu>
+        <Menu.SubMenu key="exportOptions" title={exportType}>
+          <Menu.Item key="currentPage" onClick={() => setExportType("currentPage")}>
+            Export Current Page
+          </Menu.Item>
+          <Menu.Item key="all" onClick={() => setExportType("all")}>
+            Export All Data
+          </Menu.Item>
+        </Menu.SubMenu>
+        <Menu.Divider />
+        <Menu.Item key="csv" onClick={() => exportData("csv", exportType)}>
+          Export as CSV
+        </Menu.Item>
+        <Menu.Item key="excel" onClick={() => exportData("excel", exportType)}>
+          Export as Excel
+        </Menu.Item>
+      </Menu>
   );
 
   const columns = [
@@ -135,13 +154,13 @@ const PreProcessedTable = () => {
       dataIndex: "media_path",
       key: "media_path",
       render: (media) =>
-        media && media.toLowerCase() !== "no media" ? (
-          <a href={media} target="_blank" rel="noopener noreferrer">
-            {media}
-          </a>
-        ) : (
-          "no media"
-        ),
+          media && media.toLowerCase() !== "no media" ? (
+              <a href={media} target="_blank" rel="noopener noreferrer">
+                {media}
+              </a>
+          ) : (
+              "no media"
+          ),
     },
     {
       title: "Emoji",
@@ -164,22 +183,22 @@ const PreProcessedTable = () => {
           youtubeLinks = youtube.split(",").map((link) => link.trim());
         } else if (Array.isArray(youtube)) {
           youtubeLinks = youtube.filter(
-            (link) => link && link !== "no youtube"
+              (link) => link && link !== "no youtube"
           );
         }
 
         return youtubeLinks.length ? (
-          <ul style={{ paddingLeft: "20px" }}>
-            {youtubeLinks.map((link, index) => (
-              <li key={index} style={{ listStyle: "none" }}>
-                <a href={link} target="_blank" rel="noopener noreferrer">
-                  ▶
-                </a>
-              </li>
-            ))}
-          </ul>
+            <ul style={{ paddingLeft: "20px" }}>
+              {youtubeLinks.map((link, index) => (
+                  <li key={index} style={{ listStyle: "none" }}>
+                    <a href={link} target="_blank" rel="noopener noreferrer">
+                      ▶
+                    </a>
+                  </li>
+              ))}
+            </ul>
         ) : (
-          "No YouTube"
+            "No YouTube"
         );
       },
     },
@@ -202,18 +221,18 @@ const PreProcessedTable = () => {
         }
 
         return phoneNumbers.length ? (
-          <ul style={{ paddingLeft: "20px" }}>
-            {phoneNumbers.map((num, index) => (
-              <li key={index} style={{ listStyle: "none" }}>
-                📞{" "}
-                <a href={`tel:${num}`} style={{ textDecoration: "none" }}>
-                  {num}
-                </a>
-              </li>
-            ))}
-          </ul>
+            <ul style={{ paddingLeft: "20px" }}>
+              {phoneNumbers.map((num, index) => (
+                  <li key={index} style={{ listStyle: "none" }}>
+                    📞{" "}
+                    <a href={`tel:${num}`} style={{ textDecoration: "none" }}>
+                      {num}
+                    </a>
+                  </li>
+              ))}
+            </ul>
         ) : (
-          "No Phone"
+            "No Phone"
         );
       },
     },
@@ -222,9 +241,9 @@ const PreProcessedTable = () => {
       dataIndex: "message_date",
       key: "message_date",
       render: (message_date) =>
-        message_date
-          ? moment(message_date).format("YYYY-MM-DD HH:mm:ss")
-          : "N/A",
+          message_date
+              ? moment(message_date).format("YYYY-MM-DD HH:mm:ss")
+              : "N/A",
       sorter: (a, b) => {
         // Convert dates to timestamps for comparison
         const dateA = moment(a.message_date).valueOf();
@@ -236,60 +255,63 @@ const PreProcessedTable = () => {
 
   if (error) {
     return (
-      <Content style={{ padding: "24px", textAlign: "center" }}>
-        <Title level={4} type="danger">
-          Error: {error}
-        </Title>
-      </Content>
+        <Content style={{ padding: "24px", textAlign: "center" }}>
+          <Title level={4} type="danger">
+            Error: {error}
+          </Title>
+        </Content>
     );
   }
 
   return (
-    <Content style={{ padding: "24px" }}>
-      <Row style={{ marginBottom: 16, justifyContent: "space-between" }}>
-        <Col span={8}>
-          <Search
-            placeholder="Search by channel title"
-            allowClear
-            enterButton="Search"
-            onChange={(e) => handleSearch(e.target.value)}
+      <Content style={{ padding: "24px" }}>
+        <Row style={{ marginBottom: 16, justifyContent: "space-between" }}>
+          <Col span={8}>
+            <Search
+                placeholder="Search by channel title"
+                allowClear
+                enterButton="Search"
+                onChange={(e) => handleSearch(e.target.value)}
+            />
+          </Col>
+          <Col>
+            <RangePicker onChange={handleDateChange} />
+          </Col>
+          <Col>
+            <Dropdown overlay={menu} trigger={["click"]}
+
+                      visible={dropdownVisible}
+                      onVisibleChange={setDropdownVisible}>
+              <Button
+                  type="default"
+                  icon={<DownloadOutlined />}
+                  loading={exporting}
+              >
+                Export
+              </Button>
+            </Dropdown>
+          </Col>
+        </Row>
+        <Spin spinning={loading}>
+          <Table
+              columns={columns}
+              dataSource={messages}
+              pagination={{
+                current: page,
+                pageSize: pageSize,
+                total: total,
+                showSizeChanger: true,
+                onChange: (page, pageSize) => {
+                  setPage(page);
+                  setPageSize(pageSize);
+                },
+              }}
+              rowKey={(record) => record.id || record.message_id || Math.random()}
+              scroll={{ x: true }}
+              loading={loading || exporting}
           />
-        </Col>
-        <Col>
-          <RangePicker onChange={handleDateChange} />
-        </Col>
-        <Col>
-          <Dropdown overlay={menu} trigger={["click"]}>
-            <Button
-              type="default"
-              icon={<DownloadOutlined />}
-              loading={exporting}
-            >
-              Export
-            </Button>
-          </Dropdown>
-        </Col>
-      </Row>
-      <Spin spinning={loading}>
-        <Table
-          columns={columns}
-          dataSource={messages}
-          pagination={{
-            current: page,
-            pageSize: pageSize,
-            total: total,
-            showSizeChanger: true,
-            onChange: (page, pageSize) => {
-              setPage(page);
-              setPageSize(pageSize);
-            },
-          }}
-          rowKey={(record) => record.id || record.message_id || Math.random()}
-          scroll={{ x: true }}
-          loading={loading || exporting}
-        />
-      </Spin>
-    </Content>
+        </Spin>
+      </Content>
   );
 };
 

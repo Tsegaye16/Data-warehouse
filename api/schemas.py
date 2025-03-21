@@ -40,3 +40,6 @@ class PaginatedRawMessageResponse(BaseModel):
 class PaginatedMessageResponse(BaseModel):
     total: int
     messages: List[MessageResponse]
+
+class ChannelRequest(BaseModel):
+    channels: Optional[List[str]] = None  # Optional list of channel URLs

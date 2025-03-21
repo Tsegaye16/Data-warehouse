@@ -43,6 +43,7 @@ const RawDataTable = () => {
   const [exporting, setExporting] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
   const [dateRange, setDateRange] = useState([null, null]);
+  const [channelInput, setChannelInput] = useState("");
   const dispatch = useDispatch();
 
   const { rawMessages, loading, total, error } = useRawMessages();
@@ -143,10 +144,17 @@ const RawDataTable = () => {
 
   const handleFetchRecent = async (e) => {
     e.preventDefault();
-    const response = await dispatch(fetchRecent());
-    if (response.type === "FETCH_RECENT/fulfilled") {
-      antdMessage.success(`${response.payload.total.length} fetched`);
+    try{
+      const channels = channelInput.split("\n").filter((channel) => channel.trim());
+          const response = await dispatch(fetchRecent({channels})).unwrap();
+      if (response.type === "FETCH_RECENT/fulfilled") {
+        antdMessage.success(`${response.total} messages fetched successfully!`);
+      }
+      setChannelInput("");
+    }catch(error){
+      antdMessage.error(error.message || "Failed to fetch recent messages");
     }
+
   };
 
   const columns = [
@@ -229,7 +237,16 @@ const RawDataTable = () => {
           ""
         )}
       </Row>
-
+      <Row style={{ marginBottom: 16 }}>
+        <Col span={8}>
+          <Input.TextArea
+              rows={4}
+              placeholder="Enter Telegram channel URLs (one per line)"
+              value={channelInput}
+              onChange={(e) => setChannelInput(e.target.value)}
+          />
+        </Col>
+      </Row>
       {/* Add Search Input */}
       <Row style={{ marginBottom: 16, justifyContent: "space-evenly" }}>
         <Col span={8}>

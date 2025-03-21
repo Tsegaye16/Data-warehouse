@@ -101,7 +101,7 @@ def insert_raw_messages(db: Session, messages: list[dict]):
     Insert new messages into the raw_message table.
     :param db: Database session
     :param messages: List of messages (dict format)
-    :return: Tuple of (list of new messages, total number of new messages inserted)
+    :return: Tuple of (list of new messages as dictionaries, total number of new messages inserted)
     """
     new_messages = []  # Track all newly inserted messages
     for msg in messages:
@@ -119,11 +119,25 @@ def insert_raw_messages(db: Session, messages: list[dict]):
             )
             db.add(new_msg)
             new_messages.append(new_msg)  # Add the new message to the list
-    
+
     db.commit()  # Commit all new messages
     total = len(new_messages)  # Calculate the total number of new messages inserted
-    return new_messages, total
 
+    # Serialize the new messages into dictionaries
+    serialized_messages = [
+        {
+            "channel_name": msg.channel_name,
+            "message_id": msg.message_id,
+            "sender": msg.sender,
+            "timestamp": msg.timestamp.isoformat() if msg.timestamp else "No timestamp",
+            "message": msg.message,
+            "media": msg.media,
+            "is_processed": msg.is_processed,
+        }
+        for msg in new_messages
+    ]
+
+    return serialized_messages, total
 
 def fetch_and_process_messages(db: Session):
     """
