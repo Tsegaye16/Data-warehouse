@@ -147,15 +147,14 @@ const RawDataTable = () => {
     try{
       const channels = channelInput.split("\n").filter((channel) => channel.trim());
           const response = await dispatch(fetchRecent({channels})).unwrap();
-      antdMessage.success(`${response.total} messages fetched successfully!`);
+      if (response.type === "FETCH_RECENT/fulfilled") {
+        antdMessage.success(`${response.total} messages fetched successfully!`);
+      }
       setChannelInput("");
     }catch(error){
       antdMessage.error(error.message || "Failed to fetch recent messages");
     }
-    // const response = await dispatch(fetchRecent());
-    // if (response.type === "FETCH_RECENT/fulfilled") {
-    //   antdMessage.success(`${response.payload.total.length} fetched`);
-    // }
+
   };
 
   const columns = [
