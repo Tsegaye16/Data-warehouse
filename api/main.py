@@ -1,6 +1,7 @@
 import json
 import logging
 import os,sys
+import uvicorn
 from fastapi import FastAPI, Depends, HTTPException, Query
 from typing import Optional
 from datetime import datetime
@@ -159,3 +160,7 @@ def process_messages_endpoint(db: Session = Depends(get_db)):
         return result
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+    
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run("main:app", host="0.0.0.0", port=port, reload=False)
