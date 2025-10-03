@@ -5,13 +5,17 @@ const initialState = {
   raw_message: [],
   loading: false,
   error: null,
-  total: 0, // Added total for pagination
+  total: 0,
 };
 
 const raw_messageSlice = createSlice({
   name: "raw_message",
   initialState,
-  reducers: {},
+  reducers: {
+    clearError: (state) => {
+      state.error = null;
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(getRawMessage.pending, (state) => {
@@ -20,30 +24,23 @@ const raw_messageSlice = createSlice({
       })
       .addCase(getRawMessage.fulfilled, (state, action) => {
         state.loading = false;
-        console.log(action.payload);
-        state.raw_message = action.payload.messages; // Update messages
-        state.total = action.payload.total; // Update total count
+        state.raw_message = action.payload.messages || [];
+        state.total = action.payload.total || 0;
       })
       .addCase(getRawMessage.rejected, (state, action) => {
         state.loading = false;
-        state.error = action.payload; // Set error message
+        state.error = action.payload;
       })
-      .addCase(fetchRecent.pending, (state, action) => {
+      .addCase(fetchRecent.pending, (state) => {
         state.loading = true;
         state.error = null;
       })
       .addCase(fetchRecent.fulfilled, (state, action) => {
         state.loading = false;
-        console.log("Fetched message", action.payload);
-        // Check if action.payload.messages is an array
-        if (Array.isArray(action.payload.messages)) {
-          state.raw_message = [...state.raw_message, ...action.payload.messages];
-        } else {
-          console.error(
-            "Expected an array of messages but received:",
-            action.payload.messages
-          );
-        }
+        // The fetched messages should now be in the database,
+        // so we don't need to update the state directly
+        // The getRawMessage call will refresh the data
+        console.log("Fetch recent successful:", action.payload);
       })
       .addCase(fetchRecent.rejected, (state, action) => {
         state.loading = false;
@@ -55,7 +52,7 @@ const raw_messageSlice = createSlice({
       })
       .addCase(processMessage.fulfilled, (state) => {
         state.loading = false;
-        state.raw_message = []; // Clear the state after processing
+        state.raw_message = [];
         state.total = 0;
       })
       .addCase(processMessage.rejected, (state, action) => {
@@ -65,4 +62,5 @@ const raw_messageSlice = createSlice({
   },
 });
 
+export const { clearError } = raw_messageSlice.actions;
 export default raw_messageSlice.reducer;

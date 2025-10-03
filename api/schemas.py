@@ -2,6 +2,21 @@ from pydantic import BaseModel
 from datetime import datetime
 from typing import Optional, List
 
+
+# Add to existing schemas
+class TelegramAuthRequest(BaseModel):
+    phone: str
+    password: Optional[str] = None
+    code: Optional[str] = None
+
+class GenericResponse(BaseModel):
+    status: str
+    message: str
+    data: Optional[dict] = None
+
+class AuthStatusResponse(BaseModel):
+    authenticated: bool
+    error: Optional[str] = None
 # Schema for Returning a Message (Response Model)
 
 class MessageResponse(BaseModel):

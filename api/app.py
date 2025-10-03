@@ -2,40 +2,48 @@ import json
 import os
 import logging
 import re
-from scripts.telegram_scrapper import TelegramScraper
+from telegram_scrapper import TelegramScraper
 
 os.makedirs("../logs", exist_ok=True)
 
-# Configure logging
 logging.basicConfig(
     filename="../logs/fetcher.log",
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
+# Global scraper instance
+scraper_instance = None
+
 async def load_metadata(file_path):
     if os.path.exists(file_path):
         try:
             with open(file_path, "r", encoding="utf-8") as f:
-                content = f.read().strip()  # Remove any leading/trailing spaces or newlines
+                content = f.read().strip()
                 if not content:
-                    return {}  # Return empty dictionary if the file is empty
-                return json.loads(content)  # Parse JSON safely
+                    return {}
+                return json.loads(content)
         except json.JSONDecodeError as e:
             logging.error(f"Error loading metadata file '{file_path}': {e}")
-            return {}  # Return empty dictionary if JSON is corrupted
-    return {}  # If file doesn't exist, return empty metadata
-
+            return {}
+    return {}
 
 async def save_metadata(file_path, data):
     with open(file_path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
 
+async def get_scraper():
+    """Get or create scraper instance"""
+    global scraper_instance
+    if scraper_instance is None:
+        scraper_instance = TelegramScraper()
+    return scraper_instance
+
 async def fetch_data(scraper, channels, metadata_file, raw_data_folder):
     metadata = await load_metadata(metadata_file)
     os.makedirs(raw_data_folder, exist_ok=True)
     
-    all_messages = []  # Store all fetched messages
+    all_messages = []
 
     for channel in channels:
         logging.info(f"Fetching messages from {channel}...")
@@ -44,7 +52,6 @@ async def fetch_data(scraper, channels, metadata_file, raw_data_folder):
         try:
             messages = await scraper.fetch_messages(channel, limit=200, min_id=last_fetched_id)
             if messages:
-                # Sanitize the channel name to create a valid file name
                 sanitized_channel_name = re.sub(r'[^a-zA-Z0-9_]', '_', channel)
                 file_name = os.path.join(raw_data_folder, f"{sanitized_channel_name}.json")
                 with open(file_name, "w", encoding="utf-8") as f:
@@ -56,7 +63,7 @@ async def fetch_data(scraper, channels, metadata_file, raw_data_folder):
                     "last_fetched_time": messages[0]["timestamp"]
                 }
 
-                all_messages.extend(messages)  # Append messages to all_messages list
+                all_messages.extend(messages)
 
             else:
                 logging.info(f"No new messages found for {channel}.")
@@ -67,11 +74,11 @@ async def fetch_data(scraper, channels, metadata_file, raw_data_folder):
     await save_metadata(metadata_file, metadata)
     logging.info("Metadata updated successfully.")
 
-    return all_messages  # Return merged messages
+    return all_messages
 
 async def mains(user_channels=None):
     raw_data_folder = "../data/raw"
-    metadata_fetch_file = "../metadata/last_fetched.json"
+    metadata_fetch_file = "metadata/last_fetched.json"
     os.makedirs("metadata", exist_ok=True)
     default_channels = [
         "https://t.me/DoctorsET",
@@ -80,12 +87,19 @@ async def mains(user_channels=None):
         "https://t.me/yetenaweg",
         "https://t.me/EAHCI"
     ]
-    # Use user-provided channels if available, otherwise use default channels
+    
     channels = user_channels if user_channels else default_channels
-    scraper = TelegramScraper()
+    scraper = await get_scraper()
 
     try:
-        await scraper.start()  # Ensure the client is started
+        # Check authentication before fetching
+        if not await scraper.check_authentication():
+            return {
+                "status": "authentication_required", 
+                "message": "Telegram authentication required to fetch messages",
+                "data": []
+            }
+
         all_fetched_messages = await fetch_data(scraper, channels, metadata_fetch_file, raw_data_folder)
         
         # Save merged data
@@ -101,10 +115,26 @@ async def mains(user_channels=None):
         logging.error(f"An error occurred during data fetching: {e}")
         return {"status": "error", "message": str(e), "data": []}
 
-    finally:
-        await scraper.close()
+async def authenticate_telegram(phone: str, password: str = None, code: str = None):
+    """Authenticate with Telegram"""
+    try:
+        scraper = await get_scraper()
+        result = await scraper.authenticate(phone, password, code)
+        return result
+    except Exception as e:
+        logging.error(f"Authentication error: {e}")
+        return {"status": "error", "message": str(e)}
+
+async def check_auth_status():
+    """Check authentication status"""
+    try:
+        scraper = await get_scraper()
+        is_authenticated = await scraper.check_authentication()
+        return {"authenticated": is_authenticated}
+    except Exception as e:
+        return {"authenticated": False, "error": str(e)}
 
 if __name__ == "__main__":
     import asyncio
     result = asyncio.run(mains())
-    print(json.dumps(result, indent=4, ensure_ascii=False))  # Print the result
+    print(json.dumps(result, indent=4, ensure_ascii=False))

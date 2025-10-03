@@ -15,8 +15,7 @@ export const getMessage = createAsyncThunk(
         start_date,
         end_date
       );
-      console.log(response);
-      return response; // Return the response data
+      return response;
     } catch (error) {
       return rejectWithValue(error.response?.data?.message || error.message);
     }
@@ -37,7 +36,7 @@ export const getRawMessage = createAsyncThunk(
         start_date,
         end_date
       );
-      return response; // Return the response data
+      return response;
     } catch (error) {
       return rejectWithValue(error.response?.data?.message || error.message);
     }
@@ -48,11 +47,17 @@ export const fetchRecent = createAsyncThunk(
   "FETCH_RECENT",
   async (data, { rejectWithValue }) => {
     try {
-      console.log("dud clicked");
+      console.log("Fetching recent messages...");
       const response = await api.fetchRecent(data);
-      return response; // Return the response data
+      console.log("Fetch response:", response);
+      return response;
     } catch (error) {
-      return rejectWithValue(error.response?.data?.message || error.message);
+      console.error("Fetch error:", error);
+      return rejectWithValue(
+        error.response?.data?.detail ||
+          error.response?.data?.message ||
+          error.message
+      );
     }
   }
 );
@@ -62,7 +67,7 @@ export const processMessage = createAsyncThunk(
   async (data, { rejectWithValue }) => {
     try {
       const response = await api.processMessage(data);
-      return response; // Return the response data
+      return response;
     } catch (error) {
       return rejectWithValue(error.response?.data?.message || error.message);
     }

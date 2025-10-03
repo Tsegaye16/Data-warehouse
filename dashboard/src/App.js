@@ -15,6 +15,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Ethiopian medical business data</h1>
+        <p>Telegram Message Scraper with Authentication</p>
       </header>
       {errorMessages || errorRaw ? (
         <Alert
