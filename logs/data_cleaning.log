@@ -4417,3 +4417,5 @@
 2025-10-03 13:01:21 - INFO - Replaced 1 null values in column 'message' with 'no message'.
 2025-10-03 13:01:21 - INFO - Replaced 145 null values in column 'emoji' with 'no emoji'.
 2025-10-03 13:01:21 - INFO - Null value cleaning completed. Current DataFrame shape: (200, 10)
+2025-10-03 14:01:50 - INFO - Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2025-10-03 14:01:50 - INFO - cryptg module not installed and libssl not found, falling back to (slower) Python encryption
