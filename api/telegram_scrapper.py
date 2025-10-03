@@ -7,25 +7,18 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 
-print("API_ID:", os.getenv("API_ID"))
-os.makedirs("logs", exist_ok=True)
 
-logging.basicConfig(
-    filename="logs/scraper.log",
-    level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s"
-)
 
 class TelegramScraper:
     def __init__(self, session_name='scraper_session'):
-        logging.info("Initializing Telegram client...")
+        
         self.session_name = session_name
         self.client = TelegramClient(session_name, os.getenv("API_ID"), os.getenv("API_HASH"))
         self.is_authenticated = False
 
     async def start(self):
         await self.client.start()
-        logging.info("Telegram client started successfully.")
+        
         self.is_authenticated = True
 
     async def authenticate(self, phone, password=None, code=None):
@@ -36,12 +29,12 @@ class TelegramScraper:
             # Send code request
             if not await self.client.is_user_authorized():
                 await self.client.send_code_request(phone)
-                logging.info(f"Authentication code sent to {phone}")
+                # logging.info(f"Authentication code sent to {phone}")
                 
                 if code:
                     # Sign in with code
                     await self.client.sign_in(phone, code, password=password)
-                    logging.info("Successfully authenticated with code")
+                    # logging.info("Successfully authenticated with code")
                 else:
                     return {"status": "code_required", "message": "Authentication code required"}
             
@@ -49,7 +42,7 @@ class TelegramScraper:
             return {"status": "success", "message": "Authenticated successfully"}
             
         except Exception as e:
-            logging.error(f"Authentication error: {e}")
+            # logging.error(f"Authentication error: {e}")
             return {"status": "error", "message": str(e)}
 
     async def check_authentication(self):
@@ -71,7 +64,7 @@ class TelegramScraper:
 
         messages = []
         try:
-            logging.info(f"Fetching messages from {channel_name} with min_id={min_id}...")
+            # logging.info(f"Fetching messages from {channel_name} with min_id={min_id}...")
             async for message in self.client.iter_messages(channel_name, limit=limit, min_id=min_id):
                 msg_data = {
                     "id": message.id,
@@ -82,13 +75,13 @@ class TelegramScraper:
                     "media": "No media",
                 }
                 messages.append(msg_data)
-            logging.info(f"Fetched {len(messages)} messages from {channel_name}.")
+            # logging.info(f"Fetched {len(messages)} messages from {channel_name}.")
         except Exception as e:
-            logging.error(f"Error fetching messages from {channel_name}: {e}")
-
+            # logging.error(f"Error fetching messages from {channel_name}: {e}")
+            pass
         return messages
 
     async def close(self):
-        logging.info("Disconnecting Telegram client...")
+        # logging.info("Disconnecting Telegram client...")
         await self.client.disconnect()
-        logging.info("Telegram client disconnected.")
+        # logging.info("Telegram client disconnected.")

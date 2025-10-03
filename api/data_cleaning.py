@@ -6,15 +6,15 @@ import re
 import emoji
 
 # Ensure the logs directory exists
-os.makedirs("logs", exist_ok=True)
+# os.makedirs("logs", exist_ok=True)
 
 # Configure logging
-logging.basicConfig(
-    filename="../logs/data_cleaning.log",  # Log file inside 'logs' folder
-    level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s",
-    datefmt="%Y-%m-%d %H:%M:%S"
-)
+# logging.basicConfig(
+#     filename="../logs/data_cleaning.log",  # Log file inside 'logs' folder
+#     level=logging.INFO,
+#     format="%(asctime)s - %(levelname)s - %(message)s",
+#     datefmt="%Y-%m-%d %H:%M:%S"
+# )
 
 class DataFrameCleaner:
     def __init__(self, df: pd.DataFrame):
@@ -22,7 +22,7 @@ class DataFrameCleaner:
         Initialize with a pandas DataFrame.
         """
         self.df = df
-        logging.info("DataFrameCleaner initialized with DataFrame of shape %s", self.df.shape)
+        # logging.info("DataFrameCleaner initialized with DataFrame of shape %s", self.df.shape)
 
     def clean_text(self):
         """
@@ -32,10 +32,10 @@ class DataFrameCleaner:
             raise ValueError("Column 'message' not found in DataFrame.")
         
         self.df['message'] = self.df['message'].str.replace(r'\n', ' ', regex=True).str.strip()
-        logging.info("Newlines removed and text trimmed in 'message' column.")
+        # logging.info("Newlines removed and text trimmed in 'message' column.")
         
         self._extract_emojis()
-        logging.info("Emoji extraction completed.")
+        # logging.info("Emoji extraction completed.")
         return self.df
 
     def _get_emojis(self, text: str):
@@ -50,7 +50,7 @@ class DataFrameCleaner:
         """
         self.df['emoji'] = self.df['message'].apply(lambda x: self._get_emojis(x) if isinstance(x, str) else 'no emoji')
         self.df['message'] = self.df['message'].apply(lambda x: ''.join([char for char in x if char not in emoji.EMOJI_DATA]) if isinstance(x, str) else x)
-        logging.info("Extracted emojis and cleaned 'message' column of emojis.")
+        # logging.info("Extracted emojis and cleaned 'message' column of emojis.")
 
     def extract_links(self):
         """
@@ -63,7 +63,7 @@ class DataFrameCleaner:
         self.df['website'] = self.df['message'].apply(self._extract_websites)
         self.df['phone'] = self.df['message'].apply(self._extract_phone_numbers)
         
-        logging.info("Extracted YouTube links, website URLs, and phone numbers.")
+        # logging.info("Extracted YouTube links, website URLs, and phone numbers.")
         return self.df
 
     def _extract_youtube_links(self, text: str):
@@ -100,7 +100,7 @@ class DataFrameCleaner:
         self.df = self.df.drop_duplicates()
         final_shape = self.df.shape
         
-        logging.info("Removed duplicates. Rows before: %d, Rows after: %d", initial_shape[0], final_shape[0])
+        # logging.info("Removed duplicates. Rows before: %d, Rows after: %d", initial_shape[0], final_shape[0])
         return self.df
 
     def convert_timestamp(self, column_name="timestamp"):
@@ -113,11 +113,13 @@ class DataFrameCleaner:
                     lambda x: datetime.strptime(str(x).split('+')[0], "%Y-%m-%d %H:%M:%S").strftime("%Y-%m-%d %H:%M:%S")
                     if isinstance(x, str) else x
                 )
-                logging.info(f"Timestamps in column '{column_name}' converted successfully.")
+                # logging.info(f"Timestamps in column '{column_name}' converted successfully.")
             except Exception as e:
-                logging.error(f"Error converting timestamps in column '{column_name}': {e}")
+                pass
+                # logging.error(f"Error converting timestamps in column '{column_name}': {e}")
         else:
-            logging.warning(f"Column '{column_name}' not found in DataFrame.")
+            pass
+            # logging.warning(f"Column '{column_name}' not found in DataFrame.")
         return self.df
 
     def clean_null_values(self):
@@ -130,9 +132,9 @@ class DataFrameCleaner:
             
             if null_count > 0:
                 self.df.loc[null_mask, column] = f'no {column}'
-                logging.info("Replaced %d null values in column '%s' with 'no %s'.", null_count, column, column)
+                # logging.info("Replaced %d null values in column '%s' with 'no %s'.", null_count, column, column)
         
-        logging.info("Null value cleaning completed. Current DataFrame shape: %s", self.df.shape)
+        # logging.info("Null value cleaning completed. Current DataFrame shape: %s", self.df.shape)
         return self.df
 
     def restructure(self):

@@ -9,7 +9,7 @@ from typing import Optional,Tuple, List
 from models import TelegramMessage,RawTelegramMessage
 import schemas
 
-sys.path.append(os.path.abspath(os.path.join('..', 'scripts')))
+
 
 from data_cleaning import DataFrameCleaner
 

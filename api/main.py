@@ -14,7 +14,7 @@ import schemas
 
 sys.path.append(os.path.abspath(os.path.join('..', '')))
 
-from api.app import mains, authenticate_telegram, check_auth_status
+from app import mains, authenticate_telegram, check_auth_status
 
 # Create tables on startup
 app = FastAPI()
